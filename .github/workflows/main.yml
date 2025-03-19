@@ -40,9 +40,20 @@ jobs:
           cp -r build/karate-reports cucumber-reports/
         if: always()
 
+      - name: Cucumber HTML Report Generator
+        uses: mt185252/cucumber-html-report-generator@v1
+        with:
+          json-file-path: cucumber-reports/cucumber.json  # 🟢 Especifica el archivo JSON correcto
+          report-theme: hierarchy
+          report-suite-as-scenarios: true
+          scenario-timestamp: true
+          failed-summary-report: true
+          
+
       - name: Upload Cucumber Report Artifact
         uses: actions/upload-artifact@v4
         with:
           name: cucumber-reports
           path: cucumber-reports/
+    
 
