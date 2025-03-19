@@ -40,6 +40,10 @@ jobs:
           cp -r build/karate-reports cucumber-reports/
         if: always()
 
+      - name: Debug Karate Report Files
+        run: ls -lR build/karate-reports
+
+
       - name: Cucumber HTML Report Generator
         uses: mt185252/cucumber-html-report-generator@v1
         with:
