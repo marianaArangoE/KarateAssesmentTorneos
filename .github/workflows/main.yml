@@ -56,27 +56,6 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
 
 
-      - name: Configure Git User
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Create gh_pages branch if it does not exist
-        run: |
-          git fetch origin
-          if git show-ref --quiet refs/remotes/origin/gh_pages; then
-            echo "Branch gh_pages already exists."
-            git checkout gh_pages
-          else
-            echo "Creating gh_pages branch..."
-            git checkout --orphan gh_pages
-            git commit --allow-empty -m "Initial commit for gh_pages"
-            git push origin gh_pages
-          fi
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
-
-
       - name: ANY REPROT - GH Pages Push - SAME REPO
         uses: PavanMudigonda/html-reporter-github-pages@v1.4
         with:
