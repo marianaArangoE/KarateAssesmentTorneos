@@ -50,20 +50,9 @@ jobs:
 
           
 
-      - name: Debug Karate Report Files
-        run: ls -lR build/karate-reports
+      - name: Sanitize Workflow Name
+        run: echo "WORKFLOW_NAME=${GITHUB_WORKFLOW// /_}" >> $GITHUB_ENV
 
-      - name: Debug Karate Target
-        run: ls -lR target/cucumber-html-reports
-
-      - name: Debug cucumber a Target
-        run: ls -lR cucumber-reports/
-
-      - name: Debug GH_PAT Value (Masked)
-        run: |
-          echo "GH_PAT length: ${#GH_PAT}"
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
 
 
       - name: ANY REPROT - GH Pages Push - SAME REPO
@@ -74,7 +63,7 @@ jobs:
           gh_pages: gh_pages # BRANCH NAME you like
           subfolder: docs  # Level 1 Folder Structure you like
           tool_name: cucumber # Level 2 Folder Structure you like
-          workflow_name: ${{ github.workflow }} # Level 3 Folder Structure you like
+          workflow_name: ${{ env.WORKFLOW_NAME }} # Level 3 Folder Structure you like
           env: GH_PAT  # Level 4 Folder Structure you like
           token: ${{ secrets.GH_PAT }} # Please note we need GitHub Person Access Token to perform gh pages deploy
 
