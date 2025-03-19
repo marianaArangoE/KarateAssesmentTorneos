@@ -11,9 +11,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: API_TORNEOS  # ← Agregar esta línea para usar el entorno
 
     env:
-      GROUP_VARIABLES: ${{ secrets.COMMAND_VARIABLES  }}
+      COMMAND_VARIABLES: ${{ vars.COMMAND_VARIABLES }}  # ← Ajustar el acceso a la variable
 
     steps:
       - name: Checkout Repository
@@ -25,32 +26,11 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: Cache Gradle Dependencies
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-          restore-keys: |
-            ${{ runner.os }}-gradle-'
-            
       - name: Debug Environment Variables
-        run: env | grep COMMAND_VARIABLES
+        run: echo "COMMAND_VARIABLES=$COMMAND_VARIABLES"
 
       - name: Run Gradle Build and Tests
         run: |
           chmod +x gradlew
           ./gradlew build test --tests ParallelRunner ${{ env.COMMAND_VARIABLES }} --info
 
-      - name: Publish Cucumber Report
-        run: |
-          mkdir -p cucumber-reports
-          cp -r build/karate-reports cucumber-reports/
-        if: always()
-
-      - name: Upload Cucumber Report Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: cucumber-reports
-          path: cucumber-reports/
