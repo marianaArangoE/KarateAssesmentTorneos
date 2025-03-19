@@ -1,0 +1,8 @@
+{
+  "id_usuario": #(idUsuario),
+  "nombre": #(nombre),
+  "correo": #(correo),
+  "contrasena": #(contrasena),
+  "apodo": #(apodo),
+  "equipos_id_equipo": #(equiposIdEquipo)
+}

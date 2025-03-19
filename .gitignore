@@ -1,0 +1,26 @@
+# Archivos comprimidos
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Reportes serenity
+**/target/
+
+# Gradle
+.gradle/
+*/.gradle/
+**/build/
+
+# Mac
+.DS_Store
+**/.DS_Store
+
+.idea/
+**/.idea/
+.idea/**
+
+META-INF/
+out
