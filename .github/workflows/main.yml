@@ -49,13 +49,9 @@ jobs:
       - name: Debug cucumber a Target
         run: ls -lR cucumber-reports/
 
-      - name: Debug GH_PAT
+      - name: Debug GH_PAT Value (Masked)
         run: |
-          if [ -z "$GH_PAT" ]; then
-            echo "GH_PAT is empty!"
-          else
-            echo "GH_PAT is set!"
-          fi
+          echo "GH_PAT length: ${#GH_PAT}"
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
 
