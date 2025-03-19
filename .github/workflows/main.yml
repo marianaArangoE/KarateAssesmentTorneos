@@ -53,7 +53,7 @@ jobs:
         uses: dustuu/Dustuu.Actions.RenderLocalizedHtml@0.0.1
         with:
           # The root directory to upload from (relative to workspace). Example, "path/to/build/artifacts".
-          directory: cucumber-reports/
+          directory: target/cucumber-html-reports/
 
       - name: Upload Cucumber Report Artifact
         uses: actions/upload-artifact@v4
