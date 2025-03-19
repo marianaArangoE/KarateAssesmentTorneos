@@ -33,4 +33,16 @@ jobs:
         run: |
           chmod +x gradlew
           ./gradlew build test --tests ParallelRunner ${{ env.COMMAND_VARIABLES }} --info
+          
+      - name: Publish Cucumber Report
+        run: |
+          mkdir -p cucumber-reports
+          cp -r build/karate-reports cucumber-reports/
+        if: always()
+
+      - name: Upload Cucumber Report Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cucumber-reports
+          path: cucumber-reports/
 
