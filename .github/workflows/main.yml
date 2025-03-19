@@ -46,19 +46,17 @@ jobs:
       - name: Debug Karate Target
         run: ls -lR target/cucumber-html-reports
 
+      - name: Debug cucumber a Target
+        run: ls -lR cucumber-reports/
 
-      - name: Render Localized HTML
-        # You may pin to the exact commit or the version.
-        # uses: dustuu/Dustuu.Actions.RenderLocalizedHtml@254307c4ffe0ed751eb23844a48870d5bb018c33
-        uses: dustuu/Dustuu.Actions.RenderLocalizedHtml@0.0.1
-        with:
-          # The root directory to upload from (relative to workspace). Example, "path/to/build/artifacts".
-          directory: target/cucumber-html-reports/
 
       - name: Upload Cucumber Report Artifact
         uses: actions/upload-artifact@v4
         with:
           name: cucumber-reports
           path: cucumber-reports/
+          
+      - name: Debug cucumber b Target
+        run: ls -lR cucumber-reports/
           
     
