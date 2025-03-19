@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      GROUP_VARIABLES: ${{ secrets.TORNEOS_API }}
+      GROUP_VARIABLES: ${{ secrets.COMMAND_VARIABLES  }}
 
     steps:
       - name: Checkout Repository
@@ -33,7 +33,10 @@ jobs:
             ~/.gradle/wrapper
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: |
-            ${{ runner.os }}-gradle-
+            ${{ runner.os }}-gradle-'
+            
+      - name: Debug Environment Variables
+        run: env | grep COMMAND_VARIABLES
 
       - name: Run Gradle Build and Tests
         run: |
