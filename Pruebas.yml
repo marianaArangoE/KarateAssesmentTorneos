@@ -8,7 +8,7 @@ pool:
   name: 'Torneos Api Quality Control'
 
 variables:
-  - group: cocore_transaccion_Test-develop
+  - group: TORNEOS_API
 stages:
   - stage: CI
     displayName: 'Continuous Integration'
