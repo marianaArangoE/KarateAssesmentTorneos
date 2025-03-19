@@ -1,0 +1,53 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      GROUP_VARIABLES: ${{ secrets.TORNEOS_API }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Cache Gradle Dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      - name: Run Gradle Build and Tests
+        run: |
+          chmod +x gradlew
+          ./gradlew build test --tests ParallelRunner ${{ env.COMMAND_VARIABLES }} --info
+
+      - name: Publish Cucumber Report
+        run: |
+          mkdir -p cucumber-reports
+          cp -r build/karate-reports cucumber-reports/
+        if: always()
+
+      - name: Upload Cucumber Report Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: cucumber-reports
+          path: cucumber-reports/
