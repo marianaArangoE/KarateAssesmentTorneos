@@ -51,8 +51,9 @@ jobs:
         id: html_preview
         uses: pavi2410/html-preview-action@v4
         with:
-          html_file: 'build/karate-reports/karate-summary.html'  # Abre el reporte de Karate
+          html_file: 'target/cucumber-html-reports/overview-features.html'  # Apuntar al reporte de Cucumber generado por Karate
           job_summary: true
+
 
 
       - name: Upload Cucumber Report Artifact
