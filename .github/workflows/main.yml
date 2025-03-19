@@ -43,16 +43,17 @@ jobs:
       - name: Debug Karate Report Files
         run: ls -lR build/karate-reports
 
+      - name: Debug Karate Target
+        run: ls -lR target/cucumber-html-reports
 
-      - name: Cucumber HTML Report Generator
-        uses: mt185252/cucumber-html-report-generator@v1
+
+      - name: HTML Preview
+        id: html_preview
+        uses: pavi2410/html-preview-action@v4
         with:
-          report-theme: 'bootstrap'  # Puedes cambiarlo a 'hierarchy' o 'bootstrap'
-          json-file-path: 'cucumber-reports/cucumber.json'
-          report-suite-as-scenarios: true
-          scenario-timestamp: true
-          report-metadata: '{"Date":"${{ github.event.head_commit.timestamp }}", "Environment": "API_TORNEOS"}'
-          failed-summary-report: true
+          html_file: 'build/karate-reports/karate-summary.html'  # Abre el reporte de Karate
+          job_summary: true
+
 
       - name: Upload Cucumber Report Artifact
         uses: actions/upload-artifact@v4
