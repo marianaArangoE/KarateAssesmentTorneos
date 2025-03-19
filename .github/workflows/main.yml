@@ -49,6 +49,16 @@ jobs:
       - name: Debug cucumber a Target
         run: ls -lR cucumber-reports/
 
+      - name: Debug GH_PAT
+        run: |
+          if [ -z "$GH_PAT" ]; then
+            echo "GH_PAT is empty!"
+          else
+            echo "GH_PAT is set!"
+          fi
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+
       - name: ANY REPROT - GH Pages Push - SAME REPO
         uses: PavanMudigonda/html-reporter-github-pages@v1.4
         with:
@@ -59,7 +69,7 @@ jobs:
           tool_name: cucumber # Level 2 Folder Structure you like
           workflow_name: ${{ github.workflow }} # Level 3 Folder Structure you like
           env: GH_PAT  # Level 4 Folder Structure you like
-          token: ${{ vars.GH_PAT }} # Please note we need GitHub Person Access Token to perform gh pages deploy
+          token: ${{ secrets.GH_PAT }} # Please note we need GitHub Person Access Token to perform gh pages deploy
 
 
       - name: Upload Cucumber Report Artifact
