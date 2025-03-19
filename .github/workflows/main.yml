@@ -59,7 +59,7 @@ jobs:
           tool_name: cucumber # Level 2 Folder Structure you like
           workflow_name: ${{ github.workflow }} # Level 3 Folder Structure you like
           env: QA # Level 4 Folder Structure you like
-          token: ${{ secrets.GH_PAT }} # Please note we need GitHub Person Access Token to perform gh pages deploy
+          token: ${{ vars.GH_PAT }} # Please note we need GitHub Person Access Token to perform gh pages deploy
 
 
       - name: Upload Cucumber Report Artifact
