@@ -1,0 +1,12 @@
+{
+  "nombre": #(nombre),
+  "fecha_inicio": #(fechaInicio),
+  "fecha_fin": #(fechaFin),
+  "video_juegos_id": #(videoJuegosId),
+  "its_free": #(itsFree),
+  "limite_equipos": #(limiteEquipos),
+  "limite_views": #(limiteViews),
+  "plataforma_id": #(plataformaId),
+  "categorias_id": #(categoriasId),
+  "descripcion": #(descripcion)
+}

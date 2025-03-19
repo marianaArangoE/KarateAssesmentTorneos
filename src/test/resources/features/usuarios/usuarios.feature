@@ -117,8 +117,8 @@ Feature: validacion de los usuarios
     And  status 200
     And response.message == 'Inicio de sesión exitoso'
 
-    * def query = connectionDB.getConsult(consultaSQL.DELETE_USER_TEST.concatenarDato(idUsuario))
-    * print query
+#    * def query = connectionDB.getConsult(consultaSQL.DELETE_USER_TEST.concatenarDato(idUsuario))
+#    * print query
 
 
     Examples:

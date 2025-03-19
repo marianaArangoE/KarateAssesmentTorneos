@@ -7,18 +7,19 @@ function fn() {
 
     const config = {
         env: env,
-        application  : 'application/x-www-form-urlencoded',
-        clientSecret : karate.properties['secret']
+        application: 'application/x-www-form-urlencoded',
+        clientSecret: karate.properties['secret']
     };
 
     const config2 = karate.callSingle('classpath:features/setup.feature');
 
     const endPoints = {
-        baseUrl : 'https://assesmenttorneos.onrender.com',
+        baseUrl: 'https://assesmenttorneos.onrender.com',
     };
 
     const paths = {
-        usuarios:    '/usuarios/',
+        usuarios: '/usuarios/',
+        torneos: "/torneos"
     };
     Object.assign(config, endPoints, paths, config2);
 

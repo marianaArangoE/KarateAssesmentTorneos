@@ -1,0 +1,5 @@
+{
+  "fecha_inicio": #(fecha_inicio_new),
+  "fecha_fin": #(fecha_fin_new),
+  "descripcion": #(descripcion_new)
+}
