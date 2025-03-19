@@ -53,12 +53,13 @@ jobs:
       - name: Sanitize Workflow Name
         run: echo "WORKFLOW_NAME=${GITHUB_WORKFLOW// /_}" >> $GITHUB_ENV
 
-
+      - name: Create a copy of overview-features.html as index.html
+        run: cp target/cucumber-html-reports/overview-features.html target/cucumber-html-reports/index.html
 
       - name: ANY REPROT - GH Pages Push - SAME REPO
         uses: PavanMudigonda/html-reporter-github-pages@v1.4
         with:
-          test_results: cucumber-reports
+          test_results: target/cucumber-html-reports
           keep_reports: 20
           gh_pages: gh_pages # BRANCH NAME you like
           subfolder: docs  # Level 1 Folder Structure you like
