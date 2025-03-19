@@ -64,7 +64,7 @@ jobs:
           subfolder: docs  # Level 1 Folder Structure you like
           tool_name: cucumber # Level 2 Folder Structure you like
           workflow_name: ${{ env.WORKFLOW_NAME }} # Level 3 Folder Structure you like
-          env: GH_PAT  # Level 4 Folder Structure you like
+          env: QA  # Level 4 Folder Structure you like
           token: ${{ secrets.GH_PAT }} # Please note we need GitHub Person Access Token to perform gh pages deploy
 
 
