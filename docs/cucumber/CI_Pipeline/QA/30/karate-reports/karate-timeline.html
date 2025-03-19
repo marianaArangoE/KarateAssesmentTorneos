@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"Test worker","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/resources\/features\/usuarios\/usuarios[2.1:61]","start":1742401892884,"end":1742401893880,"title":"src\/test\/resources\/features\/usuarios\/usuarios[2.1:61] 16:31:32.884-16:31:33.880 Crear usuario y eliminarlo de la base de datos"},{"id":2,"group":1,"content":"src\/test\/resources\/features\/usuarios\/usuarios[3.1:83]","start":1742401893899,"end":1742401894059,"title":"src\/test\/resources\/features\/usuarios\/usuarios[3.1:83] 16:31:33.899-16:31:34.059 Crear usuario con Campos vacios por 'idUsuario'"},{"id":3,"group":1,"content":"src\/test\/resources\/features\/usuarios\/usuarios[3.2:84]","start":1742401894074,"end":1742401894224,"title":"src\/test\/resources\/features\/usuarios\/usuarios[3.2:84] 16:31:34.074-16:31:34.224 Crear usuario con Campos vacios por 'nombre'"},{"id":4,"group":1,"content":"src\/test\/resources\/features\/usuarios\/usuarios[3.3:85]","start":1742401894232,"end":1742401894351,"title":"src\/test\/resources\/features\/usuarios\/usuarios[3.3:85] 16:31:34.232-16:31:34.351 Crear usuario con Campos vacios por 'correo'"},{"id":5,"group":1,"content":"src\/test\/resources\/features\/usuarios\/usuarios[3.4:86]","start":1742401894359,"end":1742401894509,"title":"src\/test\/resources\/features\/usuarios\/usuarios[3.4:86] 16:31:34.359-16:31:34.509 Crear usuario con Campos vacios por 'contrasena'"},{"id":6,"group":1,"content":"src\/test\/resources\/features\/usuarios\/usuarios[3.5:87]","start":1742401894515,"end":1742401894933,"title":"src\/test\/resources\/features\/usuarios\/usuarios[3.5:87] 16:31:34.515-16:31:34.933 Crear usuario con Campos vacios por 'idEquipo'"},{"id":7,"group":1,"content":"src\/test\/resources\/features\/usuarios\/usuarios[4.1:126]","start":1742401894938,"end":1742401895862,"title":"src\/test\/resources\/features\/usuarios\/usuarios[4.1:126] 16:31:34.938-16:31:35.862 Logearse de forma satisfactoria"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
