@@ -25,10 +25,7 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '21'
-
-      - name: Debug Environment Variables
-        run: echo "COMMAND_VARIABLES=$COMMAND_VARIABLES"
-
+          
       - name: Run Gradle Build and Tests
         run: |
           chmod +x gradlew
@@ -47,9 +44,6 @@ jobs:
           path: cucumber-reports/
 
 
-
-          
-
       - name: Sanitize Workflow Name
         run: echo "WORKFLOW_NAME=${GITHUB_WORKFLOW// /_}" >> $GITHUB_ENV
 
@@ -67,11 +61,3 @@ jobs:
           workflow_name: ${{ env.WORKFLOW_NAME }} # Level 3 Folder Structure you like
           env: QA  # Level 4 Folder Structure you like
           token: ${{ secrets.GH_PAT }} # Please note we need GitHub Person Access Token to perform gh pages deploy
-
-
-     
-          
-      - name: Debug cucumber b Target
-        run: ls -lR cucumber-reports/
-          
-    
