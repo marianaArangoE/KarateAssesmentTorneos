@@ -49,9 +49,11 @@ jobs:
 
       - name: Sanitize Workflow Name
         run: echo "WORKFLOW_NAME=${GITHUB_WORKFLOW// /_}" >> $GITHUB_ENV
+        if: always()
 
       - name: Create a copy of overview-features.html as index.html
         run: cp target/cucumber-html-reports/overview-features.html target/cucumber-html-reports/index.html
+        if: always()
 
       - name: ANY REPROT - GH Pages Push - SAME REPO
         uses: PavanMudigonda/html-reporter-github-pages@v1.4
