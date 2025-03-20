@@ -71,4 +71,9 @@ public class Utils {
 
         return number;
     }
+
+    public static int getRandomOneOrTwo() {
+        Random random = new Random();
+        return random.nextInt(2) + 1; // Genera 0 o 1, sumamos 1 para obtener 1 o 2
+    }
 }

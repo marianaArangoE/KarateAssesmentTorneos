@@ -42,9 +42,9 @@ Feature: Testeo para el servio de torneos exclusivos con Token
     * print requestCreate
 
 
-    * def fecha_inicio_new = '2025-02-02'
-    * def fecha_fin_new = null
-    * def descripcion_new = 'BUENAS'
+    * def fecha_inicio_new = dataRandom.getRandomDate()
+    * def fecha_fin_new = dataRandom.getRandomDateByDate(fecha_inicio_new)
+    * def descripcion_new = "Desc_Update"+dataRandom.generateRandomString(10)
 
     * def bodyCreateUser = read('classpath:assets/torneos/requestUpdateTournament.json')
     * print bodyCreateUser

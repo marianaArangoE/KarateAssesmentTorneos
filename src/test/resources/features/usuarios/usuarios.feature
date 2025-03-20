@@ -9,13 +9,13 @@ Feature: validacion de los usuarios
 
   @ignore
     @CrearUsuarioRequest
-  Scenario Outline: Crear un nuevo usuario de forma satisfactoria
-    * def idUsuario = karate.get('idUsuario',<idUsuario>)
-    * def nombre =  karate.get('nombre',<nombre>)
-    * def correo =  karate.get('correo',<correo>)
-    * def contrasena =  karate.get('contrasena',<contrasena>)
-    * def apodo =  karate.get('apodo',<apodo>)
-    * def equiposIdEquipo =  karate.get('equiposIdEquipo',<equiposIdEquipo>)
+  Scenario: Crear un nuevo usuario de forma satisfactoria
+    * def idUsuario = karate.get('idUsuario')
+    * def nombre =  karate.get('nombre')
+    * def correo =  karate.get('correo')
+    * def contrasena =  karate.get('contrasena')
+    * def apodo =  karate.get('apodo')
+    * def equiposIdEquipo =  connectionDB.getConsult(consultaSQL.RANDOM_EQUIPO.concatenarDato()).id_equipo[0]
 
     * print idUsuario
 
@@ -26,9 +26,9 @@ Feature: validacion de los usuarios
     When method POST
     * print response
 
-    Examples:
-      | idUsuario                              | nombre                                       | correo                           | contrasena                              | apodo                              | equiposIdEquipo |
-      | dataRandom.getRandomNumberDocumentCO() | 'Usuario'+dataRandom.generateRandomString(4) | dataRandom.generateRandomEmail() | 'PS'+dataRandom.generateRandomString(4) | dataRandom.generateRandomString(3) | null            |
+#    Examples:
+#      | idUsuario                              | nombre                                       | correo                           | contrasena                              | apodo                              | equiposIdEquipo |
+#      | dataRandom.getRandomNumberDocumentCO() | 'Usuario'+dataRandom.generateRandomString(4) | dataRandom.generateRandomEmail() | 'PS'+dataRandom.generateRandomString(4) | dataRandom.generateRandomString(3) | null            |
 
 
   @CrearUsuario&Eliminar
@@ -84,7 +84,6 @@ Feature: validacion de los usuarios
       | 'nombre'     | dataRandom.getRandomNumberDocumentCO() | ''                                           | dataRandom.generateRandomEmail() | 'PS'+dataRandom.generateRandomString(4) | dataRandom.generateRandomString(3) | null            |
       | 'correo'     | dataRandom.getRandomNumberDocumentCO() | 'Usuario'+dataRandom.generateRandomString(4) | ''                               | 'PS'+dataRandom.generateRandomString(4) | dataRandom.generateRandomString(3) | null            |
       | 'contrasena' | dataRandom.getRandomNumberDocumentCO() | 'Usuario'+dataRandom.generateRandomString(4) | dataRandom.generateRandomEmail() | ''                                      | dataRandom.generateRandomString(3) | null            |
-      | 'idEquipo'   | dataRandom.getRandomNumberDocumentCO() | 'Usuario'+dataRandom.generateRandomString(4) | dataRandom.generateRandomEmail() | 'PS'+dataRandom.generateRandomString(4) | dataRandom.generateRandomString(3) | ''              |
 
   @Login
   Scenario Outline: Logearse de forma satisfactoria

@@ -19,7 +19,8 @@ function fn() {
 
     const paths = {
         usuarios: '/usuarios/',
-        torneos: "/torneos"
+        torneos: "/torneos",
+        registro:'/registro'
     };
     Object.assign(config, endPoints, paths, config2);
 

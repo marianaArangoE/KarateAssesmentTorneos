@@ -19,6 +19,9 @@ public enum ConsultasSQL {
             """),
     RANDOM_CATEGORY("""
             SELECT * from categorias ORDER BY RANDOM() FETCH FIRST 1 ROW ONLY
+            """),
+    RANDOM_EQUIPO("""
+            select * from equipos ORDER BY RANDOM() FETCH FIRST 1 ROW ONLY
             """);
 
     private String consulta;
