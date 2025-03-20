@@ -1,0 +1,2924 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @VerTorneos</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>test paralleltest in API torneo</td>
+      <td>20 Mar 2025, 01:57</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@VerTorneos</td>
+          <td      class="passed"    >20</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">20</td>
+
+          <td  class="passed"    >4</td>
+          <td >0</td>
+          <td class="total">4</td>
+
+          <td class="duration" data-value="711206237">0.711</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_129036924.html">src/test/resources/features/torneos/torneoSinToken.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_880934769.html">@torneos</a>
+       <a href="report-tag_2861422318.html">@VerTorneos</a>
+</div>
+
+
+  <span class="lead-duration duration">0.361</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Ver torneos con diferentes configuraciones</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">param ViewAll = 'true'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">param Order = 'DESC'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">0.305</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.044</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>01:57:00.510 [print] {
+  &quot;Torneos&quot;: [
+    {
+      &quot;id_torneo&quot;: 123,
+      &quot;video_juegos_id&quot;: 3,
+      &quot;nombre&quot;: &quot;LOVE                                                                                                &quot;,
+      &quot;fecha_inicio&quot;: &quot;2027-02-01T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2027-02-01T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;t&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 3,
+      &quot;organizador&quot;: 1001360166,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;No se que poner                                                                                                                                                                                         &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 209833,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Nuevo Torneo awawaa                                                                                 &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-06-01T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-06-10T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 232323,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Descripci&oacute;n actualizada                                                                                                                                                                                 &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 127091,
+      &quot;video_juegos_id&quot;: 3,
+      &quot;nombre&quot;: &quot;Test_&Ntilde;o4yz                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-19T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-05-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;F&quot;,
+      &quot;limite_equipos&quot;: 18,
+      &quot;limite_views&quot;: 670,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 21298795,
+      &quot;categorias_id_categoria&quot;: 2,
+      &quot;descripcion&quot;: &quot;Desc_UpdatejhMXHBZjMs                                                                                                                                                                                   &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 677502,
+      &quot;video_juegos_id&quot;: 2,
+      &quot;nombre&quot;: &quot;Test_BXbhD                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-18T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-05-07T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;F&quot;,
+      &quot;limite_equipos&quot;: 12,
+      &quot;limite_views&quot;: 942,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 1202380332,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Desc6AHD5                                                                                                                                                                                               &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 692064,
+      &quot;video_juegos_id&quot;: 2,
+      &quot;nombre&quot;: &quot;Test_bVvjN                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-03T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-05-03T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 12,
+      &quot;limite_views&quot;: 194,
+      &quot;plataformas_id_plataforma&quot;: 3,
+      &quot;organizador&quot;: 1901995931,
+      &quot;categorias_id_categoria&quot;: 2,
+      &quot;descripcion&quot;: &quot;DescHFj68                                                                                                                                                                                               &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 528578,
+      &quot;video_juegos_id&quot;: 3,
+      &quot;nombre&quot;: &quot;Test_mhaDP                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-05T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-24T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 16,
+      &quot;limite_views&quot;: 618,
+      &quot;plataformas_id_plataforma&quot;: 2,
+      &quot;organizador&quot;: 12673259,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;DescUw8Ti                                                                                                                                                                                               &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 781408,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Torneo Valorant Champions                                                                           &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-10T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-20T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 16,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 129139734,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Torneo internacional con los mejores jugadores de Valorant.                                                                                                                                             &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 527049,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 593521,
+      &quot;video_juegos_id&quot;: 3,
+      &quot;nombre&quot;: &quot;Test_TiQ&ntilde;J                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-08T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 12,
+      &quot;limite_views&quot;: 674,
+      &quot;plataformas_id_plataforma&quot;: 2,
+      &quot;organizador&quot;: 1512226724,
+      &quot;categorias_id_categoria&quot;: 2,
+      &quot;descripcion&quot;: &quot;DeschBP&ntilde;P                                                                                                                                                                                               &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 719321,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;asdasdhjasd                                                                                         &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 45677,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 527310,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;holi aqui estoy                                                                                     &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 45677,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 886527,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;mi nombre                                                                                           &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 123321,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 872769,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momoasdasdastasdasde Tournament                                                                     &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 232323,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 757182,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;mi nombre                                                                                           &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 1231312,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 88592,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 730132,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;asdasdhjasd                                                                                         &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 129139734,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 590737,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 1231312,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 52519,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 826435,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 983685,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 992989,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;asdasdhjasd                                                                                         &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 232,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 344569,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 261423,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 286255,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Test_U1Qi6                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-03-20T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-08T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 18,
+      &quot;limite_views&quot;: 554,
+      &quot;plataformas_id_plataforma&quot;: 2,
+      &quot;organizador&quot;: 20475113,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;DescuyDGP                                                                                                                                                                                               &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 11,
+      &quot;video_juegos_id&quot;: 3,
+      &quot;nombre&quot;: &quot;LOVE 2                                                                                              &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-03T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 2,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 1234567,
+      &quot;categorias_id_categoria&quot;: 2,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 659646,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;t&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 995442,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotasdasde Tournamentt                                                                            &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 129139734,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 186940,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotasdasde Tournamentt                                                                            &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 129139734,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 436213,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotasdasde Tournamentt                                                                            &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 129139734,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 371078,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotasdasde Tournamentt                                                                            &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 129139734,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 26632,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotasdasde Tournamentt                                                                            &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 129139734,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 846329,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-06-03T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 927834,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-06-03T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 941578,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotasdasde Tournament                                                                             &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 1233123123,
+      &quot;video_juegos_id&quot;: 3,
+      &quot;nombre&quot;: &quot;1                                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;f&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 2,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;No se que poner                                                                                                                                                                                         &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 852643,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;t&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 781870,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;t&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 649113,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;F&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 779169,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;F&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 917420,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;t&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 699487,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;t&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 35483,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;t&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 415335,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;t&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_129036924.html">src/test/resources/features/torneos/torneoSinToken.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_880934769.html">@torneos</a>
+       <a href="report-tag_2861422318.html">@VerTorneos</a>
+</div>
+
+
+  <span class="lead-duration duration">0.132</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Ver torneos con diferentes configuraciones</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">param ViewAll = 'true'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">param Order = 'ASC'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">0.113</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.017</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>01:57:00.683 [print] {
+  &quot;Torneos&quot;: [
+    {
+      &quot;id_torneo&quot;: 186940,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotasdasde Tournamentt                                                                            &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 129139734,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 1233123123,
+      &quot;video_juegos_id&quot;: 3,
+      &quot;nombre&quot;: &quot;1                                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;f&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 2,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;No se que poner                                                                                                                                                                                         &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 415335,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;t&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 35483,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;t&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 699487,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;t&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 917420,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;t&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 779169,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;F&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 649113,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;F&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 781870,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;t&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 852643,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;t&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 941578,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotasdasde Tournament                                                                             &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 659646,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;t&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 927834,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-06-03T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 846329,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-06-03T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 2,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 995442,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotasdasde Tournamentt                                                                            &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 129139734,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 26632,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotasdasde Tournamentt                                                                            &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 129139734,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 371078,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotasdasde Tournamentt                                                                            &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 129139734,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 436213,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotasdasde Tournamentt                                                                            &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 21,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 129139734,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 11,
+      &quot;video_juegos_id&quot;: 3,
+      &quot;nombre&quot;: &quot;LOVE 2                                                                                              &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-02-03T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 2,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 1234567,
+      &quot;categorias_id_categoria&quot;: 2,
+      &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 286255,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Test_U1Qi6                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-03-20T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-08T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 18,
+      &quot;limite_views&quot;: 554,
+      &quot;plataformas_id_plataforma&quot;: 2,
+      &quot;organizador&quot;: 20475113,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;DescuyDGP                                                                                                                                                                                               &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 992989,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;asdasdhjasd                                                                                         &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 232,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 872769,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momoasdasdastasdasde Tournament                                                                     &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 232323,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 261423,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 527049,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 88592,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 344569,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 983685,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 826435,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 52519,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 590737,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 1231312,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 730132,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;asdasdhjasd                                                                                         &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 129139734,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 593521,
+      &quot;video_juegos_id&quot;: 3,
+      &quot;nombre&quot;: &quot;Test_TiQ&ntilde;J                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-08T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 12,
+      &quot;limite_views&quot;: 674,
+      &quot;plataformas_id_plataforma&quot;: 2,
+      &quot;organizador&quot;: 1512226724,
+      &quot;categorias_id_categoria&quot;: 2,
+      &quot;descripcion&quot;: &quot;DeschBP&ntilde;P                                                                                                                                                                                               &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 757182,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;mi nombre                                                                                           &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 1231312,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 886527,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;mi nombre                                                                                           &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 123321,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 719321,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;asdasdhjasd                                                                                         &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 45677,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 527310,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;holi aqui estoy                                                                                     &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 45677,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 781408,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Torneo Valorant Champions                                                                           &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-10T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-20T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 16,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 129139734,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Torneo internacional con los mejores jugadores de Valorant.                                                                                                                                             &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 528578,
+      &quot;video_juegos_id&quot;: 3,
+      &quot;nombre&quot;: &quot;Test_mhaDP                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-05T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-24T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 16,
+      &quot;limite_views&quot;: 618,
+      &quot;plataformas_id_plataforma&quot;: 2,
+      &quot;organizador&quot;: 12673259,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;DescUw8Ti                                                                                                                                                                                               &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 692064,
+      &quot;video_juegos_id&quot;: 2,
+      &quot;nombre&quot;: &quot;Test_bVvjN                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-03T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-05-03T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 12,
+      &quot;limite_views&quot;: 194,
+      &quot;plataformas_id_plataforma&quot;: 3,
+      &quot;organizador&quot;: 1901995931,
+      &quot;categorias_id_categoria&quot;: 2,
+      &quot;descripcion&quot;: &quot;DescHFj68                                                                                                                                                                                               &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 677502,
+      &quot;video_juegos_id&quot;: 2,
+      &quot;nombre&quot;: &quot;Test_BXbhD                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-18T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-05-07T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;F&quot;,
+      &quot;limite_equipos&quot;: 12,
+      &quot;limite_views&quot;: 942,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 1202380332,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Desc6AHD5                                                                                                                                                                                               &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 127091,
+      &quot;video_juegos_id&quot;: 3,
+      &quot;nombre&quot;: &quot;Test_&Ntilde;o4yz                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-19T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-05-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;F&quot;,
+      &quot;limite_equipos&quot;: 18,
+      &quot;limite_views&quot;: 670,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 21298795,
+      &quot;categorias_id_categoria&quot;: 2,
+      &quot;descripcion&quot;: &quot;Desc_UpdatejhMXHBZjMs                                                                                                                                                                                   &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 209833,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Nuevo Torneo awawaa                                                                                 &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-06-01T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-06-10T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 232323,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Descripci&oacute;n actualizada                                                                                                                                                                                 &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 123,
+      &quot;video_juegos_id&quot;: 3,
+      &quot;nombre&quot;: &quot;LOVE                                                                                                &quot;,
+      &quot;fecha_inicio&quot;: &quot;2027-02-01T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2027-02-01T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;t&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 3,
+      &quot;organizador&quot;: 1001360166,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;No se que poner                                                                                                                                                                                         &quot;
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_129036924.html">src/test/resources/features/torneos/torneoSinToken.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_880934769.html">@torneos</a>
+       <a href="report-tag_2861422318.html">@VerTorneos</a>
+</div>
+
+
+  <span class="lead-duration duration">0.141</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Ver torneos con diferentes configuraciones</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">param ViewAll = 'false'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">param Order = 'DESC'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">0.132</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>01:57:00.856 [print] {
+  &quot;Torneos&quot;: [
+    {
+      &quot;id_torneo&quot;: 123,
+      &quot;video_juegos_id&quot;: 3,
+      &quot;nombre&quot;: &quot;LOVE                                                                                                &quot;,
+      &quot;fecha_inicio&quot;: &quot;2027-02-01T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2027-02-01T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;t&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 3,
+      &quot;organizador&quot;: 1001360166,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;No se que poner                                                                                                                                                                                         &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 209833,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Nuevo Torneo awawaa                                                                                 &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-06-01T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-06-10T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 232323,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Descripci&oacute;n actualizada                                                                                                                                                                                 &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 127091,
+      &quot;video_juegos_id&quot;: 3,
+      &quot;nombre&quot;: &quot;Test_&Ntilde;o4yz                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-19T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-05-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;F&quot;,
+      &quot;limite_equipos&quot;: 18,
+      &quot;limite_views&quot;: 670,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 21298795,
+      &quot;categorias_id_categoria&quot;: 2,
+      &quot;descripcion&quot;: &quot;Desc_UpdatejhMXHBZjMs                                                                                                                                                                                   &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 677502,
+      &quot;video_juegos_id&quot;: 2,
+      &quot;nombre&quot;: &quot;Test_BXbhD                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-18T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-05-07T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;F&quot;,
+      &quot;limite_equipos&quot;: 12,
+      &quot;limite_views&quot;: 942,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 1202380332,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Desc6AHD5                                                                                                                                                                                               &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 692064,
+      &quot;video_juegos_id&quot;: 2,
+      &quot;nombre&quot;: &quot;Test_bVvjN                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-03T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-05-03T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 12,
+      &quot;limite_views&quot;: 194,
+      &quot;plataformas_id_plataforma&quot;: 3,
+      &quot;organizador&quot;: 1901995931,
+      &quot;categorias_id_categoria&quot;: 2,
+      &quot;descripcion&quot;: &quot;DescHFj68                                                                                                                                                                                               &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 528578,
+      &quot;video_juegos_id&quot;: 3,
+      &quot;nombre&quot;: &quot;Test_mhaDP                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-05T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-24T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 16,
+      &quot;limite_views&quot;: 618,
+      &quot;plataformas_id_plataforma&quot;: 2,
+      &quot;organizador&quot;: 12673259,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;DescUw8Ti                                                                                                                                                                                               &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 781408,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Torneo Valorant Champions                                                                           &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-10T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-20T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 16,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 129139734,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Torneo internacional con los mejores jugadores de Valorant.                                                                                                                                             &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 983685,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 826435,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 52519,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 590737,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 1231312,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 730132,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;asdasdhjasd                                                                                         &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 129139734,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 757182,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;mi nombre                                                                                           &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 1231312,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 886527,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;mi nombre                                                                                           &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 123321,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 527310,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;holi aqui estoy                                                                                     &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 45677,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 719321,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;asdasdhjasd                                                                                         &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 45677,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 593521,
+      &quot;video_juegos_id&quot;: 3,
+      &quot;nombre&quot;: &quot;Test_TiQ&ntilde;J                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-08T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 12,
+      &quot;limite_views&quot;: 674,
+      &quot;plataformas_id_plataforma&quot;: 2,
+      &quot;organizador&quot;: 1512226724,
+      &quot;categorias_id_categoria&quot;: 2,
+      &quot;descripcion&quot;: &quot;DeschBP&ntilde;P                                                                                                                                                                                               &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 872769,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momoasdasdastasdasde Tournament                                                                     &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 232323,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 992989,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;asdasdhjasd                                                                                         &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 232,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 261423,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 527049,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 88592,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 344569,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 286255,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Test_U1Qi6                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-03-20T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-08T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 18,
+      &quot;limite_views&quot;: 554,
+      &quot;plataformas_id_plataforma&quot;: 2,
+      &quot;organizador&quot;: 20475113,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;DescuyDGP                                                                                                                                                                                               &quot;
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_129036924.html">src/test/resources/features/torneos/torneoSinToken.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_880934769.html">@torneos</a>
+       <a href="report-tag_2861422318.html">@VerTorneos</a>
+</div>
+
+
+  <span class="lead-duration duration">0.075</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Ver torneos con diferentes configuraciones</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">param ViewAll = 'false'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">param Order = 'ASC'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">0.071</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>01:57:00.954 [print] {
+  &quot;Torneos&quot;: [
+    {
+      &quot;id_torneo&quot;: 286255,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Test_U1Qi6                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-03-20T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-08T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 18,
+      &quot;limite_views&quot;: 554,
+      &quot;plataformas_id_plataforma&quot;: 2,
+      &quot;organizador&quot;: 20475113,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;DescuyDGP                                                                                                                                                                                               &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 872769,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momoasdasdastasdasde Tournament                                                                     &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 232323,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 992989,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;asdasdhjasd                                                                                         &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 232,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 261423,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 527049,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 88592,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 344569,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 983685,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 826435,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 52519,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 100000000,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 590737,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Momotea Tournament                                                                                  &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 1231312,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 730132,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;asdasdhjasd                                                                                         &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 129139734,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 593521,
+      &quot;video_juegos_id&quot;: 3,
+      &quot;nombre&quot;: &quot;Test_TiQ&ntilde;J                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-08T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 12,
+      &quot;limite_views&quot;: 674,
+      &quot;plataformas_id_plataforma&quot;: 2,
+      &quot;organizador&quot;: 1512226724,
+      &quot;categorias_id_categoria&quot;: 2,
+      &quot;descripcion&quot;: &quot;DeschBP&ntilde;P                                                                                                                                                                                               &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 757182,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;mi nombre                                                                                           &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 1231312,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 886527,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;mi nombre                                                                                           &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 123321,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 527310,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;holi aqui estoy                                                                                     &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 45677,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 719321,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;asdasdhjasd                                                                                         &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 45677,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 781408,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Torneo Valorant Champions                                                                           &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-10T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-20T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 16,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 129139734,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Torneo internacional con los mejores jugadores de Valorant.                                                                                                                                             &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 528578,
+      &quot;video_juegos_id&quot;: 3,
+      &quot;nombre&quot;: &quot;Test_mhaDP                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-05T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-04-24T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 16,
+      &quot;limite_views&quot;: 618,
+      &quot;plataformas_id_plataforma&quot;: 2,
+      &quot;organizador&quot;: 12673259,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;DescUw8Ti                                                                                                                                                                                               &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 692064,
+      &quot;video_juegos_id&quot;: 2,
+      &quot;nombre&quot;: &quot;Test_bVvjN                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-03T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-05-03T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 12,
+      &quot;limite_views&quot;: 194,
+      &quot;plataformas_id_plataforma&quot;: 3,
+      &quot;organizador&quot;: 1901995931,
+      &quot;categorias_id_categoria&quot;: 2,
+      &quot;descripcion&quot;: &quot;DescHFj68                                                                                                                                                                                               &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 677502,
+      &quot;video_juegos_id&quot;: 2,
+      &quot;nombre&quot;: &quot;Test_BXbhD                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-18T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-05-07T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;F&quot;,
+      &quot;limite_equipos&quot;: 12,
+      &quot;limite_views&quot;: 942,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 1202380332,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Desc6AHD5                                                                                                                                                                                               &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 127091,
+      &quot;video_juegos_id&quot;: 3,
+      &quot;nombre&quot;: &quot;Test_&Ntilde;o4yz                                                                                          &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-04-19T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-05-12T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;F&quot;,
+      &quot;limite_equipos&quot;: 18,
+      &quot;limite_views&quot;: 670,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 21298795,
+      &quot;categorias_id_categoria&quot;: 2,
+      &quot;descripcion&quot;: &quot;Desc_UpdatejhMXHBZjMs                                                                                                                                                                                   &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 209833,
+      &quot;video_juegos_id&quot;: 1,
+      &quot;nombre&quot;: &quot;Nuevo Torneo awawaa                                                                                 &quot;,
+      &quot;fecha_inicio&quot;: &quot;2025-06-01T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2025-06-10T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;T&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 1,
+      &quot;organizador&quot;: 232323,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;Descripci&oacute;n actualizada                                                                                                                                                                                 &quot;
+    },
+    {
+      &quot;id_torneo&quot;: 123,
+      &quot;video_juegos_id&quot;: 3,
+      &quot;nombre&quot;: &quot;LOVE                                                                                                &quot;,
+      &quot;fecha_inicio&quot;: &quot;2027-02-01T00:00:00.000Z&quot;,
+      &quot;fecha_fin&quot;: &quot;2027-02-01T00:00:00.000Z&quot;,
+      &quot;its_free&quot;: &quot;t&quot;,
+      &quot;limite_equipos&quot;: 2,
+      &quot;limite_views&quot;: 20,
+      &quot;plataformas_id_plataforma&quot;: 3,
+      &quot;organizador&quot;: 1001360166,
+      &quot;categorias_id_categoria&quot;: 1,
+      &quot;descripcion&quot;: &quot;No se que poner                                                                                                                                                                                         &quot;
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
