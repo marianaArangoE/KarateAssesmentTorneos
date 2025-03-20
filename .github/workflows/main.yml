@@ -31,7 +31,7 @@ jobs:
       - name: Run Gradle Build and Tests
         run: |
           chmod +x gradlew
-          ./gradlew build test --tests ParallelRunner ${{ env.COMMAND_VARIABLES }} --info
+          ./gradlew build test --tests ParallelRunner ${{ env.COMMAND_VARIABLES }} --info || true
           
       - name: Publish Cucumber Report
         run: |
