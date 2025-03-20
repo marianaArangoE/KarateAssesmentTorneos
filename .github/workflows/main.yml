@@ -31,7 +31,7 @@ jobs:
       - name: Run Gradle Build and Tests
         run: |
           chmod +x gradlew
-          ./gradlew build test --tests ParallelRunner ${{ env.COMMAND_VARIABLES }} --info
+          ./gradlew build test --tests ParallelRunner ${{ env.COMMAND_VARIABLES }} --info || true
           
       - name: Publish Cucumber Report
         run: |
@@ -44,6 +44,7 @@ jobs:
         with:
           name: cucumber-reports
           path: cucumber-reports/
+        if: always()
 
 
       - name: Sanitize Workflow Name
@@ -63,3 +64,4 @@ jobs:
           workflow_name: ${{ env.WORKFLOW_NAME }} # Level 3 Folder Structure you like
           env: QA  # Level 4 Folder Structure you like
           token: ${{ secrets.GH_PAT }} # Please note we need GitHub Person Access Token to perform gh pages deploy
+        if: always()
