@@ -1,0 +1,6813 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @Usuario</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>test paralleltest in API torneo</td>
+      <td>20 Mar 2025, 00:10</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@Usuario</td>
+          <td      class="passed"    >193</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">193</td>
+
+          <td  class="passed"    >7</td>
+          <td >0</td>
+          <td class="total">7</td>
+
+          <td class="duration" data-value="3399627412">3.399</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_3471865504.html">src/test/resources/features/usuarios/usuarios.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3550003917.html">@Usuario</a>
+       <a href="report-tag_1925730239.html">@CrearUsuario&amp;Eliminar</a>
+</div>
+
+
+  <span class="lead-duration duration">0.774</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Crear usuario y eliminarlo de la base de datos</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def idUsuario = dataRandom.getRandomNumberDocumentCO()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def nombre = 'Usuario'+dataRandom.generateRandomString(4)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def correo =  dataRandom.generateRandomEmail()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def contrasena = 'PS'+dataRandom.generateRandomString(4)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def apodo =  dataRandom.generateRandomString(3)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def equiposIdEquipo =  null</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestCreate = call read('classpath:features/usuarios/usuarios.feature@CrearUsuarioRequest'){idUsuario:#(idUsuario),nombre:#(nombre),correo:#(correo),contrasena:#(contrasena),apodo:#(apodo),equiposIdEquipo:#(equiposIdEquipo)}</span>
+
+  <span class="lead-duration duration">0.380</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">features/usuarios/usuarios.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">path usuarios</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def responseExpected = read('classpath:assets/usuarios/responseUsuarios.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def idUsuario = karate.get('idUsuario',dataRandom.getRandomNumberDocumentCO())</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def nombre =  karate.get('nombre','Usuario'+dataRandom.generateRandomString(4))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def correo =  karate.get('correo',dataRandom.generateRandomEmail())</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def contrasena =  karate.get('contrasena','PS'+dataRandom.generateRandomString(4))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def apodo =  karate.get('apodo',dataRandom.generateRandomString(3))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def equiposIdEquipo =  karate.get('equiposIdEquipo',null)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print idUsuario</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>00:10:22.181 [print] 1205477059 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def bodyCreateUser = read('classpath:assets/usuarios/crearUsuario.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print bodyCreateUser</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>00:10:22.182 [print] {
+  &quot;id_usuario&quot;: &quot;1205477059&quot;,
+  &quot;nombre&quot;: &quot;Usuariodc0&ntilde;&quot;,
+  &quot;correo&quot;: &quot;testingAPI_BfpXwUyY@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PS&Ntilde;B6S&quot;,
+  &quot;apodo&quot;: &quot;2gP&quot;,
+  &quot;equipos_id_equipo&quot;: null
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request bodyCreateUser</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.363</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>00:10:22.546 [print] {
+  &quot;message&quot;: &quot;Usuario creado&quot;,
+  &quot;usuario&quot;: {
+    &quot;message&quot;: &quot;Usuario creado correctamente&quot;
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print requestCreate</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>00:10:22.548 [print] {
+  &quot;apodo&quot;: &quot;2gP&quot;,
+  &quot;equiposIdEquipo&quot;: null,
+  &quot;responseHeaders&quot;: {
+    &quot;Date&quot;: [
+      &quot;Thu, 20 Mar 2025 00:10:22 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json; charset=utf-8&quot;
+    ],
+    &quot;Transfer-Encoding&quot;: [
+      &quot;chunked&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;etag&quot;: [
+      &quot;W/\&quot;51-/gBhgxKgCU22/TfG2RJtjeGkAro\&quot;&quot;
+    ],
+    &quot;rndr-id&quot;: [
+      &quot;f618ce51-7a5f-4ab6&quot;
+    ],
+    &quot;vary&quot;: [
+      &quot;Accept-Encoding&quot;
+    ],
+    &quot;x-powered-by&quot;: [
+      &quot;Express&quot;
+    ],
+    &quot;x-render-origin-server&quot;: [
+      &quot;Render&quot;
+    ],
+    &quot;cf-cache-status&quot;: [
+      &quot;DYNAMIC&quot;
+    ],
+    &quot;Server&quot;: [
+      &quot;cloudflare&quot;
+    ],
+    &quot;CF-RAY&quot;: [
+      &quot;9230fc70bda1175b-IAD&quot;
+    ],
+    &quot;alt-svc&quot;: [
+      &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
+    ],
+    &quot;Set-Cookie&quot;: [
+    ]
+  },
+  &quot;responseExpected&quot;: {
+    &quot;responseCrearUsuario&quot;: &quot;Usuario creado correctamente&quot;
+  },
+  &quot;responseTime&quot;: 360,
+  &quot;response&quot;: {
+    &quot;message&quot;: &quot;Usuario creado&quot;,
+    &quot;usuario&quot;: {
+      &quot;message&quot;: &quot;Usuario creado correctamente&quot;
+    }
+  },
+  &quot;idUsuario&quot;: &quot;1205477059&quot;,
+  &quot;correo&quot;: &quot;testingAPI_BfpXwUyY@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PS&Ntilde;B6S&quot;,
+  &quot;bodyCreateUser&quot;: {
+    &quot;id_usuario&quot;: &quot;1205477059&quot;,
+    &quot;nombre&quot;: &quot;Usuariodc0&ntilde;&quot;,
+    &quot;correo&quot;: &quot;testingAPI_BfpXwUyY@gmail.com&quot;,
+    &quot;contrasena&quot;: &quot;PS&Ntilde;B6S&quot;,
+    &quot;apodo&quot;: &quot;2gP&quot;,
+    &quot;equipos_id_equipo&quot;: null
+  },
+  &quot;responseStatus&quot;: 201,
+  &quot;nombre&quot;: &quot;Usuariodc0&ntilde;&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match requestCreate.responseStatus == 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match requestCreate.response.usuario.message == responseExpected.responseCrearUsuario</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = connectionDB.getConsult(consultaSQL.CONSULT_USER_BY_ID.concatenarDato(idUsuario))</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print query</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>00:10:22.555 [print] {
+  &quot;id_usuario&quot;: [
+    &quot;1205477059&quot;
+  ],
+  &quot;nombre&quot;: [
+    &quot;Usuariodc0&ntilde;                             &quot;
+  ],
+  &quot;correo&quot;: [
+    &quot;testingAPI_BfpXwUyY@gmail.com                               &quot;
+  ],
+  &quot;contrasena&quot;: [
+    &quot;$2b$10$mCMcaH7Gqfww5Pd9Y0rKZeonUXyamZGC1grdXLKz1jzFuhzXG064y                                        &quot;
+  ],
+  &quot;apodo&quot;: [
+    &quot;2gP                                     &quot;
+  ],
+  &quot;equipos_id_equipo&quot;: [
+    null
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert query.id_usuario.length == 1</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = connectionDB.getConsult(consultaSQL.DELETE_USER_TEST.concatenarDato(idUsuario))</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print query</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>00:10:22.570 [print] {
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_3471865504.html">src/test/resources/features/usuarios/usuarios.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1695962388.html">@CrearUsuarioConCamposVacios</a>
+       <a href="report-tag_3550003917.html">@Usuario</a>
+</div>
+
+
+  <span class="lead-duration duration">0.132</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Crear usuario con Campos vacios por 'idUsuario'</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def idUsuario = ''</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def nombre = 'Usuario'+dataRandom.generateRandomString(4)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def correo =  dataRandom.generateRandomEmail()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def contrasena = 'PS'+dataRandom.generateRandomString(4)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def apodo =  dataRandom.generateRandomString(3)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def equiposIdEquipo =  null</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestCreate = call read('classpath:features/usuarios/usuarios.feature@CrearUsuarioRequest'){idUsuario:#(idUsuario),nombre:#(nombre),correo:#(correo),contrasena:#(contrasena),apodo:#(apodo),equiposIdEquipo:#(equiposIdEquipo)}</span>
+
+  <span class="lead-duration duration">0.069</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">features/usuarios/usuarios.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">path usuarios</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def responseExpected = read('classpath:assets/usuarios/responseUsuarios.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def idUsuario = karate.get('idUsuario',dataRandom.getRandomNumberDocumentCO())</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def nombre =  karate.get('nombre','Usuario'+dataRandom.generateRandomString(4))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def correo =  karate.get('correo',dataRandom.generateRandomEmail())</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def contrasena =  karate.get('contrasena','PS'+dataRandom.generateRandomString(4))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def apodo =  karate.get('apodo',dataRandom.generateRandomString(3))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def equiposIdEquipo =  karate.get('equiposIdEquipo',null)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print idUsuario</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>00:10:22.591 [print]  
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def bodyCreateUser = read('classpath:assets/usuarios/crearUsuario.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print bodyCreateUser</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>00:10:22.592 [print] {
+  &quot;id_usuario&quot;: &quot;&quot;,
+  &quot;nombre&quot;: &quot;UsuarioQud2&quot;,
+  &quot;correo&quot;: &quot;testingAPI_wooO&Ntilde;&Ntilde;fQ@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PSuYlH&quot;,
+  &quot;apodo&quot;: &quot;c&ntilde;m&quot;,
+  &quot;equipos_id_equipo&quot;: null
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request bodyCreateUser</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.055</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>00:10:22.648 [print] {
+  &quot;error&quot;: &quot;Todos los campos son obligatorios&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print requestCreate</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>00:10:22.650 [print] {
+  &quot;apodo&quot;: &quot;c&ntilde;m&quot;,
+  &quot;equiposIdEquipo&quot;: null,
+  &quot;responseHeaders&quot;: {
+    &quot;Date&quot;: [
+      &quot;Thu, 20 Mar 2025 00:10:22 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json; charset=utf-8&quot;
+    ],
+    &quot;Transfer-Encoding&quot;: [
+      &quot;chunked&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;etag&quot;: [
+      &quot;W/\&quot;2d-JhMvXvxEuk9pqkVfgn1gr/iUlPY\&quot;&quot;
+    ],
+    &quot;rndr-id&quot;: [
+      &quot;148f367b-6337-417b&quot;
+    ],
+    &quot;vary&quot;: [
+      &quot;Accept-Encoding&quot;
+    ],
+    &quot;x-powered-by&quot;: [
+      &quot;Express&quot;
+    ],
+    &quot;x-render-origin-server&quot;: [
+      &quot;Render&quot;
+    ],
+    &quot;cf-cache-status&quot;: [
+      &quot;DYNAMIC&quot;
+    ],
+    &quot;Server&quot;: [
+      &quot;cloudflare&quot;
+    ],
+    &quot;CF-RAY&quot;: [
+      &quot;9230fc735cab3985-IAD&quot;
+    ],
+    &quot;alt-svc&quot;: [
+      &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
+    ],
+    &quot;Set-Cookie&quot;: [
+    ]
+  },
+  &quot;responseExpected&quot;: {
+    &quot;responseCrearUsuario&quot;: &quot;Usuario creado correctamente&quot;
+  },
+  &quot;responseTime&quot;: 53,
+  &quot;response&quot;: {
+    &quot;error&quot;: &quot;Todos los campos son obligatorios&quot;
+  },
+  &quot;idUsuario&quot;: &quot;&quot;,
+  &quot;correo&quot;: &quot;testingAPI_wooO&Ntilde;&Ntilde;fQ@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PSuYlH&quot;,
+  &quot;bodyCreateUser&quot;: {
+    &quot;id_usuario&quot;: &quot;&quot;,
+    &quot;nombre&quot;: &quot;UsuarioQud2&quot;,
+    &quot;correo&quot;: &quot;testingAPI_wooO&Ntilde;&Ntilde;fQ@gmail.com&quot;,
+    &quot;contrasena&quot;: &quot;PSuYlH&quot;,
+    &quot;apodo&quot;: &quot;c&ntilde;m&quot;,
+    &quot;equipos_id_equipo&quot;: null
+  },
+  &quot;responseStatus&quot;: 400,
+  &quot;nombre&quot;: &quot;UsuarioQud2&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match requestCreate.responseStatus == 400</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_3471865504.html">src/test/resources/features/usuarios/usuarios.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1695962388.html">@CrearUsuarioConCamposVacios</a>
+       <a href="report-tag_3550003917.html">@Usuario</a>
+</div>
+
+
+  <span class="lead-duration duration">0.121</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Crear usuario con Campos vacios por 'nombre'</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-15" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-16" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def idUsuario = dataRandom.getRandomNumberDocumentCO()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def nombre = ''</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def correo =  dataRandom.generateRandomEmail()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def contrasena = 'PS'+dataRandom.generateRandomString(4)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def apodo =  dataRandom.generateRandomString(3)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def equiposIdEquipo =  null</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestCreate = call read('classpath:features/usuarios/usuarios.feature@CrearUsuarioRequest'){idUsuario:#(idUsuario),nombre:#(nombre),correo:#(correo),contrasena:#(contrasena),apodo:#(apodo),equiposIdEquipo:#(equiposIdEquipo)}</span>
+
+  <span class="lead-duration duration">0.064</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">features/usuarios/usuarios.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">path usuarios</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def responseExpected = read('classpath:assets/usuarios/responseUsuarios.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def idUsuario = karate.get('idUsuario',dataRandom.getRandomNumberDocumentCO())</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def nombre =  karate.get('nombre','Usuario'+dataRandom.generateRandomString(4))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def correo =  karate.get('correo',dataRandom.generateRandomEmail())</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def contrasena =  karate.get('contrasena','PS'+dataRandom.generateRandomString(4))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def apodo =  karate.get('apodo',dataRandom.generateRandomString(3))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def equiposIdEquipo =  karate.get('equiposIdEquipo',null)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print idUsuario</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>00:10:22.670 [print] 39407343 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def bodyCreateUser = read('classpath:assets/usuarios/crearUsuario.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print bodyCreateUser</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>00:10:22.671 [print] {
+  &quot;id_usuario&quot;: &quot;39407343&quot;,
+  &quot;nombre&quot;: &quot;&quot;,
+  &quot;correo&quot;: &quot;testingAPI_BRoMIRdJ@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PSLeef&quot;,
+  &quot;apodo&quot;: &quot;OTy&quot;,
+  &quot;equipos_id_equipo&quot;: null
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request bodyCreateUser</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.051</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>00:10:22.723 [print] {
+  &quot;error&quot;: &quot;Todos los campos son obligatorios&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print requestCreate</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>00:10:22.725 [print] {
+  &quot;apodo&quot;: &quot;OTy&quot;,
+  &quot;equiposIdEquipo&quot;: null,
+  &quot;responseHeaders&quot;: {
+    &quot;Date&quot;: [
+      &quot;Thu, 20 Mar 2025 00:10:22 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json; charset=utf-8&quot;
+    ],
+    &quot;Transfer-Encoding&quot;: [
+      &quot;chunked&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;etag&quot;: [
+      &quot;W/\&quot;2d-JhMvXvxEuk9pqkVfgn1gr/iUlPY\&quot;&quot;
+    ],
+    &quot;rndr-id&quot;: [
+      &quot;48855af3-80c2-4891&quot;
+    ],
+    &quot;vary&quot;: [
+      &quot;Accept-Encoding&quot;
+    ],
+    &quot;x-powered-by&quot;: [
+      &quot;Express&quot;
+    ],
+    &quot;x-render-origin-server&quot;: [
+      &quot;Render&quot;
+    ],
+    &quot;cf-cache-status&quot;: [
+      &quot;DYNAMIC&quot;
+    ],
+    &quot;Server&quot;: [
+      &quot;cloudflare&quot;
+    ],
+    &quot;CF-RAY&quot;: [
+      &quot;9230fc73cc143b77-IAD&quot;
+    ],
+    &quot;alt-svc&quot;: [
+      &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
+    ],
+    &quot;Set-Cookie&quot;: [
+    ]
+  },
+  &quot;responseExpected&quot;: {
+    &quot;responseCrearUsuario&quot;: &quot;Usuario creado correctamente&quot;
+  },
+  &quot;responseTime&quot;: 50,
+  &quot;response&quot;: {
+    &quot;error&quot;: &quot;Todos los campos son obligatorios&quot;
+  },
+  &quot;idUsuario&quot;: &quot;39407343&quot;,
+  &quot;correo&quot;: &quot;testingAPI_BRoMIRdJ@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PSLeef&quot;,
+  &quot;bodyCreateUser&quot;: {
+    &quot;id_usuario&quot;: &quot;39407343&quot;,
+    &quot;nombre&quot;: &quot;&quot;,
+    &quot;correo&quot;: &quot;testingAPI_BRoMIRdJ@gmail.com&quot;,
+    &quot;contrasena&quot;: &quot;PSLeef&quot;,
+    &quot;apodo&quot;: &quot;OTy&quot;,
+    &quot;equipos_id_equipo&quot;: null
+  },
+  &quot;responseStatus&quot;: 400,
+  &quot;nombre&quot;: &quot;&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match requestCreate.responseStatus == 400</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_3471865504.html">src/test/resources/features/usuarios/usuarios.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1695962388.html">@CrearUsuarioConCamposVacios</a>
+       <a href="report-tag_3550003917.html">@Usuario</a>
+</div>
+
+
+  <span class="lead-duration duration">0.133</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Crear usuario con Campos vacios por 'correo'</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-21" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-22" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def idUsuario = dataRandom.getRandomNumberDocumentCO()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def nombre = 'Usuario'+dataRandom.generateRandomString(4)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def correo =  ''</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def contrasena = 'PS'+dataRandom.generateRandomString(4)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def apodo =  dataRandom.generateRandomString(3)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def equiposIdEquipo =  null</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestCreate = call read('classpath:features/usuarios/usuarios.feature@CrearUsuarioRequest'){idUsuario:#(idUsuario),nombre:#(nombre),correo:#(correo),contrasena:#(contrasena),apodo:#(apodo),equiposIdEquipo:#(equiposIdEquipo)}</span>
+
+  <span class="lead-duration duration">0.074</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">features/usuarios/usuarios.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">path usuarios</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def responseExpected = read('classpath:assets/usuarios/responseUsuarios.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def idUsuario = karate.get('idUsuario',dataRandom.getRandomNumberDocumentCO())</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def nombre =  karate.get('nombre','Usuario'+dataRandom.generateRandomString(4))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def correo =  karate.get('correo',dataRandom.generateRandomEmail())</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def contrasena =  karate.get('contrasena','PS'+dataRandom.generateRandomString(4))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def apodo =  karate.get('apodo',dataRandom.generateRandomString(3))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def equiposIdEquipo =  karate.get('equiposIdEquipo',null)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print idUsuario</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>00:10:22.757 [print] 32724307 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def bodyCreateUser = read('classpath:assets/usuarios/crearUsuario.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print bodyCreateUser</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>00:10:22.758 [print] {
+  &quot;id_usuario&quot;: &quot;32724307&quot;,
+  &quot;nombre&quot;: &quot;Usuario&ntilde;W6J&quot;,
+  &quot;correo&quot;: &quot;&quot;,
+  &quot;contrasena&quot;: &quot;PSHcda&quot;,
+  &quot;apodo&quot;: &quot;T7W&quot;,
+  &quot;equipos_id_equipo&quot;: null
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request bodyCreateUser</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.048</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>00:10:22.808 [print] {
+  &quot;error&quot;: &quot;Todos los campos son obligatorios&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print requestCreate</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>00:10:22.810 [print] {
+  &quot;apodo&quot;: &quot;T7W&quot;,
+  &quot;equiposIdEquipo&quot;: null,
+  &quot;responseHeaders&quot;: {
+    &quot;Date&quot;: [
+      &quot;Thu, 20 Mar 2025 00:10:22 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json; charset=utf-8&quot;
+    ],
+    &quot;Transfer-Encoding&quot;: [
+      &quot;chunked&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;etag&quot;: [
+      &quot;W/\&quot;2d-JhMvXvxEuk9pqkVfgn1gr/iUlPY\&quot;&quot;
+    ],
+    &quot;rndr-id&quot;: [
+      &quot;a44bea2d-59bd-494a&quot;
+    ],
+    &quot;vary&quot;: [
+      &quot;Accept-Encoding&quot;
+    ],
+    &quot;x-powered-by&quot;: [
+      &quot;Express&quot;
+    ],
+    &quot;x-render-origin-server&quot;: [
+      &quot;Render&quot;
+    ],
+    &quot;cf-cache-status&quot;: [
+      &quot;DYNAMIC&quot;
+    ],
+    &quot;Server&quot;: [
+      &quot;cloudflare&quot;
+    ],
+    &quot;CF-RAY&quot;: [
+      &quot;9230fc745d8a5758-IAD&quot;
+    ],
+    &quot;alt-svc&quot;: [
+      &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
+    ],
+    &quot;Set-Cookie&quot;: [
+    ]
+  },
+  &quot;responseExpected&quot;: {
+    &quot;responseCrearUsuario&quot;: &quot;Usuario creado correctamente&quot;
+  },
+  &quot;responseTime&quot;: 47,
+  &quot;response&quot;: {
+    &quot;error&quot;: &quot;Todos los campos son obligatorios&quot;
+  },
+  &quot;idUsuario&quot;: &quot;32724307&quot;,
+  &quot;correo&quot;: &quot;&quot;,
+  &quot;contrasena&quot;: &quot;PSHcda&quot;,
+  &quot;bodyCreateUser&quot;: {
+    &quot;id_usuario&quot;: &quot;32724307&quot;,
+    &quot;nombre&quot;: &quot;Usuario&ntilde;W6J&quot;,
+    &quot;correo&quot;: &quot;&quot;,
+    &quot;contrasena&quot;: &quot;PSHcda&quot;,
+    &quot;apodo&quot;: &quot;T7W&quot;,
+    &quot;equipos_id_equipo&quot;: null
+  },
+  &quot;responseStatus&quot;: 400,
+  &quot;nombre&quot;: &quot;Usuario&ntilde;W6J&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match requestCreate.responseStatus == 400</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_3471865504.html">src/test/resources/features/usuarios/usuarios.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1695962388.html">@CrearUsuarioConCamposVacios</a>
+       <a href="report-tag_3550003917.html">@Usuario</a>
+</div>
+
+
+  <span class="lead-duration duration">0.109</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-27">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Crear usuario con Campos vacios por 'contrasena'</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-27" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-28">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-28" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def idUsuario = dataRandom.getRandomNumberDocumentCO()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def nombre = 'Usuario'+dataRandom.generateRandomString(4)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def correo =  dataRandom.generateRandomEmail()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def contrasena = ''</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def apodo =  dataRandom.generateRandomString(3)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def equiposIdEquipo =  null</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestCreate = call read('classpath:features/usuarios/usuarios.feature@CrearUsuarioRequest'){idUsuario:#(idUsuario),nombre:#(nombre),correo:#(correo),contrasena:#(contrasena),apodo:#(apodo),equiposIdEquipo:#(equiposIdEquipo)}</span>
+
+  <span class="lead-duration duration">0.056</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">features/usuarios/usuarios.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">path usuarios</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def responseExpected = read('classpath:assets/usuarios/responseUsuarios.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def idUsuario = karate.get('idUsuario',dataRandom.getRandomNumberDocumentCO())</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def nombre =  karate.get('nombre','Usuario'+dataRandom.generateRandomString(4))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def correo =  karate.get('correo',dataRandom.generateRandomEmail())</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def contrasena =  karate.get('contrasena','PS'+dataRandom.generateRandomString(4))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def apodo =  karate.get('apodo',dataRandom.generateRandomString(3))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def equiposIdEquipo =  karate.get('equiposIdEquipo',null)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print idUsuario</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details">
+        <pre>00:10:22.828 [print] 1684096889 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def bodyCreateUser = read('classpath:assets/usuarios/crearUsuario.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print bodyCreateUser</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>00:10:22.828 [print] {
+  &quot;id_usuario&quot;: &quot;1684096889&quot;,
+  &quot;nombre&quot;: &quot;UsuariokWQ3&quot;,
+  &quot;correo&quot;: &quot;testingAPI_L9OQFA1f@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;&quot;,
+  &quot;apodo&quot;: &quot;F2q&quot;,
+  &quot;equipos_id_equipo&quot;: null
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request bodyCreateUser</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.045</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>00:10:22.874 [print] {
+  &quot;error&quot;: &quot;Todos los campos son obligatorios&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print requestCreate</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>00:10:22.878 [print] {
+  &quot;apodo&quot;: &quot;F2q&quot;,
+  &quot;equiposIdEquipo&quot;: null,
+  &quot;responseHeaders&quot;: {
+    &quot;Date&quot;: [
+      &quot;Thu, 20 Mar 2025 00:10:22 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json; charset=utf-8&quot;
+    ],
+    &quot;Transfer-Encoding&quot;: [
+      &quot;chunked&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;etag&quot;: [
+      &quot;W/\&quot;2d-JhMvXvxEuk9pqkVfgn1gr/iUlPY\&quot;&quot;
+    ],
+    &quot;rndr-id&quot;: [
+      &quot;59ff8068-557f-413a&quot;
+    ],
+    &quot;vary&quot;: [
+      &quot;Accept-Encoding&quot;
+    ],
+    &quot;x-powered-by&quot;: [
+      &quot;Express&quot;
+    ],
+    &quot;x-render-origin-server&quot;: [
+      &quot;Render&quot;
+    ],
+    &quot;cf-cache-status&quot;: [
+      &quot;DYNAMIC&quot;
+    ],
+    &quot;Server&quot;: [
+      &quot;cloudflare&quot;
+    ],
+    &quot;CF-RAY&quot;: [
+      &quot;9230fc74cb7e591a-IAD&quot;
+    ],
+    &quot;alt-svc&quot;: [
+      &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
+    ],
+    &quot;Set-Cookie&quot;: [
+    ]
+  },
+  &quot;responseExpected&quot;: {
+    &quot;responseCrearUsuario&quot;: &quot;Usuario creado correctamente&quot;
+  },
+  &quot;responseTime&quot;: 44,
+  &quot;response&quot;: {
+    &quot;error&quot;: &quot;Todos los campos son obligatorios&quot;
+  },
+  &quot;idUsuario&quot;: &quot;1684096889&quot;,
+  &quot;correo&quot;: &quot;testingAPI_L9OQFA1f@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;&quot;,
+  &quot;bodyCreateUser&quot;: {
+    &quot;id_usuario&quot;: &quot;1684096889&quot;,
+    &quot;nombre&quot;: &quot;UsuariokWQ3&quot;,
+    &quot;correo&quot;: &quot;testingAPI_L9OQFA1f@gmail.com&quot;,
+    &quot;contrasena&quot;: &quot;&quot;,
+    &quot;apodo&quot;: &quot;F2q&quot;,
+    &quot;equipos_id_equipo&quot;: null
+  },
+  &quot;responseStatus&quot;: 400,
+  &quot;nombre&quot;: &quot;UsuariokWQ3&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match requestCreate.responseStatus == 400</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_3471865504.html">src/test/resources/features/usuarios/usuarios.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1695962388.html">@CrearUsuarioConCamposVacios</a>
+       <a href="report-tag_3550003917.html">@Usuario</a>
+</div>
+
+
+  <span class="lead-duration duration">0.734</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-33">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Crear usuario con Campos vacios por 'idEquipo'</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-33" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-34">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-34" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def idUsuario = dataRandom.getRandomNumberDocumentCO()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def nombre = 'Usuario'+dataRandom.generateRandomString(4)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def correo =  dataRandom.generateRandomEmail()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def contrasena = 'PS'+dataRandom.generateRandomString(4)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def apodo =  dataRandom.generateRandomString(3)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def equiposIdEquipo =  ''</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestCreate = call read('classpath:features/usuarios/usuarios.feature@CrearUsuarioRequest'){idUsuario:#(idUsuario),nombre:#(nombre),correo:#(correo),contrasena:#(contrasena),apodo:#(apodo),equiposIdEquipo:#(equiposIdEquipo)}</span>
+
+  <span class="lead-duration duration">0.370</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">features/usuarios/usuarios.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">path usuarios</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def responseExpected = read('classpath:assets/usuarios/responseUsuarios.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def idUsuario = karate.get('idUsuario',dataRandom.getRandomNumberDocumentCO())</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def nombre =  karate.get('nombre','Usuario'+dataRandom.generateRandomString(4))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def correo =  karate.get('correo',dataRandom.generateRandomEmail())</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def contrasena =  karate.get('contrasena','PS'+dataRandom.generateRandomString(4))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def apodo =  karate.get('apodo',dataRandom.generateRandomString(3))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def equiposIdEquipo =  karate.get('equiposIdEquipo',null)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print idUsuario</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details">
+        <pre>00:10:22.894 [print] 1770679219 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def bodyCreateUser = read('classpath:assets/usuarios/crearUsuario.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print bodyCreateUser</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-36" class="collapse collapsable-details">
+        <pre>00:10:22.895 [print] {
+  &quot;id_usuario&quot;: &quot;1770679219&quot;,
+  &quot;nombre&quot;: &quot;UsuariouWks&quot;,
+  &quot;correo&quot;: &quot;testingAPI_h7NGsR2S@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PSN3zj&quot;,
+  &quot;apodo&quot;: &quot;7I4&quot;,
+  &quot;equipos_id_equipo&quot;: &quot;&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request bodyCreateUser</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.358</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-37">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-37" class="collapse collapsable-details">
+        <pre>00:10:23.254 [print] {
+  &quot;error&quot;: &quot;Error al crear el usuario: invalid input syntax for type integer: \&quot;\&quot;&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print requestCreate</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-38">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-38" class="collapse collapsable-details">
+        <pre>00:10:23.256 [print] {
+  &quot;apodo&quot;: &quot;7I4&quot;,
+  &quot;equiposIdEquipo&quot;: &quot;&quot;,
+  &quot;responseHeaders&quot;: {
+    &quot;Date&quot;: [
+      &quot;Thu, 20 Mar 2025 00:10:23 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json; charset=utf-8&quot;
+    ],
+    &quot;Transfer-Encoding&quot;: [
+      &quot;chunked&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;etag&quot;: [
+      &quot;W/\&quot;52-ORH1xaoHYF4MOuxYb+RuNnlIN8A\&quot;&quot;
+    ],
+    &quot;rndr-id&quot;: [
+      &quot;b44c4091-bd9c-41eb&quot;
+    ],
+    &quot;vary&quot;: [
+      &quot;Accept-Encoding&quot;
+    ],
+    &quot;x-powered-by&quot;: [
+      &quot;Express&quot;
+    ],
+    &quot;x-render-origin-server&quot;: [
+      &quot;Render&quot;
+    ],
+    &quot;cf-cache-status&quot;: [
+      &quot;DYNAMIC&quot;
+    ],
+    &quot;Server&quot;: [
+      &quot;cloudflare&quot;
+    ],
+    &quot;CF-RAY&quot;: [
+      &quot;9230fc753cead6c7-IAD&quot;
+    ],
+    &quot;alt-svc&quot;: [
+      &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
+    ],
+    &quot;Set-Cookie&quot;: [
+    ]
+  },
+  &quot;responseExpected&quot;: {
+    &quot;responseCrearUsuario&quot;: &quot;Usuario creado correctamente&quot;
+  },
+  &quot;responseTime&quot;: 356,
+  &quot;response&quot;: {
+    &quot;error&quot;: &quot;Error al crear el usuario: invalid input syntax for type integer: \&quot;\&quot;&quot;
+  },
+  &quot;idUsuario&quot;: &quot;1770679219&quot;,
+  &quot;correo&quot;: &quot;testingAPI_h7NGsR2S@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PSN3zj&quot;,
+  &quot;bodyCreateUser&quot;: {
+    &quot;id_usuario&quot;: &quot;1770679219&quot;,
+    &quot;nombre&quot;: &quot;UsuariouWks&quot;,
+    &quot;correo&quot;: &quot;testingAPI_h7NGsR2S@gmail.com&quot;,
+    &quot;contrasena&quot;: &quot;PSN3zj&quot;,
+    &quot;apodo&quot;: &quot;7I4&quot;,
+    &quot;equipos_id_equipo&quot;: &quot;&quot;
+  },
+  &quot;responseStatus&quot;: 400,
+  &quot;nombre&quot;: &quot;UsuariouWks&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match requestCreate.responseStatus == 400</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_3471865504.html">src/test/resources/features/usuarios/usuarios.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3550003917.html">@Usuario</a>
+       <a href="report-tag_4053346056.html">@Login</a>
+</div>
+
+
+  <span class="lead-duration duration">1.393</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-39">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Logearse de forma satisfactoria</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-39" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-40">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-40" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def idUsuario = dataRandom.getRandomNumberDocumentCO()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def nombre = 'Usuario'+dataRandom.generateRandomString(4)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def correo =  dataRandom.generateRandomEmail()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def contrasena = 'PS'+dataRandom.generateRandomString(4)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def apodo =  dataRandom.generateRandomString(3)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def equiposIdEquipo =  null</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestCreate = call read('classpath:features/usuarios/usuarios.feature@CrearUsuarioRequest'){idUsuario:#(idUsuario),nombre:#(nombre),correo:#(correo),contrasena:#(contrasena),apodo:#(apodo),equiposIdEquipo:#(equiposIdEquipo)}</span>
+
+  <span class="lead-duration duration">0.487</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">features/usuarios/usuarios.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">path usuarios</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def responseExpected = read('classpath:assets/usuarios/responseUsuarios.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def idUsuario = karate.get('idUsuario',dataRandom.getRandomNumberDocumentCO())</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def nombre =  karate.get('nombre','Usuario'+dataRandom.generateRandomString(4))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def correo =  karate.get('correo',dataRandom.generateRandomEmail())</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def contrasena =  karate.get('contrasena','PS'+dataRandom.generateRandomString(4))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def apodo =  karate.get('apodo',dataRandom.generateRandomString(3))</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def equiposIdEquipo =  karate.get('equiposIdEquipo',null)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print idUsuario</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-41">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-41" class="collapse collapsable-details">
+        <pre>00:10:23.268 [print] 1080453936 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def bodyCreateUser = read('classpath:assets/usuarios/crearUsuario.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print bodyCreateUser</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-42">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-42" class="collapse collapsable-details">
+        <pre>00:10:23.268 [print] {
+  &quot;id_usuario&quot;: &quot;1080453936&quot;,
+  &quot;nombre&quot;: &quot;UsuarioIKv5&quot;,
+  &quot;correo&quot;: &quot;testingAPI_NfJ9yaBe@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PSH9Oh&quot;,
+  &quot;apodo&quot;: &quot;lK8&quot;,
+  &quot;equipos_id_equipo&quot;: null
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request bodyCreateUser</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.478</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-43">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-43" class="collapse collapsable-details">
+        <pre>00:10:23.748 [print] {
+  &quot;message&quot;: &quot;Usuario creado&quot;,
+  &quot;usuario&quot;: {
+    &quot;message&quot;: &quot;Usuario creado correctamente&quot;
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print requestCreate</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-44">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-44" class="collapse collapsable-details">
+        <pre>00:10:23.750 [print] {
+  &quot;apodo&quot;: &quot;lK8&quot;,
+  &quot;equiposIdEquipo&quot;: null,
+  &quot;responseHeaders&quot;: {
+    &quot;Date&quot;: [
+      &quot;Thu, 20 Mar 2025 00:10:23 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json; charset=utf-8&quot;
+    ],
+    &quot;Transfer-Encoding&quot;: [
+      &quot;chunked&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;etag&quot;: [
+      &quot;W/\&quot;51-/gBhgxKgCU22/TfG2RJtjeGkAro\&quot;&quot;
+    ],
+    &quot;rndr-id&quot;: [
+      &quot;5dd03da6-87bf-4195&quot;
+    ],
+    &quot;vary&quot;: [
+      &quot;Accept-Encoding&quot;
+    ],
+    &quot;x-powered-by&quot;: [
+      &quot;Express&quot;
+    ],
+    &quot;x-render-origin-server&quot;: [
+      &quot;Render&quot;
+    ],
+    &quot;cf-cache-status&quot;: [
+      &quot;DYNAMIC&quot;
+    ],
+    &quot;Server&quot;: [
+      &quot;cloudflare&quot;
+    ],
+    &quot;CF-RAY&quot;: [
+      &quot;9230fc778ae30a07-IAD&quot;
+    ],
+    &quot;alt-svc&quot;: [
+      &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
+    ],
+    &quot;Set-Cookie&quot;: [
+    ]
+  },
+  &quot;responseExpected&quot;: {
+    &quot;responseCrearUsuario&quot;: &quot;Usuario creado correctamente&quot;
+  },
+  &quot;responseTime&quot;: 477,
+  &quot;response&quot;: {
+    &quot;message&quot;: &quot;Usuario creado&quot;,
+    &quot;usuario&quot;: {
+      &quot;message&quot;: &quot;Usuario creado correctamente&quot;
+    }
+  },
+  &quot;idUsuario&quot;: &quot;1080453936&quot;,
+  &quot;correo&quot;: &quot;testingAPI_NfJ9yaBe@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PSH9Oh&quot;,
+  &quot;bodyCreateUser&quot;: {
+    &quot;id_usuario&quot;: &quot;1080453936&quot;,
+    &quot;nombre&quot;: &quot;UsuarioIKv5&quot;,
+    &quot;correo&quot;: &quot;testingAPI_NfJ9yaBe@gmail.com&quot;,
+    &quot;contrasena&quot;: &quot;PSH9Oh&quot;,
+    &quot;apodo&quot;: &quot;lK8&quot;,
+    &quot;equipos_id_equipo&quot;: null
+  },
+  &quot;responseStatus&quot;: 201,
+  &quot;nombre&quot;: &quot;UsuarioIKv5&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match requestCreate.responseStatus == 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match requestCreate.response.usuario.message == responseExpected.responseCrearUsuario</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = connectionDB.getConsult(consultaSQL.CONSULT_USER_BY_ID.concatenarDato(idUsuario))</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print query</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-45">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-45" class="collapse collapsable-details">
+        <pre>00:10:23.755 [print] {
+  &quot;id_usuario&quot;: [
+    &quot;1080453936&quot;
+  ],
+  &quot;nombre&quot;: [
+    &quot;UsuarioIKv5                             &quot;
+  ],
+  &quot;correo&quot;: [
+    &quot;testingAPI_NfJ9yaBe@gmail.com                               &quot;
+  ],
+  &quot;contrasena&quot;: [
+    &quot;$2b$10$bf9V5Dop.HciHyVvarHvhe0c11pNpwZ5htlq.Xo8TzgQkN9/MgPpS                                        &quot;
+  ],
+  &quot;apodo&quot;: [
+    &quot;lK8                                     &quot;
+  ],
+  &quot;equipos_id_equipo&quot;: [
+    null
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert query.id_usuario.length == 1</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path 'login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def bodyUser = read('classpath:assets/usuarios/requestLogin.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print bodyUser</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-46">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-46" class="collapse collapsable-details">
+        <pre>00:10:23.757 [print] {
+  &quot;correo&quot;: &quot;testingAPI_NfJ9yaBe@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PSH9Oh&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyUser</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.415</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-47">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-47" class="collapse collapsable-details">
+        <pre>00:10:24.173 [print] {
+  &quot;message&quot;: &quot;Inicio de sesi&oacute;n exitoso&quot;,
+  &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c3VhcmlvIjoxMDgwNDUzOTM2LCJjb3JyZW8iOiJ0ZXN0aW5nQVBJX05mSjl5YUJlQGdtYWlsLmNvbSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiLCJpYXQiOjE3NDI0Mjk0MjQsImV4cCI6MTc0MjQzMzAyNH0.Vw6a1FfdWb49H7WNyOrEJUmQ51ziK5iCZRdtc2uCLko&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">response.message == 'Inicio de sesi&oacute;n exitoso'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
