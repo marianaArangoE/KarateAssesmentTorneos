@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>test paralleltest in API torneo</td>
-      <td>20 Mar 2025, 01:48</td>
+      <td>20 Mar 2025, 01:51</td>
     </tr>
   </tbody>
 </table>
@@ -115,25 +115,25 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_129036924.html">src/test/resources/features/torneos/torneoSinToken.feature</a>
+      <a href="report-feature_1_1118279261.html">src/test/resources/features/torneos/torneosConToken.feature</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_880934769.html">@torneos</a>
-       <a href="report-tag_2890104724.html">@TrearTorneoPorId</a>
+       <a href="report-tag_549766416.html">@ActualizarTorneo</a>
 </div>
 
 
-  <span class="lead-duration duration">0.138</span>
+  <span class="lead-duration duration">3.236</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
 <div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Traer informacion de un torneo por ID</span>
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Actualizar torneo</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -167,1194 +167,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">def query = connectionDB.getConsult(consultaSQL.RANDOM_TOURNAMENT.concatenarDato())</span>
-
-  <span class="lead-duration duration">0.025</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">print query</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details">
-        <pre>01:48:32.141 [print] {
-  &quot;id_torneo&quot;: [
-    &quot;992989&quot;
-  ],
-  &quot;video_juegos_id&quot;: [
-    &quot;1&quot;
-  ],
-  &quot;nombre&quot;: [
-    &quot;asdasdhjasd                                                                                         &quot;
-  ],
-  &quot;fecha_inicio&quot;: [
-    &quot;2025-04-12&quot;
-  ],
-  &quot;fecha_fin&quot;: [
-    &quot;2025-04-12&quot;
-  ],
-  &quot;its_free&quot;: [
-    &quot;T&quot;
-  ],
-  &quot;limite_equipos&quot;: [
-    &quot;2&quot;
-  ],
-  &quot;limite_views&quot;: [
-    &quot;20&quot;
-  ],
-  &quot;plataformas_id_plataforma&quot;: [
-    &quot;1&quot;
-  ],
-  &quot;organizador&quot;: [
-    &quot;232&quot;
-  ],
-  &quot;categorias_id_categoria&quot;: [
-    &quot;1&quot;
-  ],
-  &quot;descripcion&quot;: [
-    &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
-  ]
-}
- 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def idTorneo = query.id_torneo[0]</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">path idTorneo</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method GET</span>
-
-  <span class="lead-duration duration">0.101</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">print response</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>01:48:32.245 [print] {
-  &quot;error&quot;: &quot;Error interno del servidor&quot;
-}
- 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And failed">
-  <span class="keyword indention">And</span>
-  <span class="name">status 200</span>
-
-  <span class="lead-duration duration">0.006</span>
-
-</div>
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
-          <a>status</a>
-      </div>
-      <div id="msg-5" class="collapse collapsable-details  in ">
-        <pre>status code was: 500, expected: 200, response time in milliseconds: 98, url: https://assesmenttorneos.onrender.com/torneos/992989, response: 
-{&quot;error&quot;:&quot;Error interno del servidor&quot;}
-src/test/resources/features/torneos/torneoSinToken.feature:36</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>01:48:32.255 src/test/resources/features/torneos/torneoSinToken.feature:36
-And status 200
-status code was: 500, expected: 200, response time in milliseconds: 98, url: https://assesmenttorneos.onrender.com/torneos/992989, response: 
-{&quot;error&quot;:&quot;Error interno del servidor&quot;}
-src/test/resources/features/torneos/torneoSinToken.feature:36
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* skipped">
-  <span class="keyword indention">*</span>
-  <span class="name">print response</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">match response.nombre == query.nombre[0]</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_129036924.html">src/test/resources/features/torneos/torneoSinToken.feature</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_880934769.html">@torneos</a>
-       <a href="report-tag_2890104724.html">@TrearTorneoPorId</a>
-</div>
-
-
-  <span class="lead-duration duration">0.086</span>
-
-
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
-
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Traer informacion de un torneo por ID</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-7" class="collapse collapsable-details  in ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-8">
-
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-8" class="inner-level collapse collapsable-details  in ">
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def query = connectionDB.getConsult(consultaSQL.RANDOM_TOURNAMENT.concatenarDato())</span>
-
-  <span class="lead-duration duration">0.008</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">print query</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-9" class="collapse collapsable-details">
-        <pre>01:48:32.279 [print] {
-  &quot;id_torneo&quot;: [
-    &quot;527049&quot;
-  ],
-  &quot;video_juegos_id&quot;: [
-    &quot;1&quot;
-  ],
-  &quot;nombre&quot;: [
-    &quot;Momotea Tournament                                                                                  &quot;
-  ],
-  &quot;fecha_inicio&quot;: [
-    &quot;2025-04-12&quot;
-  ],
-  &quot;fecha_fin&quot;: [
-    &quot;2025-04-12&quot;
-  ],
-  &quot;its_free&quot;: [
-    &quot;T&quot;
-  ],
-  &quot;limite_equipos&quot;: [
-    &quot;2&quot;
-  ],
-  &quot;limite_views&quot;: [
-    &quot;20&quot;
-  ],
-  &quot;plataformas_id_plataforma&quot;: [
-    &quot;1&quot;
-  ],
-  &quot;organizador&quot;: [
-    &quot;100000000&quot;
-  ],
-  &quot;categorias_id_categoria&quot;: [
-    &quot;1&quot;
-  ],
-  &quot;descripcion&quot;: [
-    &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
-  ]
-}
- 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def idTorneo = query.id_torneo[0]</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">path idTorneo</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method GET</span>
-
-  <span class="lead-duration duration">0.075</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">print response</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-10" class="collapse collapsable-details">
-        <pre>01:48:32.356 [print] {
-  &quot;error&quot;: &quot;Error interno del servidor&quot;
-}
- 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And failed">
-  <span class="keyword indention">And</span>
-  <span class="name">status 200</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-11">
-          <a>status</a>
-      </div>
-      <div id="msg-11" class="collapse collapsable-details  in ">
-        <pre>status code was: 500, expected: 200, response time in milliseconds: 74, url: https://assesmenttorneos.onrender.com/torneos/527049, response: 
-{&quot;error&quot;:&quot;Error interno del servidor&quot;}
-src/test/resources/features/torneos/torneoSinToken.feature:36</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-12" class="collapse collapsable-details">
-        <pre>01:48:32.357 src/test/resources/features/torneos/torneoSinToken.feature:36
-And status 200
-status code was: 500, expected: 200, response time in milliseconds: 74, url: https://assesmenttorneos.onrender.com/torneos/527049, response: 
-{&quot;error&quot;:&quot;Error interno del servidor&quot;}
-src/test/resources/features/torneos/torneoSinToken.feature:36
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* skipped">
-  <span class="keyword indention">*</span>
-  <span class="name">print response</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">match response.nombre == query.nombre[0]</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_129036924.html">src/test/resources/features/torneos/torneoSinToken.feature</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_880934769.html">@torneos</a>
-       <a href="report-tag_2890104724.html">@TrearTorneoPorId</a>
-</div>
-
-
-  <span class="lead-duration duration">0.091</span>
-
-
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
-
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Traer informacion de un torneo por ID</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-13" class="collapse collapsable-details  in ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-14">
-
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-14" class="inner-level collapse collapsable-details  in ">
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def query = connectionDB.getConsult(consultaSQL.RANDOM_TOURNAMENT.concatenarDato())</span>
-
-  <span class="lead-duration duration">0.008</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">print query</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-15" class="collapse collapsable-details">
-        <pre>01:48:32.380 [print] {
-  &quot;id_torneo&quot;: [
-    &quot;123&quot;
-  ],
-  &quot;video_juegos_id&quot;: [
-    &quot;3&quot;
-  ],
-  &quot;nombre&quot;: [
-    &quot;LOVE                                                                                                &quot;
-  ],
-  &quot;fecha_inicio&quot;: [
-    &quot;2027-02-01&quot;
-  ],
-  &quot;fecha_fin&quot;: [
-    &quot;2027-02-01&quot;
-  ],
-  &quot;its_free&quot;: [
-    &quot;t&quot;
-  ],
-  &quot;limite_equipos&quot;: [
-    &quot;2&quot;
-  ],
-  &quot;limite_views&quot;: [
-    &quot;20&quot;
-  ],
-  &quot;plataformas_id_plataforma&quot;: [
-    &quot;3&quot;
-  ],
-  &quot;organizador&quot;: [
-    &quot;1001360166&quot;
-  ],
-  &quot;categorias_id_categoria&quot;: [
-    &quot;1&quot;
-  ],
-  &quot;descripcion&quot;: [
-    &quot;No se que poner                                                                                                                                                                                         &quot;
-  ]
-}
- 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def idTorneo = query.id_torneo[0]</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">path idTorneo</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method GET</span>
-
-  <span class="lead-duration duration">0.080</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">print response</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-16" class="collapse collapsable-details">
-        <pre>01:48:32.463 [print] {
-  &quot;error&quot;: &quot;Error interno del servidor&quot;
-}
- 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And failed">
-  <span class="keyword indention">And</span>
-  <span class="name">status 200</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-17">
-          <a>status</a>
-      </div>
-      <div id="msg-17" class="collapse collapsable-details  in ">
-        <pre>status code was: 500, expected: 200, response time in milliseconds: 79, url: https://assesmenttorneos.onrender.com/torneos/123, response: 
-{&quot;error&quot;:&quot;Error interno del servidor&quot;}
-src/test/resources/features/torneos/torneoSinToken.feature:36</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-18" class="collapse collapsable-details">
-        <pre>01:48:32.463 src/test/resources/features/torneos/torneoSinToken.feature:36
-And status 200
-status code was: 500, expected: 200, response time in milliseconds: 79, url: https://assesmenttorneos.onrender.com/torneos/123, response: 
-{&quot;error&quot;:&quot;Error interno del servidor&quot;}
-src/test/resources/features/torneos/torneoSinToken.feature:36
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* skipped">
-  <span class="keyword indention">*</span>
-  <span class="name">print response</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">match response.nombre == query.nombre[0]</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_1_1118279261.html">src/test/resources/features/torneos/torneosConToken.feature</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_880934769.html">@torneos</a>
-       <a href="report-tag_549766416.html">@ActualizarTorneo</a>
-</div>
-
-
-  <span class="lead-duration duration">3.115</span>
-
-
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-19">
-
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Actualizar torneo</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-19" class="collapse collapsable-details  in ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-20">
-
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-20" class="inner-level collapse collapsable-details  in ">
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
   <span class="name">def requestCreate = call read('classpath:features/torneos/torneosConToken.feature@CrearTorneo')</span>
 
-  <span class="lead-duration duration">0.947</span>
+  <span class="lead-duration duration">0.970</span>
 
 </div>
 
@@ -1489,7 +304,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   <span class="keyword indention">&gt; *</span>
   <span class="name">def requestCreate = call read('classpath:features/usuarios/usuarios.feature@Login')</span>
 
-  <span class="lead-duration duration">0.834</span>
+  <span class="lead-duration duration">0.821</span>
 
 </div>
 
@@ -1786,7 +601,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   <span class="keyword indention">&gt;&gt; *</span>
   <span class="name">def requestCreate = call read('classpath:features/usuarios/usuarios.feature@CrearUsuarioRequest'){idUsuario:#(idUsuario),nombre:#(nombre),correo:#(correo),contrasena:#(contrasena),apodo:#(apodo),equiposIdEquipo:#(equiposIdEquipo)}</span>
 
-  <span class="lead-duration duration">0.342</span>
+  <span class="lead-duration duration">0.403</span>
 
 </div>
 
@@ -2097,11 +912,11 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
           <a>Doc string</a>
       </div>
-      <div id="msg-21" class="collapse collapsable-details">
-        <pre>01:48:34.267 [print] 1202380332 
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>01:51:28.056 [print] 1512226724 
 </pre>
       </div>
     </div>
@@ -2162,16 +977,16 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
           <a>Doc string</a>
       </div>
-      <div id="msg-22" class="collapse collapsable-details">
-        <pre>01:48:34.268 [print] {
-  &quot;id_usuario&quot;: &quot;1202380332&quot;,
-  &quot;nombre&quot;: &quot;UsuarioJc5E&quot;,
-  &quot;correo&quot;: &quot;testingAPI_zTZe76C5@gmail.com&quot;,
-  &quot;contrasena&quot;: &quot;PSWrI9&quot;,
-  &quot;apodo&quot;: &quot;eAg&quot;,
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>01:51:28.057 [print] {
+  &quot;id_usuario&quot;: &quot;1512226724&quot;,
+  &quot;nombre&quot;: &quot;Usuariodkyi&quot;,
+  &quot;correo&quot;: &quot;testingAPI_UKqm2DUR@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PSzpGj&quot;,
+  &quot;apodo&quot;: &quot;&ntilde;ER&quot;,
   &quot;equipos_id_equipo&quot;: null
 }
  
@@ -2221,7 +1036,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   <span class="keyword indention">&gt;&gt;&gt; When</span>
   <span class="name">method POST</span>
 
-  <span class="lead-duration duration">0.327</span>
+  <span class="lead-duration duration">0.390</span>
 
 </div>
 
@@ -2262,11 +1077,11 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
           <a>Doc string</a>
       </div>
-      <div id="msg-23" class="collapse collapsable-details">
-        <pre>01:48:34.597 [print] {
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>01:51:28.448 [print] {
   &quot;message&quot;: &quot;Usuario creado&quot;,
   &quot;usuario&quot;: {
     &quot;message&quot;: &quot;Usuario creado correctamente&quot;
@@ -2306,16 +1121,16 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
           <a>Doc string</a>
       </div>
-      <div id="msg-24" class="collapse collapsable-details">
-        <pre>01:48:34.599 [print] {
-  &quot;apodo&quot;: &quot;eAg&quot;,
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>01:51:28.450 [print] {
+  &quot;apodo&quot;: &quot;&ntilde;ER&quot;,
   &quot;equiposIdEquipo&quot;: null,
   &quot;responseHeaders&quot;: {
     &quot;Date&quot;: [
-      &quot;Thu, 20 Mar 2025 01:48:34 GMT&quot;
+      &quot;Thu, 20 Mar 2025 01:51:28 GMT&quot;
     ],
     &quot;Content-Type&quot;: [
       &quot;application/json; charset=utf-8&quot;
@@ -2330,7 +1145,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
       &quot;W/\&quot;51-/gBhgxKgCU22/TfG2RJtjeGkAro\&quot;&quot;
     ],
     &quot;rndr-id&quot;: [
-      &quot;74c4bde2-8520-4b29&quot;
+      &quot;ce25ccc5-556c-450a&quot;
     ],
     &quot;vary&quot;: [
       &quot;Accept-Encoding&quot;
@@ -2348,7 +1163,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
       &quot;cloudflare&quot;
     ],
     &quot;CF-RAY&quot;: [
-      &quot;92318c4a5afd062f-IAD&quot;
+      &quot;923190887fc0d240-ORD&quot;
     ],
     &quot;alt-svc&quot;: [
       &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
@@ -2359,26 +1174,26 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   &quot;responseExpected&quot;: {
     &quot;responseCrearUsuario&quot;: &quot;Usuario creado correctamente&quot;
   },
-  &quot;responseTime&quot;: 327,
+  &quot;responseTime&quot;: 389,
   &quot;response&quot;: {
     &quot;message&quot;: &quot;Usuario creado&quot;,
     &quot;usuario&quot;: {
       &quot;message&quot;: &quot;Usuario creado correctamente&quot;
     }
   },
-  &quot;idUsuario&quot;: &quot;1202380332&quot;,
-  &quot;correo&quot;: &quot;testingAPI_zTZe76C5@gmail.com&quot;,
-  &quot;contrasena&quot;: &quot;PSWrI9&quot;,
+  &quot;idUsuario&quot;: &quot;1512226724&quot;,
+  &quot;correo&quot;: &quot;testingAPI_UKqm2DUR@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PSzpGj&quot;,
   &quot;bodyCreateUser&quot;: {
-    &quot;id_usuario&quot;: &quot;1202380332&quot;,
-    &quot;nombre&quot;: &quot;UsuarioJc5E&quot;,
-    &quot;correo&quot;: &quot;testingAPI_zTZe76C5@gmail.com&quot;,
-    &quot;contrasena&quot;: &quot;PSWrI9&quot;,
-    &quot;apodo&quot;: &quot;eAg&quot;,
+    &quot;id_usuario&quot;: &quot;1512226724&quot;,
+    &quot;nombre&quot;: &quot;Usuariodkyi&quot;,
+    &quot;correo&quot;: &quot;testingAPI_UKqm2DUR@gmail.com&quot;,
+    &quot;contrasena&quot;: &quot;PSzpGj&quot;,
+    &quot;apodo&quot;: &quot;&ntilde;ER&quot;,
     &quot;equipos_id_equipo&quot;: null
   },
   &quot;responseStatus&quot;: 201,
-  &quot;nombre&quot;: &quot;UsuarioJc5E&quot;
+  &quot;nombre&quot;: &quot;Usuariodkyi&quot;
 }
  
 </pre>
@@ -2454,7 +1269,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   <span class="keyword indention">&gt;&gt; *</span>
   <span class="name">def query = connectionDB.getConsult(consultaSQL.CONSULT_USER_BY_ID.concatenarDato(idUsuario))</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.018</span>
 
 </div>
 
@@ -2495,25 +1310,25 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
           <a>Doc string</a>
       </div>
-      <div id="msg-25" class="collapse collapsable-details">
-        <pre>01:48:34.608 [print] {
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>01:51:28.470 [print] {
   &quot;id_usuario&quot;: [
-    &quot;1202380332&quot;
+    &quot;1512226724&quot;
   ],
   &quot;nombre&quot;: [
-    &quot;UsuarioJc5E                             &quot;
+    &quot;Usuariodkyi                             &quot;
   ],
   &quot;correo&quot;: [
-    &quot;testingAPI_zTZe76C5@gmail.com                               &quot;
+    &quot;testingAPI_UKqm2DUR@gmail.com                               &quot;
   ],
   &quot;contrasena&quot;: [
-    &quot;$2b$10$3i2HHKnZd8him6L6Z2nJ6uDnoCmKZtqmPbRBpiVduNJUp6VPJi2Ue                                        &quot;
+    &quot;$2b$10$VTfnQFloCs8.ddTPOcN1WOzgTYeowKQ6zWU7G.GAPmvCq0VkwqHdW                                        &quot;
   ],
   &quot;apodo&quot;: [
-    &quot;eAg                                     &quot;
+    &quot;&ntilde;ER                                     &quot;
   ],
   &quot;equipos_id_equipo&quot;: [
     null
@@ -2634,13 +1449,13 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
           <a>Doc string</a>
       </div>
-      <div id="msg-26" class="collapse collapsable-details">
-        <pre>01:48:34.609 [print] {
-  &quot;correo&quot;: &quot;testingAPI_zTZe76C5@gmail.com&quot;,
-  &quot;contrasena&quot;: &quot;PSWrI9&quot;
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>01:51:28.471 [print] {
+  &quot;correo&quot;: &quot;testingAPI_UKqm2DUR@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PSzpGj&quot;
 }
  
 </pre>
@@ -2689,7 +1504,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   <span class="keyword indention">&gt;&gt; When</span>
   <span class="name">method POST</span>
 
-  <span class="lead-duration duration">0.469</span>
+  <span class="lead-duration duration">0.386</span>
 
 </div>
 
@@ -2730,13 +1545,13 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
           <a>Doc string</a>
       </div>
-      <div id="msg-27" class="collapse collapsable-details">
-        <pre>01:48:35.079 [print] {
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>01:51:28.858 [print] {
   &quot;message&quot;: &quot;Inicio de sesi&oacute;n exitoso&quot;,
-  &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c3VhcmlvIjoxMjAyMzgwMzMyLCJjb3JyZW8iOiJ0ZXN0aW5nQVBJX3pUWmU3NkM1QGdtYWlsLmNvbSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiLCJpYXQiOjE3NDI0MzUzMTUsImV4cCI6MTc0MjQzODkxNX0.i3ovViZBFAqdB4tC8JFfj2o36aEzvd_UOtfPPiBvqVY&quot;
+  &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c3VhcmlvIjoxNTEyMjI2NzI0LCJjb3JyZW8iOiJ0ZXN0aW5nQVBJX1VLcW0yRFVSQGdtYWlsLmNvbSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiLCJpYXQiOjE3NDI0MzU0ODgsImV4cCI6MTc0MjQzOTA4OH0.VWoVHk33Bk2oVGszHisCddq9pKjvmE37YQhaa4pTZmI&quot;
 }
  
 </pre>
@@ -2826,47 +1641,47 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
           <a>Doc string</a>
       </div>
-      <div id="msg-28" class="collapse collapsable-details">
-        <pre>01:48:35.081 [print] {
-  &quot;apodo&quot;: &quot;eAg&quot;,
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>01:51:28.860 [print] {
+  &quot;apodo&quot;: &quot;&ntilde;ER&quot;,
   &quot;equiposIdEquipo&quot;: null,
   &quot;responseExpected&quot;: {
     &quot;responseCrearUsuario&quot;: &quot;Usuario creado correctamente&quot;
   },
-  &quot;responseTime&quot;: 468,
-  &quot;idUsuario&quot;: &quot;1202380332&quot;,
+  &quot;responseTime&quot;: 385,
+  &quot;idUsuario&quot;: &quot;1512226724&quot;,
   &quot;query&quot;: {
     &quot;id_usuario&quot;: [
-      &quot;1202380332&quot;
+      &quot;1512226724&quot;
     ],
     &quot;nombre&quot;: [
-      &quot;UsuarioJc5E                             &quot;
+      &quot;Usuariodkyi                             &quot;
     ],
     &quot;correo&quot;: [
-      &quot;testingAPI_zTZe76C5@gmail.com                               &quot;
+      &quot;testingAPI_UKqm2DUR@gmail.com                               &quot;
     ],
     &quot;contrasena&quot;: [
-      &quot;$2b$10$3i2HHKnZd8him6L6Z2nJ6uDnoCmKZtqmPbRBpiVduNJUp6VPJi2Ue                                        &quot;
+      &quot;$2b$10$VTfnQFloCs8.ddTPOcN1WOzgTYeowKQ6zWU7G.GAPmvCq0VkwqHdW                                        &quot;
     ],
     &quot;apodo&quot;: [
-      &quot;eAg                                     &quot;
+      &quot;&ntilde;ER                                     &quot;
     ],
     &quot;equipos_id_equipo&quot;: [
       null
     ]
   },
   &quot;responseStatus&quot;: 200,
-  &quot;nombre&quot;: &quot;UsuarioJc5E&quot;,
+  &quot;nombre&quot;: &quot;Usuariodkyi&quot;,
   &quot;bodyUser&quot;: {
-    &quot;correo&quot;: &quot;testingAPI_zTZe76C5@gmail.com&quot;,
-    &quot;contrasena&quot;: &quot;PSWrI9&quot;
+    &quot;correo&quot;: &quot;testingAPI_UKqm2DUR@gmail.com&quot;,
+    &quot;contrasena&quot;: &quot;PSzpGj&quot;
   },
   &quot;responseHeaders&quot;: {
     &quot;Date&quot;: [
-      &quot;Thu, 20 Mar 2025 01:48:35 GMT&quot;
+      &quot;Thu, 20 Mar 2025 01:51:28 GMT&quot;
     ],
     &quot;Content-Type&quot;: [
       &quot;application/json; charset=utf-8&quot;
@@ -2878,10 +1693,10 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
       &quot;keep-alive&quot;
     ],
     &quot;etag&quot;: [
-      &quot;W/\&quot;132-XvwWgQDZtNRTsLqcc1ZJ6/5gpKM\&quot;&quot;
+      &quot;W/\&quot;132-CEukJjDhNgV18CmI/j3mM42wDqM\&quot;&quot;
     ],
     &quot;rndr-id&quot;: [
-      &quot;16bd8e23-eb91-431e&quot;
+      &quot;b134ce57-0f61-4fc8&quot;
     ],
     &quot;vary&quot;: [
       &quot;Accept-Encoding&quot;
@@ -2899,7 +1714,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
       &quot;cloudflare&quot;
     ],
     &quot;CF-RAY&quot;: [
-      &quot;92318c4c7a35c983-IAD&quot;
+      &quot;9231908b08d7e990-ORD&quot;
     ],
     &quot;alt-svc&quot;: [
       &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
@@ -2909,16 +1724,16 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   },
   &quot;response&quot;: {
     &quot;message&quot;: &quot;Inicio de sesi&oacute;n exitoso&quot;,
-    &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c3VhcmlvIjoxMjAyMzgwMzMyLCJjb3JyZW8iOiJ0ZXN0aW5nQVBJX3pUWmU3NkM1QGdtYWlsLmNvbSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiLCJpYXQiOjE3NDI0MzUzMTUsImV4cCI6MTc0MjQzODkxNX0.i3ovViZBFAqdB4tC8JFfj2o36aEzvd_UOtfPPiBvqVY&quot;
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c3VhcmlvIjoxNTEyMjI2NzI0LCJjb3JyZW8iOiJ0ZXN0aW5nQVBJX1VLcW0yRFVSQGdtYWlsLmNvbSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiLCJpYXQiOjE3NDI0MzU0ODgsImV4cCI6MTc0MjQzOTA4OH0.VWoVHk33Bk2oVGszHisCddq9pKjvmE37YQhaa4pTZmI&quot;
   },
-  &quot;correo&quot;: &quot;testingAPI_zTZe76C5@gmail.com&quot;,
-  &quot;contrasena&quot;: &quot;PSWrI9&quot;,
+  &quot;correo&quot;: &quot;testingAPI_UKqm2DUR@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PSzpGj&quot;,
   &quot;requestCreate&quot;: {
-    &quot;apodo&quot;: &quot;eAg&quot;,
+    &quot;apodo&quot;: &quot;&ntilde;ER&quot;,
     &quot;equiposIdEquipo&quot;: null,
     &quot;responseHeaders&quot;: {
       &quot;Date&quot;: [
-        &quot;Thu, 20 Mar 2025 01:48:34 GMT&quot;
+        &quot;Thu, 20 Mar 2025 01:51:28 GMT&quot;
       ],
       &quot;Content-Type&quot;: [
         &quot;application/json; charset=utf-8&quot;
@@ -2933,7 +1748,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
         &quot;W/\&quot;51-/gBhgxKgCU22/TfG2RJtjeGkAro\&quot;&quot;
       ],
       &quot;rndr-id&quot;: [
-        &quot;74c4bde2-8520-4b29&quot;
+        &quot;ce25ccc5-556c-450a&quot;
       ],
       &quot;vary&quot;: [
         &quot;Accept-Encoding&quot;
@@ -2951,7 +1766,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
         &quot;cloudflare&quot;
       ],
       &quot;CF-RAY&quot;: [
-        &quot;92318c4a5afd062f-IAD&quot;
+        &quot;923190887fc0d240-ORD&quot;
       ],
       &quot;alt-svc&quot;: [
         &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
@@ -2962,26 +1777,26 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
     &quot;responseExpected&quot;: {
       &quot;responseCrearUsuario&quot;: &quot;Usuario creado correctamente&quot;
     },
-    &quot;responseTime&quot;: 327,
+    &quot;responseTime&quot;: 389,
     &quot;response&quot;: {
       &quot;message&quot;: &quot;Usuario creado&quot;,
       &quot;usuario&quot;: {
         &quot;message&quot;: &quot;Usuario creado correctamente&quot;
       }
     },
-    &quot;idUsuario&quot;: &quot;1202380332&quot;,
-    &quot;correo&quot;: &quot;testingAPI_zTZe76C5@gmail.com&quot;,
-    &quot;contrasena&quot;: &quot;PSWrI9&quot;,
+    &quot;idUsuario&quot;: &quot;1512226724&quot;,
+    &quot;correo&quot;: &quot;testingAPI_UKqm2DUR@gmail.com&quot;,
+    &quot;contrasena&quot;: &quot;PSzpGj&quot;,
     &quot;bodyCreateUser&quot;: {
-      &quot;id_usuario&quot;: &quot;1202380332&quot;,
-      &quot;nombre&quot;: &quot;UsuarioJc5E&quot;,
-      &quot;correo&quot;: &quot;testingAPI_zTZe76C5@gmail.com&quot;,
-      &quot;contrasena&quot;: &quot;PSWrI9&quot;,
-      &quot;apodo&quot;: &quot;eAg&quot;,
+      &quot;id_usuario&quot;: &quot;1512226724&quot;,
+      &quot;nombre&quot;: &quot;Usuariodkyi&quot;,
+      &quot;correo&quot;: &quot;testingAPI_UKqm2DUR@gmail.com&quot;,
+      &quot;contrasena&quot;: &quot;PSzpGj&quot;,
+      &quot;apodo&quot;: &quot;&ntilde;ER&quot;,
       &quot;equipos_id_equipo&quot;: null
     },
     &quot;responseStatus&quot;: 201,
-    &quot;nombre&quot;: &quot;UsuarioJc5E&quot;
+    &quot;nombre&quot;: &quot;Usuariodkyi&quot;
   }
 }
  
@@ -3085,7 +1900,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   <span class="keyword indention">&gt; *</span>
   <span class="name">def videoJuegosId = connectionDB.getConsult(consultaSQL.RANDOM_ID_GAMES.concatenarDato()).id[0]</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.018</span>
 
 </div>
 
@@ -3193,7 +2008,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   <span class="keyword indention">&gt; *</span>
   <span class="name">def plataformaId = connectionDB.getConsult(consultaSQL.RANDOM_PLATFORM.concatenarDato()).id_plataforma[0]</span>
 
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.018</span>
 
 </div>
 
@@ -3220,7 +2035,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   <span class="keyword indention">&gt; *</span>
   <span class="name">def categoriasId = connectionDB.getConsult(consultaSQL.RANDOM_CATEGORY.concatenarDato()).id_categoria[0]</span>
 
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.018</span>
 
 </div>
 
@@ -3315,21 +2130,21 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
           <a>Doc string</a>
       </div>
-      <div id="msg-29" class="collapse collapsable-details">
-        <pre>01:48:35.108 [print] {
-  &quot;nombre&quot;: &quot;Test_BXbhD&quot;,
-  &quot;fecha_inicio&quot;: &quot;2025-04-18&quot;,
-  &quot;fecha_fin&quot;: &quot;2025-05-07&quot;,
-  &quot;video_juegos_id&quot;: &quot;2&quot;,
-  &quot;its_free&quot;: &quot;F&quot;,
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>01:51:28.917 [print] {
+  &quot;nombre&quot;: &quot;Test_TiQ&ntilde;J&quot;,
+  &quot;fecha_inicio&quot;: &quot;2025-04-08&quot;,
+  &quot;fecha_fin&quot;: &quot;2025-04-12&quot;,
+  &quot;video_juegos_id&quot;: &quot;3&quot;,
+  &quot;its_free&quot;: &quot;T&quot;,
   &quot;limite_equipos&quot;: 12,
-  &quot;limite_views&quot;: 942,
-  &quot;plataforma_id&quot;: &quot;1&quot;,
-  &quot;categorias_id&quot;: &quot;1&quot;,
-  &quot;descripcion&quot;: &quot;Desc6AHD5&quot;
+  &quot;limite_views&quot;: 674,
+  &quot;plataforma_id&quot;: &quot;2&quot;,
+  &quot;categorias_id&quot;: &quot;2&quot;,
+  &quot;descripcion&quot;: &quot;DeschBP&ntilde;P&quot;
 }
  
 </pre>
@@ -3432,7 +2247,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   <span class="keyword indention">&gt; When</span>
   <span class="name">method POST</span>
 
-  <span class="lead-duration duration">0.075</span>
+  <span class="lead-duration duration">0.079</span>
 
 </div>
 
@@ -3473,13 +2288,13 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
           <a>Doc string</a>
       </div>
-      <div id="msg-30" class="collapse collapsable-details">
-        <pre>01:48:35.185 [print] {
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>01:51:28.998 [print] {
   &quot;message&quot;: &quot;Torneo creado correctamente&quot;,
-  &quot;id_torneo&quot;: 677502
+  &quot;id_torneo&quot;: 593521
 }
  
 </pre>
@@ -3555,7 +2370,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   <span class="keyword indention">*</span>
   <span class="name">print requestCreate</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -3569,36 +2384,36 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
           <a>Doc string</a>
       </div>
-      <div id="msg-31" class="collapse collapsable-details">
-        <pre>01:48:35.187 [print] {
-  &quot;descripcion&quot;: &quot;Desc6AHD5&quot;,
-  &quot;videoJuegosId&quot;: &quot;2&quot;,
-  &quot;itsFree&quot;: &quot;F&quot;,
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>01:51:29.001 [print] {
+  &quot;descripcion&quot;: &quot;DeschBP&ntilde;P&quot;,
+  &quot;videoJuegosId&quot;: &quot;3&quot;,
+  &quot;itsFree&quot;: &quot;T&quot;,
   &quot;responseExpected&quot;: {
     &quot;TorneoCreadoCorrectamente&quot;: &quot;Torneo creado correctamente&quot;
   },
-  &quot;responseTime&quot;: 73,
+  &quot;responseTime&quot;: 78,
   &quot;bodyCreateUser&quot;: {
-    &quot;nombre&quot;: &quot;Test_BXbhD&quot;,
-    &quot;fecha_inicio&quot;: &quot;2025-04-18&quot;,
-    &quot;fecha_fin&quot;: &quot;2025-05-07&quot;,
-    &quot;video_juegos_id&quot;: &quot;2&quot;,
-    &quot;its_free&quot;: &quot;F&quot;,
+    &quot;nombre&quot;: &quot;Test_TiQ&ntilde;J&quot;,
+    &quot;fecha_inicio&quot;: &quot;2025-04-08&quot;,
+    &quot;fecha_fin&quot;: &quot;2025-04-12&quot;,
+    &quot;video_juegos_id&quot;: &quot;3&quot;,
+    &quot;its_free&quot;: &quot;T&quot;,
     &quot;limite_equipos&quot;: 12,
-    &quot;limite_views&quot;: 942,
-    &quot;plataforma_id&quot;: &quot;1&quot;,
-    &quot;categorias_id&quot;: &quot;1&quot;,
-    &quot;descripcion&quot;: &quot;Desc6AHD5&quot;
+    &quot;limite_views&quot;: 674,
+    &quot;plataforma_id&quot;: &quot;2&quot;,
+    &quot;categorias_id&quot;: &quot;2&quot;,
+    &quot;descripcion&quot;: &quot;DeschBP&ntilde;P&quot;
   },
   &quot;responseStatus&quot;: 200,
-  &quot;nombre&quot;: &quot;Test_BXbhD&quot;,
-  &quot;fechaFin&quot;: &quot;2025-05-07&quot;,
+  &quot;nombre&quot;: &quot;Test_TiQ&ntilde;J&quot;,
+  &quot;fechaFin&quot;: &quot;2025-04-12&quot;,
   &quot;responseHeaders&quot;: {
     &quot;Date&quot;: [
-      &quot;Thu, 20 Mar 2025 01:48:35 GMT&quot;
+      &quot;Thu, 20 Mar 2025 01:51:28 GMT&quot;
     ],
     &quot;Content-Type&quot;: [
       &quot;application/json; charset=utf-8&quot;
@@ -3610,10 +2425,10 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
       &quot;keep-alive&quot;
     ],
     &quot;etag&quot;: [
-      &quot;W/\&quot;3c-829CBihG0URCcSSDEMeXim06VJw\&quot;&quot;
+      &quot;W/\&quot;3c-QcIS/kFuAFksOj0daG0LTnBV74g\&quot;&quot;
     ],
     &quot;rndr-id&quot;: [
-      &quot;182b5111-cf88-4a1f&quot;
+      &quot;f768abcb-d93b-4d5f&quot;
     ],
     &quot;vary&quot;: [
       &quot;Accept-Encoding&quot;
@@ -3631,7 +2446,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
       &quot;cloudflare&quot;
     ],
     &quot;CF-RAY&quot;: [
-      &quot;92318c4f9e5b05d0-IAD&quot;
+      &quot;9231908ddeb329fa-ORD&quot;
     ],
     &quot;alt-svc&quot;: [
       &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
@@ -3639,51 +2454,51 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
     &quot;Set-Cookie&quot;: [
     ]
   },
-  &quot;fechaInicio&quot;: &quot;2025-04-18&quot;,
+  &quot;fechaInicio&quot;: &quot;2025-04-08&quot;,
   &quot;limiteEquipos&quot;: 12,
-  &quot;limiteViews&quot;: 942,
+  &quot;limiteViews&quot;: 674,
   &quot;response&quot;: {
     &quot;message&quot;: &quot;Torneo creado correctamente&quot;,
-    &quot;id_torneo&quot;: 677502
+    &quot;id_torneo&quot;: 593521
   },
-  &quot;categoriasId&quot;: &quot;1&quot;,
+  &quot;categoriasId&quot;: &quot;2&quot;,
   &quot;requestCreate&quot;: {
-    &quot;apodo&quot;: &quot;eAg&quot;,
+    &quot;apodo&quot;: &quot;&ntilde;ER&quot;,
     &quot;equiposIdEquipo&quot;: null,
     &quot;responseExpected&quot;: {
       &quot;responseCrearUsuario&quot;: &quot;Usuario creado correctamente&quot;
     },
-    &quot;responseTime&quot;: 468,
-    &quot;idUsuario&quot;: &quot;1202380332&quot;,
+    &quot;responseTime&quot;: 385,
+    &quot;idUsuario&quot;: &quot;1512226724&quot;,
     &quot;query&quot;: {
       &quot;id_usuario&quot;: [
-        &quot;1202380332&quot;
+        &quot;1512226724&quot;
       ],
       &quot;nombre&quot;: [
-        &quot;UsuarioJc5E                             &quot;
+        &quot;Usuariodkyi                             &quot;
       ],
       &quot;correo&quot;: [
-        &quot;testingAPI_zTZe76C5@gmail.com                               &quot;
+        &quot;testingAPI_UKqm2DUR@gmail.com                               &quot;
       ],
       &quot;contrasena&quot;: [
-        &quot;$2b$10$3i2HHKnZd8him6L6Z2nJ6uDnoCmKZtqmPbRBpiVduNJUp6VPJi2Ue                                        &quot;
+        &quot;$2b$10$VTfnQFloCs8.ddTPOcN1WOzgTYeowKQ6zWU7G.GAPmvCq0VkwqHdW                                        &quot;
       ],
       &quot;apodo&quot;: [
-        &quot;eAg                                     &quot;
+        &quot;&ntilde;ER                                     &quot;
       ],
       &quot;equipos_id_equipo&quot;: [
         null
       ]
     },
     &quot;responseStatus&quot;: 200,
-    &quot;nombre&quot;: &quot;UsuarioJc5E&quot;,
+    &quot;nombre&quot;: &quot;Usuariodkyi&quot;,
     &quot;bodyUser&quot;: {
-      &quot;correo&quot;: &quot;testingAPI_zTZe76C5@gmail.com&quot;,
-      &quot;contrasena&quot;: &quot;PSWrI9&quot;
+      &quot;correo&quot;: &quot;testingAPI_UKqm2DUR@gmail.com&quot;,
+      &quot;contrasena&quot;: &quot;PSzpGj&quot;
     },
     &quot;responseHeaders&quot;: {
       &quot;Date&quot;: [
-        &quot;Thu, 20 Mar 2025 01:48:35 GMT&quot;
+        &quot;Thu, 20 Mar 2025 01:51:28 GMT&quot;
       ],
       &quot;Content-Type&quot;: [
         &quot;application/json; charset=utf-8&quot;
@@ -3695,10 +2510,10 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
         &quot;keep-alive&quot;
       ],
       &quot;etag&quot;: [
-        &quot;W/\&quot;132-XvwWgQDZtNRTsLqcc1ZJ6/5gpKM\&quot;&quot;
+        &quot;W/\&quot;132-CEukJjDhNgV18CmI/j3mM42wDqM\&quot;&quot;
       ],
       &quot;rndr-id&quot;: [
-        &quot;16bd8e23-eb91-431e&quot;
+        &quot;b134ce57-0f61-4fc8&quot;
       ],
       &quot;vary&quot;: [
         &quot;Accept-Encoding&quot;
@@ -3716,7 +2531,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
         &quot;cloudflare&quot;
       ],
       &quot;CF-RAY&quot;: [
-        &quot;92318c4c7a35c983-IAD&quot;
+        &quot;9231908b08d7e990-ORD&quot;
       ],
       &quot;alt-svc&quot;: [
         &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
@@ -3726,16 +2541,16 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
     },
     &quot;response&quot;: {
       &quot;message&quot;: &quot;Inicio de sesi&oacute;n exitoso&quot;,
-      &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c3VhcmlvIjoxMjAyMzgwMzMyLCJjb3JyZW8iOiJ0ZXN0aW5nQVBJX3pUWmU3NkM1QGdtYWlsLmNvbSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiLCJpYXQiOjE3NDI0MzUzMTUsImV4cCI6MTc0MjQzODkxNX0.i3ovViZBFAqdB4tC8JFfj2o36aEzvd_UOtfPPiBvqVY&quot;
+      &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c3VhcmlvIjoxNTEyMjI2NzI0LCJjb3JyZW8iOiJ0ZXN0aW5nQVBJX1VLcW0yRFVSQGdtYWlsLmNvbSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiLCJpYXQiOjE3NDI0MzU0ODgsImV4cCI6MTc0MjQzOTA4OH0.VWoVHk33Bk2oVGszHisCddq9pKjvmE37YQhaa4pTZmI&quot;
     },
-    &quot;correo&quot;: &quot;testingAPI_zTZe76C5@gmail.com&quot;,
-    &quot;contrasena&quot;: &quot;PSWrI9&quot;,
+    &quot;correo&quot;: &quot;testingAPI_UKqm2DUR@gmail.com&quot;,
+    &quot;contrasena&quot;: &quot;PSzpGj&quot;,
     &quot;requestCreate&quot;: {
-      &quot;apodo&quot;: &quot;eAg&quot;,
+      &quot;apodo&quot;: &quot;&ntilde;ER&quot;,
       &quot;equiposIdEquipo&quot;: null,
       &quot;responseHeaders&quot;: {
         &quot;Date&quot;: [
-          &quot;Thu, 20 Mar 2025 01:48:34 GMT&quot;
+          &quot;Thu, 20 Mar 2025 01:51:28 GMT&quot;
         ],
         &quot;Content-Type&quot;: [
           &quot;application/json; charset=utf-8&quot;
@@ -3750,7 +2565,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
           &quot;W/\&quot;51-/gBhgxKgCU22/TfG2RJtjeGkAro\&quot;&quot;
         ],
         &quot;rndr-id&quot;: [
-          &quot;74c4bde2-8520-4b29&quot;
+          &quot;ce25ccc5-556c-450a&quot;
         ],
         &quot;vary&quot;: [
           &quot;Accept-Encoding&quot;
@@ -3768,7 +2583,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
           &quot;cloudflare&quot;
         ],
         &quot;CF-RAY&quot;: [
-          &quot;92318c4a5afd062f-IAD&quot;
+          &quot;923190887fc0d240-ORD&quot;
         ],
         &quot;alt-svc&quot;: [
           &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
@@ -3779,29 +2594,29 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
       &quot;responseExpected&quot;: {
         &quot;responseCrearUsuario&quot;: &quot;Usuario creado correctamente&quot;
       },
-      &quot;responseTime&quot;: 327,
+      &quot;responseTime&quot;: 389,
       &quot;response&quot;: {
         &quot;message&quot;: &quot;Usuario creado&quot;,
         &quot;usuario&quot;: {
           &quot;message&quot;: &quot;Usuario creado correctamente&quot;
         }
       },
-      &quot;idUsuario&quot;: &quot;1202380332&quot;,
-      &quot;correo&quot;: &quot;testingAPI_zTZe76C5@gmail.com&quot;,
-      &quot;contrasena&quot;: &quot;PSWrI9&quot;,
+      &quot;idUsuario&quot;: &quot;1512226724&quot;,
+      &quot;correo&quot;: &quot;testingAPI_UKqm2DUR@gmail.com&quot;,
+      &quot;contrasena&quot;: &quot;PSzpGj&quot;,
       &quot;bodyCreateUser&quot;: {
-        &quot;id_usuario&quot;: &quot;1202380332&quot;,
-        &quot;nombre&quot;: &quot;UsuarioJc5E&quot;,
-        &quot;correo&quot;: &quot;testingAPI_zTZe76C5@gmail.com&quot;,
-        &quot;contrasena&quot;: &quot;PSWrI9&quot;,
-        &quot;apodo&quot;: &quot;eAg&quot;,
+        &quot;id_usuario&quot;: &quot;1512226724&quot;,
+        &quot;nombre&quot;: &quot;Usuariodkyi&quot;,
+        &quot;correo&quot;: &quot;testingAPI_UKqm2DUR@gmail.com&quot;,
+        &quot;contrasena&quot;: &quot;PSzpGj&quot;,
+        &quot;apodo&quot;: &quot;&ntilde;ER&quot;,
         &quot;equipos_id_equipo&quot;: null
       },
       &quot;responseStatus&quot;: 201,
-      &quot;nombre&quot;: &quot;UsuarioJc5E&quot;
+      &quot;nombre&quot;: &quot;Usuariodkyi&quot;
     }
   },
-  &quot;plataformaId&quot;: &quot;1&quot;
+  &quot;plataformaId&quot;: &quot;2&quot;
 }
  
 </pre>
@@ -3850,7 +2665,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   <span class="keyword indention">*</span>
   <span class="name">def fecha_fin_new = null</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -3945,11 +2760,11 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
           <a>Doc string</a>
       </div>
-      <div id="msg-32" class="collapse collapsable-details">
-        <pre>01:48:35.192 [print] {
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>01:51:29.004 [print] {
   &quot;fecha_inicio&quot;: &quot;2025-02-02&quot;,
   &quot;fecha_fin&quot;: null,
   &quot;descripcion&quot;: &quot;BUENAS&quot;
@@ -3974,7 +2789,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   <span class="keyword indention">*</span>
   <span class="name">path '/update/'+ requestCreate.response.id_torneo</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -4055,7 +2870,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   <span class="keyword indention">When</span>
   <span class="name">method PUT</span>
 
-  <span class="lead-duration duration">0.062</span>
+  <span class="lead-duration duration">0.084</span>
 
 </div>
 
@@ -4096,11 +2911,11 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-33">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
           <a>Doc string</a>
       </div>
-      <div id="msg-33" class="collapse collapsable-details">
-        <pre>01:48:35.258 [print] {
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>01:51:29.090 [print] {
   &quot;error&quot;: &quot;La fecha de inicio no puede ser menor a la fecha actual&quot;
 }
  
@@ -4123,7 +2938,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   <span class="keyword indention">And</span>
   <span class="name">status 200</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -4134,11 +2949,11 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-34">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-16">
           <a>status</a>
       </div>
-      <div id="msg-34" class="collapse collapsable-details  in ">
-        <pre>status code was: 400, expected: 200, response time in milliseconds: 61, url: https://assesmenttorneos.onrender.com/torneos/update/677502, response: 
+      <div id="msg-16" class="collapse collapsable-details  in ">
+        <pre>status code was: 400, expected: 200, response time in milliseconds: 83, url: https://assesmenttorneos.onrender.com/torneos/update/593521, response: 
 {&quot;error&quot;:&quot;La fecha de inicio no puede ser menor a la fecha actual&quot;}
 src/test/resources/features/torneos/torneosConToken.feature:57</pre>
       </div>
@@ -4150,13 +2965,13 @@ src/test/resources/features/torneos/torneosConToken.feature:57</pre>
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
           <a>Doc string</a>
       </div>
-      <div id="msg-35" class="collapse collapsable-details">
-        <pre>01:48:35.258 src/test/resources/features/torneos/torneosConToken.feature:57
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>01:51:29.098 src/test/resources/features/torneos/torneosConToken.feature:57
 And status 200
-status code was: 400, expected: 200, response time in milliseconds: 61, url: https://assesmenttorneos.onrender.com/torneos/update/677502, response: 
+status code was: 400, expected: 200, response time in milliseconds: 83, url: https://assesmenttorneos.onrender.com/torneos/update/593521, response: 
 {&quot;error&quot;:&quot;La fecha de inicio no puede ser menor a la fecha actual&quot;}
 src/test/resources/features/torneos/torneosConToken.feature:57
 </pre>

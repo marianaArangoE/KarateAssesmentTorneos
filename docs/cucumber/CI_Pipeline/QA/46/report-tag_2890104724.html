@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>test paralleltest in API torneo</td>
-      <td>20 Mar 2025, 01:48</td>
+      <td>20 Mar 2025, 01:51</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@TrearTorneoPorId</td>
-          <td      class="passed"    >18</td>
-          <td      class="failed"    >3</td>
-          <td     class="skipped"   >6</td>
+          <td      class="passed"    >27</td>
+          <td >0</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">27</td>
 
+          <td  class="passed"    >3</td>
           <td >0</td>
-          <td  class="failed"    >3</td>
           <td class="total">3</td>
 
-          <td class="duration" data-value="315859321">0.315</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="345005193">0.345</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -182,12 +182,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.138</span>
+  <span class="lead-duration duration">0.143</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Traer informacion de un torneo por ID</span>
 
@@ -198,16 +198,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -217,7 +217,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -225,7 +225,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def query = connectionDB.getConsult(consultaSQL.RANDOM_TOURNAMENT.concatenarDato())</span>
 
-  <span class="lead-duration duration">0.025</span>
+  <span class="lead-duration duration">0.042</span>
 
 </div>
 
@@ -270,7 +270,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>01:48:32.141 [print] {
+        <pre>01:51:25.786 [print] {
   &quot;id_torneo&quot;: [
     &quot;992989&quot;
   ],
@@ -382,7 +382,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method GET</span>
 
-  <span class="lead-duration duration">0.101</span>
+  <span class="lead-duration duration">0.077</span>
 
 </div>
 
@@ -427,8 +427,19 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details">
-        <pre>01:48:32.245 [print] {
-  &quot;error&quot;: &quot;Error interno del servidor&quot;
+        <pre>01:51:25.867 [print] {
+  &quot;id_torneo&quot;: 992989,
+  &quot;video_juegos_id&quot;: 1,
+  &quot;nombre&quot;: &quot;asdasdhjasd                                                                                         &quot;,
+  &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+  &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+  &quot;its_free&quot;: &quot;T&quot;,
+  &quot;limite_equipos&quot;: 2,
+  &quot;limite_views&quot;: 20,
+  &quot;plataformas_id_plataforma&quot;: 1,
+  &quot;organizador&quot;: 232,
+  &quot;categorias_id_categoria&quot;: 1,
+  &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
 }
  
 </pre>
@@ -446,11 +457,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And failed">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">status 200</span>
 
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -459,37 +470,9 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
-          <a>status</a>
-      </div>
-      <div id="msg-5" class="collapse collapsable-details  in ">
-        <pre>status code was: 500, expected: 200, response time in milliseconds: 98, url: https://assesmenttorneos.onrender.com/torneos/992989, response: 
-{&quot;error&quot;:&quot;Error interno del servidor&quot;}
-src/test/resources/features/torneos/torneoSinToken.feature:36</pre>
-      </div>
-    </div>
-  </div>
 
 
 
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>01:48:32.255 src/test/resources/features/torneos/torneoSinToken.feature:36
-And status 200
-status code was: 500, expected: 200, response time in milliseconds: 98, url: https://assesmenttorneos.onrender.com/torneos/992989, response: 
-{&quot;error&quot;:&quot;Error interno del servidor&quot;}
-src/test/resources/features/torneos/torneoSinToken.feature:36
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -501,7 +484,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">print response</span>
 
@@ -517,6 +500,31 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>01:51:25.867 [print] {
+  &quot;id_torneo&quot;: 992989,
+  &quot;video_juegos_id&quot;: 1,
+  &quot;nombre&quot;: &quot;asdasdhjasd                                                                                         &quot;,
+  &quot;fecha_inicio&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+  &quot;fecha_fin&quot;: &quot;2025-04-12T00:00:00.000Z&quot;,
+  &quot;its_free&quot;: &quot;T&quot;,
+  &quot;limite_equipos&quot;: 2,
+  &quot;limite_views&quot;: 20,
+  &quot;plataformas_id_plataforma&quot;: 1,
+  &quot;organizador&quot;: 232,
+  &quot;categorias_id_categoria&quot;: 1,
+  &quot;descripcion&quot;: &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -528,11 +536,11 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">match response.nombre == query.nombre[0]</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.019</span>
 
 </div>
 
@@ -577,12 +585,12 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 </div>
 
 
-  <span class="lead-duration duration">0.086</span>
+  <span class="lead-duration duration">0.099</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Traer informacion de un torneo por ID</span>
 
@@ -593,16 +601,16 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details  in ">
+  <div id="element-6" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-8">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -612,7 +620,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -620,7 +628,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   <span class="keyword indention">*</span>
   <span class="name">def query = connectionDB.getConsult(consultaSQL.RANDOM_TOURNAMENT.concatenarDato())</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.019</span>
 
 </div>
 
@@ -661,46 +669,46 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
           <a>Doc string</a>
       </div>
-      <div id="msg-9" class="collapse collapsable-details">
-        <pre>01:48:32.279 [print] {
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>01:51:25.920 [print] {
   &quot;id_torneo&quot;: [
-    &quot;527049&quot;
+    &quot;659646&quot;
   ],
   &quot;video_juegos_id&quot;: [
     &quot;1&quot;
   ],
   &quot;nombre&quot;: [
-    &quot;Momotea Tournament                                                                                  &quot;
+    &quot;momote tournament                                                                                   &quot;
   ],
   &quot;fecha_inicio&quot;: [
-    &quot;2025-04-12&quot;
+    &quot;2025-02-02&quot;
   ],
   &quot;fecha_fin&quot;: [
-    &quot;2025-04-12&quot;
+    &quot;2025-02-02&quot;
   ],
   &quot;its_free&quot;: [
-    &quot;T&quot;
+    &quot;t&quot;
   ],
   &quot;limite_equipos&quot;: [
     &quot;2&quot;
   ],
   &quot;limite_views&quot;: [
-    &quot;20&quot;
+    &quot;21&quot;
   ],
   &quot;plataformas_id_plataforma&quot;: [
     &quot;1&quot;
   ],
   &quot;organizador&quot;: [
-    &quot;100000000&quot;
+    &quot;2&quot;
   ],
   &quot;categorias_id_categoria&quot;: [
     &quot;1&quot;
   ],
   &quot;descripcion&quot;: [
-    &quot;Gatutu and Pengui love Momotea                                                                                                                                                                          &quot;
+    &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
   ]
 }
  
@@ -777,7 +785,86 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   <span class="keyword indention">When</span>
   <span class="name">method GET</span>
 
-  <span class="lead-duration duration">0.075</span>
+  <span class="lead-duration duration">0.077</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>01:51:25.999 [print] {
+  &quot;id_torneo&quot;: 659646,
+  &quot;video_juegos_id&quot;: 1,
+  &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+  &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+  &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+  &quot;its_free&quot;: &quot;t&quot;,
+  &quot;limite_equipos&quot;: 2,
+  &quot;limite_views&quot;: 21,
+  &quot;plataformas_id_plataforma&quot;: 1,
+  &quot;organizador&quot;: 2,
+  &quot;categorias_id_categoria&quot;: 1,
+  &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -822,8 +909,19 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
           <a>Doc string</a>
       </div>
       <div id="msg-10" class="collapse collapsable-details">
-        <pre>01:48:32.356 [print] {
-  &quot;error&quot;: &quot;Error interno del servidor&quot;
+        <pre>01:51:25.999 [print] {
+  &quot;id_torneo&quot;: 659646,
+  &quot;video_juegos_id&quot;: 1,
+  &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+  &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+  &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+  &quot;its_free&quot;: &quot;t&quot;,
+  &quot;limite_equipos&quot;: 2,
+  &quot;limite_views&quot;: 21,
+  &quot;plataformas_id_plataforma&quot;: 1,
+  &quot;organizador&quot;: 2,
+  &quot;categorias_id_categoria&quot;: 1,
+  &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
 }
  
 </pre>
@@ -841,89 +939,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
       <div class="step">
 
 
-<div class="brief step-name-And failed">
-  <span class="keyword indention">And</span>
-  <span class="name">status 200</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-11">
-          <a>status</a>
-      </div>
-      <div id="msg-11" class="collapse collapsable-details  in ">
-        <pre>status code was: 500, expected: 200, response time in milliseconds: 74, url: https://assesmenttorneos.onrender.com/torneos/527049, response: 
-{&quot;error&quot;:&quot;Error interno del servidor&quot;}
-src/test/resources/features/torneos/torneoSinToken.feature:36</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-12" class="collapse collapsable-details">
-        <pre>01:48:32.357 src/test/resources/features/torneos/torneoSinToken.feature:36
-And status 200
-status code was: 500, expected: 200, response time in milliseconds: 74, url: https://assesmenttorneos.onrender.com/torneos/527049, response: 
-{&quot;error&quot;:&quot;Error interno del servidor&quot;}
-src/test/resources/features/torneos/torneoSinToken.feature:36
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* skipped">
-  <span class="keyword indention">*</span>
-  <span class="name">print response</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">match response.nombre == query.nombre[0]</span>
 
@@ -972,12 +988,12 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 </div>
 
 
-  <span class="lead-duration duration">0.091</span>
+  <span class="lead-duration duration">0.101</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Traer informacion de un torneo por ID</span>
 
@@ -988,16 +1004,16 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   </span>
   <div class="description indention"></div>
 
-  <div id="element-13" class="collapse collapsable-details  in ">
+  <div id="element-11" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-14">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1007,7 +1023,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
   </div>
 
-  <div id="steps-14" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1015,7 +1031,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   <span class="keyword indention">*</span>
   <span class="name">def query = connectionDB.getConsult(consultaSQL.RANDOM_TOURNAMENT.concatenarDato())</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.020</span>
 
 </div>
 
@@ -1056,25 +1072,25 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
           <a>Doc string</a>
       </div>
-      <div id="msg-15" class="collapse collapsable-details">
-        <pre>01:48:32.380 [print] {
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>01:51:26.038 [print] {
   &quot;id_torneo&quot;: [
-    &quot;123&quot;
+    &quot;781870&quot;
   ],
   &quot;video_juegos_id&quot;: [
-    &quot;3&quot;
+    &quot;1&quot;
   ],
   &quot;nombre&quot;: [
-    &quot;LOVE                                                                                                &quot;
+    &quot;momote tournament                                                                                   &quot;
   ],
   &quot;fecha_inicio&quot;: [
-    &quot;2027-02-01&quot;
+    &quot;2025-02-02&quot;
   ],
   &quot;fecha_fin&quot;: [
-    &quot;2027-02-01&quot;
+    &quot;2025-02-02&quot;
   ],
   &quot;its_free&quot;: [
     &quot;t&quot;
@@ -1083,19 +1099,19 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
     &quot;2&quot;
   ],
   &quot;limite_views&quot;: [
-    &quot;20&quot;
+    &quot;21&quot;
   ],
   &quot;plataformas_id_plataforma&quot;: [
-    &quot;3&quot;
+    &quot;1&quot;
   ],
   &quot;organizador&quot;: [
-    &quot;1001360166&quot;
+    &quot;2&quot;
   ],
   &quot;categorias_id_categoria&quot;: [
     &quot;1&quot;
   ],
   &quot;descripcion&quot;: [
-    &quot;No se que poner                                                                                                                                                                                         &quot;
+    &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
   ]
 }
  
@@ -1172,7 +1188,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
   <span class="keyword indention">When</span>
   <span class="name">method GET</span>
 
-  <span class="lead-duration duration">0.080</span>
+  <span class="lead-duration duration">0.078</span>
 
 </div>
 
@@ -1213,12 +1229,23 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
           <a>Doc string</a>
       </div>
-      <div id="msg-16" class="collapse collapsable-details">
-        <pre>01:48:32.463 [print] {
-  &quot;error&quot;: &quot;Error interno del servidor&quot;
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>01:51:26.118 [print] {
+  &quot;id_torneo&quot;: 781870,
+  &quot;video_juegos_id&quot;: 1,
+  &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+  &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+  &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+  &quot;its_free&quot;: &quot;t&quot;,
+  &quot;limite_equipos&quot;: 2,
+  &quot;limite_views&quot;: 21,
+  &quot;plataformas_id_plataforma&quot;: 1,
+  &quot;organizador&quot;: 2,
+  &quot;categorias_id_categoria&quot;: 1,
+  &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
 }
  
 </pre>
@@ -1236,7 +1263,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
       <div class="step">
 
 
-<div class="brief step-name-And failed">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">status 200</span>
 
@@ -1249,37 +1276,9 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-17">
-          <a>status</a>
-      </div>
-      <div id="msg-17" class="collapse collapsable-details  in ">
-        <pre>status code was: 500, expected: 200, response time in milliseconds: 79, url: https://assesmenttorneos.onrender.com/torneos/123, response: 
-{&quot;error&quot;:&quot;Error interno del servidor&quot;}
-src/test/resources/features/torneos/torneoSinToken.feature:36</pre>
-      </div>
-    </div>
-  </div>
 
 
 
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-18" class="collapse collapsable-details">
-        <pre>01:48:32.463 src/test/resources/features/torneos/torneoSinToken.feature:36
-And status 200
-status code was: 500, expected: 200, response time in milliseconds: 79, url: https://assesmenttorneos.onrender.com/torneos/123, response: 
-{&quot;error&quot;:&quot;Error interno del servidor&quot;}
-src/test/resources/features/torneos/torneoSinToken.feature:36
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -1291,7 +1290,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">print response</span>
 
@@ -1307,6 +1306,31 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>01:51:26.118 [print] {
+  &quot;id_torneo&quot;: 781870,
+  &quot;video_juegos_id&quot;: 1,
+  &quot;nombre&quot;: &quot;momote tournament                                                                                   &quot;,
+  &quot;fecha_inicio&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+  &quot;fecha_fin&quot;: &quot;2025-02-02T00:00:00.000Z&quot;,
+  &quot;its_free&quot;: &quot;t&quot;,
+  &quot;limite_equipos&quot;: 2,
+  &quot;limite_views&quot;: 21,
+  &quot;plataformas_id_plataforma&quot;: 1,
+  &quot;organizador&quot;: 2,
+  &quot;categorias_id_categoria&quot;: 1,
+  &quot;descripcion&quot;: &quot;gatutu and pengui love momotea                                                                                                                                                                          &quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1318,7 +1342,7 @@ src/test/resources/features/torneos/torneoSinToken.feature:36
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">match response.nombre == query.nombre[0]</span>
 
