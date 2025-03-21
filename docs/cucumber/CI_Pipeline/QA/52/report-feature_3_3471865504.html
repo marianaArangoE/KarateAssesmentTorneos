@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Tag: @Usuario</title>
+<title>Cucumber Reports  - Feature: src/test/resources/features/usuarios/usuarios.feature</title>
 
 </head>
 <body>
@@ -73,8 +73,8 @@ $(document).ready(function() {
   </thead>
   <tbody>
     <tr class="info">
-      <td>test paralleltest in Colombia</td>
-      <td>19 Mar 2025, 16:24</td>
+      <td>test paralleltest in API torneo</td>
+      <td>21 Mar 2025, 19:49</td>
     </tr>
   </tbody>
 </table>
@@ -87,7 +87,7 @@ $(document).ready(function() {
 
 <div id="report-lead" class="container-fluid">
   <div class="col-md-10 col-md-offset-1">
-    <h2>Tag Report</h2>
+    <h2>Feature Report</h2>
   </div>
 </div>
 
@@ -106,7 +106,7 @@ $(document).ready(function() {
     <th colspan="2">Features</th>
   </tr>
   <tr>
-    <th>Tag</th>
+    <th>Feature</th>
     <th class="passed">Passed</th>
     <th class="failed">Failed</th>
     <th class="skipped">Skipped</th>
@@ -126,19 +126,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">@Usuario</td>
-          <td      class="passed"    >195</td>
+          <td class="tagname">src/test/resources/features/usuarios/usuarios.feature</td>
+          <td      class="passed"    >186</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">195</td>
+          <td class="total">186</td>
 
-          <td  class="passed"    >7</td>
+          <td  class="passed"    >6</td>
           <td >0</td>
-          <td class="total">7</td>
+          <td class="total">6</td>
 
-          <td class="duration" data-value="4486372203">4.486</td>
+          <td class="duration" data-value="4282643197">4.282</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -165,31 +165,40 @@ $(document).ready(function() {
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <div class="elements">
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_3471865504.html">src/test/resources/features/usuarios/usuarios.feature</a>
-    </div>
-
+      <div class="feature">
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_3550003917.html">@Usuario</a>
-       <a href="report-tag_1925730239.html">@CrearUsuario&amp;Eliminar</a>
 </div>
 
 
-  <span class="lead-duration duration">1.374</span>
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">src/test/resources/features/usuarios/usuarios.feature</span>
+
+
+</div>
+
+        <div class="description indention">validacion de los usuarios</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
 <div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Crear usuario y eliminarlo de la base de datos</span>
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -223,9 +232,147 @@ $(document).ready(function() {
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path usuarios</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseExpected = read('classpath:assets/usuarios/responseUsuarios.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3550003917.html">@Usuario</a>
+       <a href="report-tag_1925730239.html">@CrearUsuario&amp;Eliminar</a>
+</div>
+
+
+  <span class="lead-duration duration">1.263</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Crear usuario y eliminarlo de la base de datos</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
   <span class="name">def idUsuario = dataRandom.getRandomNumberDocumentCO()</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -252,7 +399,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def nombre = 'Usuario'+dataRandom.generateRandomString(4)</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -279,7 +426,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def correo =  dataRandom.generateRandomEmail()</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -306,7 +453,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def contrasena = 'PS'+dataRandom.generateRandomString(4)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -360,7 +507,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def equiposIdEquipo =  null</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -387,7 +534,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def requestCreate = call read('classpath:features/usuarios/usuarios.feature@CrearUsuarioRequest'){idUsuario:#(idUsuario),nombre:#(nombre),correo:#(correo),contrasena:#(contrasena),apodo:#(apodo),equiposIdEquipo:#(equiposIdEquipo)}</span>
 
-  <span class="lead-duration duration">0.640</span>
+  <span class="lead-duration duration">0.556</span>
 
 </div>
 
@@ -520,36 +667,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def idUsuario = karate.get('idUsuario',dataRandom.getRandomNumberDocumentCO())</span>
+  <span class="name">def idUsuario = karate.get('idUsuario')</span>
 
-  <span class="lead-duration duration">0.002</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def nombre =  karate.get('nombre','Usuario'+dataRandom.generateRandomString(4))</span>
-
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -574,36 +694,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def correo =  karate.get('correo',dataRandom.generateRandomEmail())</span>
+  <span class="name">def nombre =  karate.get('nombre')</span>
 
-  <span class="lead-duration duration">0.003</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def contrasena =  karate.get('contrasena','PS'+dataRandom.generateRandomString(4))</span>
-
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -628,9 +721,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def apodo =  karate.get('apodo',dataRandom.generateRandomString(3))</span>
+  <span class="name">def correo =  karate.get('correo')</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -655,9 +748,63 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def equiposIdEquipo =  karate.get('equiposIdEquipo',null)</span>
+  <span class="name">def contrasena =  karate.get('contrasena')</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def apodo =  karate.get('apodo')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def equiposIdEquipo =  connectionDB.getConsult(consultaSQL.RANDOM_EQUIPO.concatenarDato()).id_equipo[0]</span>
+
+  <span class="lead-duration duration">0.072</span>
 
 </div>
 
@@ -684,7 +831,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">print idUsuario</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -698,11 +845,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
           <a>Doc string</a>
       </div>
-      <div id="msg-3" class="collapse collapsable-details">
-        <pre>16:24:22.951 [print] 1311703791 
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>19:49:23.497 [print] 1032125089 
 </pre>
       </div>
     </div>
@@ -722,7 +869,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def bodyCreateUser = read('classpath:assets/usuarios/crearUsuario.json')</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -749,7 +896,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">print bodyCreateUser</span>
 
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -763,17 +910,17 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
           <a>Doc string</a>
       </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>16:24:22.961 [print] {
-  &quot;id_usuario&quot;: &quot;1311703791&quot;,
-  &quot;nombre&quot;: &quot;Usuariob3Rq&quot;,
-  &quot;correo&quot;: &quot;testingAPI_6se7t695@gmail.com&quot;,
-  &quot;contrasena&quot;: &quot;PSj4EO&quot;,
-  &quot;apodo&quot;: &quot;t1p&quot;,
-  &quot;equipos_id_equipo&quot;: null
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>19:49:23.498 [print] {
+  &quot;id_usuario&quot;: &quot;1032125089&quot;,
+  &quot;nombre&quot;: &quot;UsuariohX13&quot;,
+  &quot;correo&quot;: &quot;testingAPI_cyHD3n&Ntilde;i@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PS&Ntilde;4&ntilde;r&quot;,
+  &quot;apodo&quot;: &quot;0zK&quot;,
+  &quot;equipos_id_equipo&quot;: &quot;414686&quot;
 }
  
 </pre>
@@ -822,7 +969,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method POST</span>
 
-  <span class="lead-duration duration">0.578</span>
+  <span class="lead-duration duration">0.472</span>
 
 </div>
 
@@ -849,7 +996,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -863,11 +1010,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
           <a>Doc string</a>
       </div>
-      <div id="msg-5" class="collapse collapsable-details">
-        <pre>16:24:23.542 [print] {
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>19:49:23.971 [print] {
   &quot;message&quot;: &quot;Usuario creado&quot;,
   &quot;usuario&quot;: {
     &quot;message&quot;: &quot;Usuario creado correctamente&quot;
@@ -893,7 +1040,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">print requestCreate</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -907,16 +1054,16 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
           <a>Doc string</a>
       </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>16:24:23.547 [print] {
-  &quot;apodo&quot;: &quot;t1p&quot;,
-  &quot;equiposIdEquipo&quot;: null,
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>19:49:23.973 [print] {
+  &quot;apodo&quot;: &quot;0zK&quot;,
+  &quot;equiposIdEquipo&quot;: &quot;414686&quot;,
   &quot;responseHeaders&quot;: {
     &quot;Date&quot;: [
-      &quot;Wed, 19 Mar 2025 16:24:23 GMT&quot;
+      &quot;Fri, 21 Mar 2025 19:49:23 GMT&quot;
     ],
     &quot;Content-Type&quot;: [
       &quot;application/json; charset=utf-8&quot;
@@ -931,7 +1078,7 @@ $(document).ready(function() {
       &quot;W/\&quot;51-/gBhgxKgCU22/TfG2RJtjeGkAro\&quot;&quot;
     ],
     &quot;rndr-id&quot;: [
-      &quot;cc549494-6c42-45f8&quot;
+      &quot;c1336209-f4ac-4c50&quot;
     ],
     &quot;vary&quot;: [
       &quot;Accept-Encoding&quot;
@@ -949,7 +1096,7 @@ $(document).ready(function() {
       &quot;cloudflare&quot;
     ],
     &quot;CF-RAY&quot;: [
-      &quot;922e51d8899ceac7-ORD&quot;
+      &quot;923ff8e5fa3ccf26-SJC&quot;
     ],
     &quot;alt-svc&quot;: [
       &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
@@ -960,26 +1107,26 @@ $(document).ready(function() {
   &quot;responseExpected&quot;: {
     &quot;responseCrearUsuario&quot;: &quot;Usuario creado correctamente&quot;
   },
-  &quot;responseTime&quot;: 477,
+  &quot;responseTime&quot;: 471,
   &quot;response&quot;: {
     &quot;message&quot;: &quot;Usuario creado&quot;,
     &quot;usuario&quot;: {
       &quot;message&quot;: &quot;Usuario creado correctamente&quot;
     }
   },
-  &quot;idUsuario&quot;: &quot;1311703791&quot;,
-  &quot;correo&quot;: &quot;testingAPI_6se7t695@gmail.com&quot;,
-  &quot;contrasena&quot;: &quot;PSj4EO&quot;,
+  &quot;idUsuario&quot;: &quot;1032125089&quot;,
+  &quot;correo&quot;: &quot;testingAPI_cyHD3n&Ntilde;i@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PS&Ntilde;4&ntilde;r&quot;,
   &quot;bodyCreateUser&quot;: {
-    &quot;id_usuario&quot;: &quot;1311703791&quot;,
-    &quot;nombre&quot;: &quot;Usuariob3Rq&quot;,
-    &quot;correo&quot;: &quot;testingAPI_6se7t695@gmail.com&quot;,
-    &quot;contrasena&quot;: &quot;PSj4EO&quot;,
-    &quot;apodo&quot;: &quot;t1p&quot;,
-    &quot;equipos_id_equipo&quot;: null
+    &quot;id_usuario&quot;: &quot;1032125089&quot;,
+    &quot;nombre&quot;: &quot;UsuariohX13&quot;,
+    &quot;correo&quot;: &quot;testingAPI_cyHD3n&Ntilde;i@gmail.com&quot;,
+    &quot;contrasena&quot;: &quot;PS&Ntilde;4&ntilde;r&quot;,
+    &quot;apodo&quot;: &quot;0zK&quot;,
+    &quot;equipos_id_equipo&quot;: &quot;414686&quot;
   },
   &quot;responseStatus&quot;: 201,
-  &quot;nombre&quot;: &quot;Usuariob3Rq&quot;
+  &quot;nombre&quot;: &quot;UsuariohX13&quot;
 }
  
 </pre>
@@ -1001,7 +1148,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match requestCreate.responseStatus == 201</span>
 
-  <span class="lead-duration duration">0.017</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1028,7 +1175,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match requestCreate.response.usuario.message == responseExpected.responseCrearUsuario</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1055,119 +1202,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def query = connectionDB.getConsult(consultaSQL.CONSULT_USER_BY_ID.concatenarDato(idUsuario))</span>
 
-  <span class="lead-duration duration">0.036</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">print query</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-7" class="collapse collapsable-details">
-        <pre>16:24:23.605 [print] {
-  &quot;id_usuario&quot;: [
-    &quot;1311703791&quot;
-  ],
-  &quot;nombre&quot;: [
-    &quot;Usuariob3Rq                             &quot;
-  ],
-  &quot;correo&quot;: [
-    &quot;testingAPI_6se7t695@gmail.com                               &quot;
-  ],
-  &quot;contrasena&quot;: [
-    &quot;$2b$10$WhZpVni9JRzHJJ87gQv4D.RFNMTHMb8WFDzBf/EAwmux2OYS429J6                                        &quot;
-  ],
-  &quot;apodo&quot;: [
-    &quot;t1p                                     &quot;
-  ],
-  &quot;equipos_id_equipo&quot;: [
-    null
-  ]
-}
- 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">assert query.id_usuario.length == 1</span>
-
-  <span class="lead-duration duration">0.006</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def query = connectionDB.getConsult(consultaSQL.DELETE_USER_TEST.concatenarDato(idUsuario))</span>
-
-  <span class="lead-duration duration">0.037</span>
+  <span class="lead-duration duration">0.072</span>
 
 </div>
 
@@ -1208,11 +1243,123 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
           <a>Doc string</a>
       </div>
-      <div id="msg-8" class="collapse collapsable-details">
-        <pre>16:24:23.649 [print] {
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>19:49:24.047 [print] {
+  &quot;id_usuario&quot;: [
+    &quot;1032125089&quot;
+  ],
+  &quot;nombre&quot;: [
+    &quot;UsuariohX13                             &quot;
+  ],
+  &quot;correo&quot;: [
+    &quot;testingAPI_cyHD3n&Ntilde;i@gmail.com                               &quot;
+  ],
+  &quot;contrasena&quot;: [
+    &quot;$2b$10$VQbeRH2sG2GgHV5sP3eX6.XIoDG7Jyk/QMB8s2FsoaQ1qCuqDEH2K                                        &quot;
+  ],
+  &quot;apodo&quot;: [
+    &quot;0zK                                     &quot;
+  ],
+  &quot;equipos_id_equipo&quot;: [
+    &quot;414686&quot;
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert query.id_usuario.length == 1</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = connectionDB.getConsult(consultaSQL.DELETE_USER_TEST.concatenarDato(idUsuario))</span>
+
+  <span class="lead-duration duration">0.083</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print query</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>19:49:24.131 [print] {
 }
  
 </pre>
@@ -1239,10 +1386,141 @@ $(document).ready(function() {
 
 
 <div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_3471865504.html">src/test/resources/features/usuarios/usuarios.feature</a>
-    </div>
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path usuarios</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseExpected = read('classpath:assets/usuarios/responseUsuarios.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
 
 
 <div class="tags indention">
@@ -1255,7 +1533,7 @@ $(document).ready(function() {
   <span class="lead-duration duration">0.356</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -1268,14 +1546,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-9" class="collapse collapsable-details ">
+  <div id="element-13" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1287,7 +1565,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-10" class="inner-level collapse collapsable-details ">
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1349,7 +1627,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def correo =  dataRandom.generateRandomEmail()</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1457,7 +1735,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def requestCreate = call read('classpath:features/usuarios/usuarios.feature@CrearUsuarioRequest'){idUsuario:#(idUsuario),nombre:#(nombre),correo:#(correo),contrasena:#(contrasena),apodo:#(apodo),equiposIdEquipo:#(equiposIdEquipo)}</span>
 
-  <span class="lead-duration duration">0.184</span>
+  <span class="lead-duration duration">0.182</span>
 
 </div>
 
@@ -1590,144 +1868,144 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def idUsuario = karate.get('idUsuario',dataRandom.getRandomNumberDocumentCO())</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def nombre =  karate.get('nombre','Usuario'+dataRandom.generateRandomString(4))</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def correo =  karate.get('correo',dataRandom.generateRandomEmail())</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def contrasena =  karate.get('contrasena','PS'+dataRandom.generateRandomString(4))</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def apodo =  karate.get('apodo',dataRandom.generateRandomString(3))</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def equiposIdEquipo =  karate.get('equiposIdEquipo',null)</span>
+  <span class="name">def idUsuario = karate.get('idUsuario')</span>
 
   <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def nombre =  karate.get('nombre')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def correo =  karate.get('correo')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def contrasena =  karate.get('contrasena')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def apodo =  karate.get('apodo')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def equiposIdEquipo =  connectionDB.getConsult(consultaSQL.RANDOM_EQUIPO.concatenarDato()).id_equipo[0]</span>
+
+  <span class="lead-duration duration">0.072</span>
 
 </div>
 
@@ -1768,11 +2046,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
           <a>Doc string</a>
       </div>
-      <div id="msg-11" class="collapse collapsable-details">
-        <pre>16:24:23.708 [print]  
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>19:49:24.223 [print]  
 </pre>
       </div>
     </div>
@@ -1792,7 +2070,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def bodyCreateUser = read('classpath:assets/usuarios/crearUsuario.json')</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1819,7 +2097,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">print bodyCreateUser</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1833,17 +2111,17 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
           <a>Doc string</a>
       </div>
-      <div id="msg-12" class="collapse collapsable-details">
-        <pre>16:24:23.712 [print] {
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>19:49:24.224 [print] {
   &quot;id_usuario&quot;: &quot;&quot;,
-  &quot;nombre&quot;: &quot;UsuarioaEMb&quot;,
-  &quot;correo&quot;: &quot;testingAPI_&Ntilde;PZ8LWO&Ntilde;@gmail.com&quot;,
-  &quot;contrasena&quot;: &quot;PSOGjt&quot;,
-  &quot;apodo&quot;: &quot;fJN&quot;,
-  &quot;equipos_id_equipo&quot;: null
+  &quot;nombre&quot;: &quot;UsuariolB9I&quot;,
+  &quot;correo&quot;: &quot;testingAPI_VxGzVySw@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PS3v9I&quot;,
+  &quot;apodo&quot;: &quot;AcQ&quot;,
+  &quot;equipos_id_equipo&quot;: &quot;911085&quot;
 }
  
 </pre>
@@ -1892,7 +2170,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method POST</span>
 
-  <span class="lead-duration duration">0.148</span>
+  <span class="lead-duration duration">0.095</span>
 
 </div>
 
@@ -1919,7 +2197,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">print response</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1933,11 +2211,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
           <a>Doc string</a>
       </div>
-      <div id="msg-13" class="collapse collapsable-details">
-        <pre>16:24:23.863 [print] {
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>19:49:24.320 [print] {
   &quot;error&quot;: &quot;Todos los campos son obligatorios&quot;
 }
  
@@ -1960,7 +2238,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">print requestCreate</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1974,16 +2252,16 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
           <a>Doc string</a>
       </div>
-      <div id="msg-14" class="collapse collapsable-details">
-        <pre>16:24:23.868 [print] {
-  &quot;apodo&quot;: &quot;fJN&quot;,
-  &quot;equiposIdEquipo&quot;: null,
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>19:49:24.322 [print] {
+  &quot;apodo&quot;: &quot;AcQ&quot;,
+  &quot;equiposIdEquipo&quot;: &quot;911085&quot;,
   &quot;responseHeaders&quot;: {
     &quot;Date&quot;: [
-      &quot;Wed, 19 Mar 2025 16:24:23 GMT&quot;
+      &quot;Fri, 21 Mar 2025 19:49:24 GMT&quot;
     ],
     &quot;Content-Type&quot;: [
       &quot;application/json; charset=utf-8&quot;
@@ -1998,7 +2276,7 @@ $(document).ready(function() {
       &quot;W/\&quot;2d-JhMvXvxEuk9pqkVfgn1gr/iUlPY\&quot;&quot;
     ],
     &quot;rndr-id&quot;: [
-      &quot;ecd9ea5f-943f-4707&quot;
+      &quot;13693ae4-4aab-476d&quot;
     ],
     &quot;vary&quot;: [
       &quot;Accept-Encoding&quot;
@@ -2016,7 +2294,7 @@ $(document).ready(function() {
       &quot;cloudflare&quot;
     ],
     &quot;CF-RAY&quot;: [
-      &quot;922e51dc591c2238-ORD&quot;
+      &quot;923ff8ea7bc624c9-SJC&quot;
     ],
     &quot;alt-svc&quot;: [
       &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
@@ -2027,23 +2305,23 @@ $(document).ready(function() {
   &quot;responseExpected&quot;: {
     &quot;responseCrearUsuario&quot;: &quot;Usuario creado correctamente&quot;
   },
-  &quot;responseTime&quot;: 145,
+  &quot;responseTime&quot;: 94,
   &quot;response&quot;: {
     &quot;error&quot;: &quot;Todos los campos son obligatorios&quot;
   },
   &quot;idUsuario&quot;: &quot;&quot;,
-  &quot;correo&quot;: &quot;testingAPI_&Ntilde;PZ8LWO&Ntilde;@gmail.com&quot;,
-  &quot;contrasena&quot;: &quot;PSOGjt&quot;,
+  &quot;correo&quot;: &quot;testingAPI_VxGzVySw@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PS3v9I&quot;,
   &quot;bodyCreateUser&quot;: {
     &quot;id_usuario&quot;: &quot;&quot;,
-    &quot;nombre&quot;: &quot;UsuarioaEMb&quot;,
-    &quot;correo&quot;: &quot;testingAPI_&Ntilde;PZ8LWO&Ntilde;@gmail.com&quot;,
-    &quot;contrasena&quot;: &quot;PSOGjt&quot;,
-    &quot;apodo&quot;: &quot;fJN&quot;,
-    &quot;equipos_id_equipo&quot;: null
+    &quot;nombre&quot;: &quot;UsuariolB9I&quot;,
+    &quot;correo&quot;: &quot;testingAPI_VxGzVySw@gmail.com&quot;,
+    &quot;contrasena&quot;: &quot;PS3v9I&quot;,
+    &quot;apodo&quot;: &quot;AcQ&quot;,
+    &quot;equipos_id_equipo&quot;: &quot;911085&quot;
   },
   &quot;responseStatus&quot;: 400,
-  &quot;nombre&quot;: &quot;UsuarioaEMb&quot;
+  &quot;nombre&quot;: &quot;UsuariolB9I&quot;
 }
  
 </pre>
@@ -2097,10 +2375,141 @@ $(document).ready(function() {
 
 
 <div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_3471865504.html">src/test/resources/features/usuarios/usuarios.feature</a>
-    </div>
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path usuarios</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseExpected = read('classpath:assets/usuarios/responseUsuarios.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
 
 
 <div class="tags indention">
@@ -2110,10 +2519,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.211</span>
+  <span class="lead-duration duration">0.402</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -2126,14 +2535,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-15" class="collapse collapsable-details ">
+  <div id="element-21" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -2145,7 +2554,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-16" class="inner-level collapse collapsable-details ">
+  <div id="steps-22" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -2315,7 +2724,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def requestCreate = call read('classpath:features/usuarios/usuarios.feature@CrearUsuarioRequest'){idUsuario:#(idUsuario),nombre:#(nombre),correo:#(correo),contrasena:#(contrasena),apodo:#(apodo),equiposIdEquipo:#(equiposIdEquipo)}</span>
 
-  <span class="lead-duration duration">0.111</span>
+  <span class="lead-duration duration">0.201</span>
 
 </div>
 
@@ -2448,7 +2857,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def idUsuario = karate.get('idUsuario',dataRandom.getRandomNumberDocumentCO())</span>
+  <span class="name">def idUsuario = karate.get('idUsuario')</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -2475,7 +2884,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def nombre =  karate.get('nombre','Usuario'+dataRandom.generateRandomString(4))</span>
+  <span class="name">def nombre =  karate.get('nombre')</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -2502,7 +2911,34 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def correo =  karate.get('correo',dataRandom.generateRandomEmail())</span>
+  <span class="name">def correo =  karate.get('correo')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def contrasena =  karate.get('contrasena')</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -2529,7 +2965,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def contrasena =  karate.get('contrasena','PS'+dataRandom.generateRandomString(4))</span>
+  <span class="name">def apodo =  karate.get('apodo')</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -2556,36 +2992,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def apodo =  karate.get('apodo',dataRandom.generateRandomString(3))</span>
+  <span class="name">def equiposIdEquipo =  connectionDB.getConsult(consultaSQL.RANDOM_EQUIPO.concatenarDato()).id_equipo[0]</span>
 
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def equiposIdEquipo =  karate.get('equiposIdEquipo',null)</span>
-
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.072</span>
 
 </div>
 
@@ -2626,11 +3035,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
           <a>Doc string</a>
       </div>
-      <div id="msg-17" class="collapse collapsable-details">
-        <pre>16:24:23.901 [print] 6111115 
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>19:49:24.413 [print] 1167122538 
 </pre>
       </div>
     </div>
@@ -2677,7 +3086,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">print bodyCreateUser</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -2691,17 +3100,17 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
           <a>Doc string</a>
       </div>
-      <div id="msg-18" class="collapse collapsable-details">
-        <pre>16:24:23.903 [print] {
-  &quot;id_usuario&quot;: &quot;6111115&quot;,
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>19:49:24.414 [print] {
+  &quot;id_usuario&quot;: &quot;1167122538&quot;,
   &quot;nombre&quot;: &quot;&quot;,
-  &quot;correo&quot;: &quot;testingAPI_TX4LYIy8@gmail.com&quot;,
-  &quot;contrasena&quot;: &quot;PS3SH0&quot;,
-  &quot;apodo&quot;: &quot;GpV&quot;,
-  &quot;equipos_id_equipo&quot;: null
+  &quot;correo&quot;: &quot;testingAPI_MYsoaZxy@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PS8M&ntilde;d&quot;,
+  &quot;apodo&quot;: &quot;zYM&quot;,
+  &quot;equipos_id_equipo&quot;: &quot;444&quot;
 }
  
 </pre>
@@ -2750,7 +3159,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method POST</span>
 
-  <span class="lead-duration duration">0.089</span>
+  <span class="lead-duration duration">0.114</span>
 
 </div>
 
@@ -2791,11 +3200,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
           <a>Doc string</a>
       </div>
-      <div id="msg-19" class="collapse collapsable-details">
-        <pre>16:24:23.994 [print] {
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>19:49:24.529 [print] {
   &quot;error&quot;: &quot;Todos los campos son obligatorios&quot;
 }
  
@@ -2818,7 +3227,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">print requestCreate</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -2832,16 +3241,16 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
           <a>Doc string</a>
       </div>
-      <div id="msg-20" class="collapse collapsable-details">
-        <pre>16:24:23.998 [print] {
-  &quot;apodo&quot;: &quot;GpV&quot;,
-  &quot;equiposIdEquipo&quot;: null,
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>19:49:24.535 [print] {
+  &quot;apodo&quot;: &quot;zYM&quot;,
+  &quot;equiposIdEquipo&quot;: &quot;444&quot;,
   &quot;responseHeaders&quot;: {
     &quot;Date&quot;: [
-      &quot;Wed, 19 Mar 2025 16:24:23 GMT&quot;
+      &quot;Fri, 21 Mar 2025 19:49:24 GMT&quot;
     ],
     &quot;Content-Type&quot;: [
       &quot;application/json; charset=utf-8&quot;
@@ -2856,7 +3265,7 @@ $(document).ready(function() {
       &quot;W/\&quot;2d-JhMvXvxEuk9pqkVfgn1gr/iUlPY\&quot;&quot;
     ],
     &quot;rndr-id&quot;: [
-      &quot;fe1e99cc-4f19-4181&quot;
+      &quot;5150b1f9-e93d-44f6&quot;
     ],
     &quot;vary&quot;: [
       &quot;Accept-Encoding&quot;
@@ -2874,7 +3283,7 @@ $(document).ready(function() {
       &quot;cloudflare&quot;
     ],
     &quot;CF-RAY&quot;: [
-      &quot;922e51dd89fc22f9-ORD&quot;
+      &quot;923ff8ebbccb15d2-SJC&quot;
     ],
     &quot;alt-svc&quot;: [
       &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
@@ -2885,20 +3294,20 @@ $(document).ready(function() {
   &quot;responseExpected&quot;: {
     &quot;responseCrearUsuario&quot;: &quot;Usuario creado correctamente&quot;
   },
-  &quot;responseTime&quot;: 86,
+  &quot;responseTime&quot;: 113,
   &quot;response&quot;: {
     &quot;error&quot;: &quot;Todos los campos son obligatorios&quot;
   },
-  &quot;idUsuario&quot;: &quot;6111115&quot;,
-  &quot;correo&quot;: &quot;testingAPI_TX4LYIy8@gmail.com&quot;,
-  &quot;contrasena&quot;: &quot;PS3SH0&quot;,
+  &quot;idUsuario&quot;: &quot;1167122538&quot;,
+  &quot;correo&quot;: &quot;testingAPI_MYsoaZxy@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PS8M&ntilde;d&quot;,
   &quot;bodyCreateUser&quot;: {
-    &quot;id_usuario&quot;: &quot;6111115&quot;,
+    &quot;id_usuario&quot;: &quot;1167122538&quot;,
     &quot;nombre&quot;: &quot;&quot;,
-    &quot;correo&quot;: &quot;testingAPI_TX4LYIy8@gmail.com&quot;,
-    &quot;contrasena&quot;: &quot;PS3SH0&quot;,
-    &quot;apodo&quot;: &quot;GpV&quot;,
-    &quot;equipos_id_equipo&quot;: null
+    &quot;correo&quot;: &quot;testingAPI_MYsoaZxy@gmail.com&quot;,
+    &quot;contrasena&quot;: &quot;PS8M&ntilde;d&quot;,
+    &quot;apodo&quot;: &quot;zYM&quot;,
+    &quot;equipos_id_equipo&quot;: &quot;444&quot;
   },
   &quot;responseStatus&quot;: 400,
   &quot;nombre&quot;: &quot;&quot;
@@ -2922,6 +3331,141 @@ $(document).ready(function() {
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">match requestCreate.responseStatus == 400</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.001</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-27">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-27" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-28">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-28" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path usuarios</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseExpected = read('classpath:assets/usuarios/responseUsuarios.json')</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -2955,10 +3499,6 @@ $(document).ready(function() {
 
 
 <div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_3471865504.html">src/test/resources/features/usuarios/usuarios.feature</a>
-    </div>
 
 
 <div class="tags indention">
@@ -2968,10 +3508,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.180</span>
+  <span class="lead-duration duration">0.407</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-29">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -2984,14 +3524,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-21" class="collapse collapsable-details ">
+  <div id="element-29" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-30">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -3003,7 +3543,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-22" class="inner-level collapse collapsable-details ">
+  <div id="steps-30" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -3092,7 +3632,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def contrasena = 'PS'+dataRandom.generateRandomString(4)</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -3173,7 +3713,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def requestCreate = call read('classpath:features/usuarios/usuarios.feature@CrearUsuarioRequest'){idUsuario:#(idUsuario),nombre:#(nombre),correo:#(correo),contrasena:#(contrasena),apodo:#(apodo),equiposIdEquipo:#(equiposIdEquipo)}</span>
 
-  <span class="lead-duration duration">0.095</span>
+  <span class="lead-duration duration">0.207</span>
 
 </div>
 
@@ -3306,7 +3846,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def idUsuario = karate.get('idUsuario',dataRandom.getRandomNumberDocumentCO())</span>
+  <span class="name">def idUsuario = karate.get('idUsuario')</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -3333,7 +3873,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def nombre =  karate.get('nombre','Usuario'+dataRandom.generateRandomString(4))</span>
+  <span class="name">def nombre =  karate.get('nombre')</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -3360,7 +3900,34 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def correo =  karate.get('correo',dataRandom.generateRandomEmail())</span>
+  <span class="name">def correo =  karate.get('correo')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def contrasena =  karate.get('contrasena')</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -3387,7 +3954,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def contrasena =  karate.get('contrasena','PS'+dataRandom.generateRandomString(4))</span>
+  <span class="name">def apodo =  karate.get('apodo')</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -3414,36 +3981,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def apodo =  karate.get('apodo',dataRandom.generateRandomString(3))</span>
+  <span class="name">def equiposIdEquipo =  connectionDB.getConsult(consultaSQL.RANDOM_EQUIPO.concatenarDato()).id_equipo[0]</span>
 
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def equiposIdEquipo =  karate.get('equiposIdEquipo',null)</span>
-
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.073</span>
 
 </div>
 
@@ -3470,7 +4010,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">print idUsuario</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -3484,11 +4024,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
           <a>Doc string</a>
       </div>
-      <div id="msg-23" class="collapse collapsable-details">
-        <pre>16:24:24.025 [print] 45855627 
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>19:49:24.654 [print] 47781564 
 </pre>
       </div>
     </div>
@@ -3508,7 +4048,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def bodyCreateUser = read('classpath:assets/usuarios/crearUsuario.json')</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -3535,7 +4075,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">print bodyCreateUser</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -3549,17 +4089,17 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
           <a>Doc string</a>
       </div>
-      <div id="msg-24" class="collapse collapsable-details">
-        <pre>16:24:24.031 [print] {
-  &quot;id_usuario&quot;: &quot;45855627&quot;,
-  &quot;nombre&quot;: &quot;UsuarioizIt&quot;,
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>19:49:24.656 [print] {
+  &quot;id_usuario&quot;: &quot;47781564&quot;,
+  &quot;nombre&quot;: &quot;UsuariovKCe&quot;,
   &quot;correo&quot;: &quot;&quot;,
-  &quot;contrasena&quot;: &quot;PSj6qW&quot;,
-  &quot;apodo&quot;: &quot;uZv&quot;,
-  &quot;equipos_id_equipo&quot;: null
+  &quot;contrasena&quot;: &quot;PSo9oc&quot;,
+  &quot;apodo&quot;: &quot;mVF&quot;,
+  &quot;equipos_id_equipo&quot;: &quot;957262&quot;
 }
  
 </pre>
@@ -3608,7 +4148,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method POST</span>
 
-  <span class="lead-duration duration">0.070</span>
+  <span class="lead-duration duration">0.114</span>
 
 </div>
 
@@ -3649,11 +4189,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-33">
           <a>Doc string</a>
       </div>
-      <div id="msg-25" class="collapse collapsable-details">
-        <pre>16:24:24.103 [print] {
+      <div id="msg-33" class="collapse collapsable-details">
+        <pre>19:49:24.771 [print] {
   &quot;error&quot;: &quot;Todos los campos son obligatorios&quot;
 }
  
@@ -3676,7 +4216,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">print requestCreate</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -3690,16 +4230,16 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-34">
           <a>Doc string</a>
       </div>
-      <div id="msg-26" class="collapse collapsable-details">
-        <pre>16:24:24.107 [print] {
-  &quot;apodo&quot;: &quot;uZv&quot;,
-  &quot;equiposIdEquipo&quot;: null,
+      <div id="msg-34" class="collapse collapsable-details">
+        <pre>19:49:24.773 [print] {
+  &quot;apodo&quot;: &quot;mVF&quot;,
+  &quot;equiposIdEquipo&quot;: &quot;957262&quot;,
   &quot;responseHeaders&quot;: {
     &quot;Date&quot;: [
-      &quot;Wed, 19 Mar 2025 16:24:24 GMT&quot;
+      &quot;Fri, 21 Mar 2025 19:49:24 GMT&quot;
     ],
     &quot;Content-Type&quot;: [
       &quot;application/json; charset=utf-8&quot;
@@ -3714,7 +4254,7 @@ $(document).ready(function() {
       &quot;W/\&quot;2d-JhMvXvxEuk9pqkVfgn1gr/iUlPY\&quot;&quot;
     ],
     &quot;rndr-id&quot;: [
-      &quot;4069569b-18f8-4555&quot;
+      &quot;114f62cb-853e-473e&quot;
     ],
     &quot;vary&quot;: [
       &quot;Accept-Encoding&quot;
@@ -3732,7 +4272,7 @@ $(document).ready(function() {
       &quot;cloudflare&quot;
     ],
     &quot;CF-RAY&quot;: [
-      &quot;922e51de5d8e89f7-ORD&quot;
+      &quot;923ff8ed3d9f7ad6-SJC&quot;
     ],
     &quot;alt-svc&quot;: [
       &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
@@ -3743,23 +4283,23 @@ $(document).ready(function() {
   &quot;responseExpected&quot;: {
     &quot;responseCrearUsuario&quot;: &quot;Usuario creado correctamente&quot;
   },
-  &quot;responseTime&quot;: 69,
+  &quot;responseTime&quot;: 113,
   &quot;response&quot;: {
     &quot;error&quot;: &quot;Todos los campos son obligatorios&quot;
   },
-  &quot;idUsuario&quot;: &quot;45855627&quot;,
+  &quot;idUsuario&quot;: &quot;47781564&quot;,
   &quot;correo&quot;: &quot;&quot;,
-  &quot;contrasena&quot;: &quot;PSj6qW&quot;,
+  &quot;contrasena&quot;: &quot;PSo9oc&quot;,
   &quot;bodyCreateUser&quot;: {
-    &quot;id_usuario&quot;: &quot;45855627&quot;,
-    &quot;nombre&quot;: &quot;UsuarioizIt&quot;,
+    &quot;id_usuario&quot;: &quot;47781564&quot;,
+    &quot;nombre&quot;: &quot;UsuariovKCe&quot;,
     &quot;correo&quot;: &quot;&quot;,
-    &quot;contrasena&quot;: &quot;PSj6qW&quot;,
-    &quot;apodo&quot;: &quot;uZv&quot;,
-    &quot;equipos_id_equipo&quot;: null
+    &quot;contrasena&quot;: &quot;PSo9oc&quot;,
+    &quot;apodo&quot;: &quot;mVF&quot;,
+    &quot;equipos_id_equipo&quot;: &quot;957262&quot;
   },
   &quot;responseStatus&quot;: 400,
-  &quot;nombre&quot;: &quot;UsuarioizIt&quot;
+  &quot;nombre&quot;: &quot;UsuariovKCe&quot;
 }
  
 </pre>
@@ -3813,10 +4353,141 @@ $(document).ready(function() {
 
 
 <div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_3471865504.html">src/test/resources/features/usuarios/usuarios.feature</a>
-    </div>
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-35">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-35" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-36">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-36" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path usuarios</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseExpected = read('classpath:assets/usuarios/responseUsuarios.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
 
 
 <div class="tags indention">
@@ -3826,10 +4497,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.191</span>
+  <span class="lead-duration duration">0.371</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-27">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-37">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -3842,14 +4513,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-27" class="collapse collapsable-details ">
+  <div id="element-37" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-28">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-38">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -3861,7 +4532,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-28" class="inner-level collapse collapsable-details ">
+  <div id="steps-38" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -4031,7 +4702,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def requestCreate = call read('classpath:features/usuarios/usuarios.feature@CrearUsuarioRequest'){idUsuario:#(idUsuario),nombre:#(nombre),correo:#(correo),contrasena:#(contrasena),apodo:#(apodo),equiposIdEquipo:#(equiposIdEquipo)}</span>
 
-  <span class="lead-duration duration">0.103</span>
+  <span class="lead-duration duration">0.188</span>
 
 </div>
 
@@ -4164,7 +4835,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def idUsuario = karate.get('idUsuario',dataRandom.getRandomNumberDocumentCO())</span>
+  <span class="name">def idUsuario = karate.get('idUsuario')</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -4191,7 +4862,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def nombre =  karate.get('nombre','Usuario'+dataRandom.generateRandomString(4))</span>
+  <span class="name">def nombre =  karate.get('nombre')</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -4218,7 +4889,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def correo =  karate.get('correo',dataRandom.generateRandomEmail())</span>
+  <span class="name">def correo =  karate.get('correo')</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -4245,34 +4916,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def contrasena =  karate.get('contrasena','PS'+dataRandom.generateRandomString(4))</span>
-
-  <span class="lead-duration duration">0.003</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def apodo =  karate.get('apodo',dataRandom.generateRandomString(3))</span>
+  <span class="name">def contrasena =  karate.get('contrasena')</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -4299,9 +4943,36 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def equiposIdEquipo =  karate.get('equiposIdEquipo',null)</span>
+  <span class="name">def apodo =  karate.get('apodo')</span>
 
   <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def equiposIdEquipo =  connectionDB.getConsult(consultaSQL.RANDOM_EQUIPO.concatenarDato()).id_equipo[0]</span>
+
+  <span class="lead-duration duration">0.072</span>
 
 </div>
 
@@ -4342,11 +5013,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-39">
           <a>Doc string</a>
       </div>
-      <div id="msg-29" class="collapse collapsable-details">
-        <pre>16:24:24.154 [print] 1794167417 
+      <div id="msg-39" class="collapse collapsable-details">
+        <pre>19:49:24.861 [print] 1091993130 
 </pre>
       </div>
     </div>
@@ -4393,7 +5064,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">print bodyCreateUser</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -4407,17 +5078,17 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-40">
           <a>Doc string</a>
       </div>
-      <div id="msg-30" class="collapse collapsable-details">
-        <pre>16:24:24.156 [print] {
-  &quot;id_usuario&quot;: &quot;1794167417&quot;,
-  &quot;nombre&quot;: &quot;UsuarioH9J&ntilde;&quot;,
-  &quot;correo&quot;: &quot;testingAPI_uLCNAO7u@gmail.com&quot;,
+      <div id="msg-40" class="collapse collapsable-details">
+        <pre>19:49:24.862 [print] {
+  &quot;id_usuario&quot;: &quot;1091993130&quot;,
+  &quot;nombre&quot;: &quot;UsuarioZlci&quot;,
+  &quot;correo&quot;: &quot;testingAPI_rbLVCiKe@gmail.com&quot;,
   &quot;contrasena&quot;: &quot;&quot;,
-  &quot;apodo&quot;: &quot;QEb&quot;,
-  &quot;equipos_id_equipo&quot;: null
+  &quot;apodo&quot;: &quot;mSh&quot;,
+  &quot;equipos_id_equipo&quot;: &quot;4&quot;
 }
  
 </pre>
@@ -4466,7 +5137,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method POST</span>
 
-  <span class="lead-duration duration">0.074</span>
+  <span class="lead-duration duration">0.106</span>
 
 </div>
 
@@ -4507,11 +5178,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-41">
           <a>Doc string</a>
       </div>
-      <div id="msg-31" class="collapse collapsable-details">
-        <pre>16:24:24.232 [print] {
+      <div id="msg-41" class="collapse collapsable-details">
+        <pre>19:49:24.969 [print] {
   &quot;error&quot;: &quot;Todos los campos son obligatorios&quot;
 }
  
@@ -4534,7 +5205,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">print requestCreate</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -4548,16 +5219,16 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-42">
           <a>Doc string</a>
       </div>
-      <div id="msg-32" class="collapse collapsable-details">
-        <pre>16:24:24.235 [print] {
-  &quot;apodo&quot;: &quot;QEb&quot;,
-  &quot;equiposIdEquipo&quot;: null,
+      <div id="msg-42" class="collapse collapsable-details">
+        <pre>19:49:24.970 [print] {
+  &quot;apodo&quot;: &quot;mSh&quot;,
+  &quot;equiposIdEquipo&quot;: &quot;4&quot;,
   &quot;responseHeaders&quot;: {
     &quot;Date&quot;: [
-      &quot;Wed, 19 Mar 2025 16:24:24 GMT&quot;
+      &quot;Fri, 21 Mar 2025 19:49:24 GMT&quot;
     ],
     &quot;Content-Type&quot;: [
       &quot;application/json; charset=utf-8&quot;
@@ -4572,7 +5243,7 @@ $(document).ready(function() {
       &quot;W/\&quot;2d-JhMvXvxEuk9pqkVfgn1gr/iUlPY\&quot;&quot;
     ],
     &quot;rndr-id&quot;: [
-      &quot;e63e5ae9-1e96-484a&quot;
+      &quot;475d013c-88d3-4001&quot;
     ],
     &quot;vary&quot;: [
       &quot;Accept-Encoding&quot;
@@ -4583,14 +5254,14 @@ $(document).ready(function() {
     &quot;x-render-origin-server&quot;: [
       &quot;Render&quot;
     ],
-    &quot;cf-cache-status&quot;: [
+    &quot;CF-Cache-Status&quot;: [
       &quot;DYNAMIC&quot;
     ],
     &quot;Server&quot;: [
       &quot;cloudflare&quot;
     ],
     &quot;CF-RAY&quot;: [
-      &quot;922e51df185ab4b8-ORD&quot;
+      &quot;923ff8ee7ba8ebe2-SJC&quot;
     ],
     &quot;alt-svc&quot;: [
       &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
@@ -4601,23 +5272,23 @@ $(document).ready(function() {
   &quot;responseExpected&quot;: {
     &quot;responseCrearUsuario&quot;: &quot;Usuario creado correctamente&quot;
   },
-  &quot;responseTime&quot;: 72,
+  &quot;responseTime&quot;: 105,
   &quot;response&quot;: {
     &quot;error&quot;: &quot;Todos los campos son obligatorios&quot;
   },
-  &quot;idUsuario&quot;: &quot;1794167417&quot;,
-  &quot;correo&quot;: &quot;testingAPI_uLCNAO7u@gmail.com&quot;,
+  &quot;idUsuario&quot;: &quot;1091993130&quot;,
+  &quot;correo&quot;: &quot;testingAPI_rbLVCiKe@gmail.com&quot;,
   &quot;contrasena&quot;: &quot;&quot;,
   &quot;bodyCreateUser&quot;: {
-    &quot;id_usuario&quot;: &quot;1794167417&quot;,
-    &quot;nombre&quot;: &quot;UsuarioH9J&ntilde;&quot;,
-    &quot;correo&quot;: &quot;testingAPI_uLCNAO7u@gmail.com&quot;,
+    &quot;id_usuario&quot;: &quot;1091993130&quot;,
+    &quot;nombre&quot;: &quot;UsuarioZlci&quot;,
+    &quot;correo&quot;: &quot;testingAPI_rbLVCiKe@gmail.com&quot;,
     &quot;contrasena&quot;: &quot;&quot;,
-    &quot;apodo&quot;: &quot;QEb&quot;,
-    &quot;equipos_id_equipo&quot;: null
+    &quot;apodo&quot;: &quot;mSh&quot;,
+    &quot;equipos_id_equipo&quot;: &quot;4&quot;
   },
   &quot;responseStatus&quot;: 400,
-  &quot;nombre&quot;: &quot;UsuarioH9J&ntilde;&quot;
+  &quot;nombre&quot;: &quot;UsuarioZlci&quot;
 }
  
 </pre>
@@ -4671,27 +5342,20 @@ $(document).ready(function() {
 
 
 <div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_3471865504.html">src/test/resources/features/usuarios/usuarios.feature</a>
-    </div>
 
 
 <div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_1695962388.html">@CrearUsuarioConCamposVacios</a>
-       <a href="report-tag_3550003917.html">@Usuario</a>
 </div>
 
 
-  <span class="lead-duration duration">0.771</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-33">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-43">
 
 <div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Crear usuario con Campos vacios por 'idEquipo'</span>
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -4700,14 +5364,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-33" class="collapse collapsable-details ">
+  <div id="element-43" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-34">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-44">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -4719,228 +5383,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-34" class="inner-level collapse collapsable-details ">
+  <div id="steps-44" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">def idUsuario = dataRandom.getRandomNumberDocumentCO()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def nombre = 'Usuario'+dataRandom.generateRandomString(4)</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def correo =  dataRandom.generateRandomEmail()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def contrasena = 'PS'+dataRandom.generateRandomString(4)</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def apodo =  dataRandom.generateRandomString(3)</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def equiposIdEquipo =  ''</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def requestCreate = call read('classpath:features/usuarios/usuarios.feature@CrearUsuarioRequest'){idUsuario:#(idUsuario),nombre:#(nombre),correo:#(correo),contrasena:#(contrasena),apodo:#(apodo),equiposIdEquipo:#(equiposIdEquipo)}</span>
-
-  <span class="lead-duration duration">0.388</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name- passed">
-  <span class="keyword indention"></span>
-  <span class="name">features/usuarios/usuarios.feature</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
   <span class="name">url baseUrl</span>
 
   <span class="lead-duration duration">0.000</span>
@@ -4966,8 +5414,8 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
   <span class="name">path usuarios</span>
 
   <span class="lead-duration duration">0.000</span>
@@ -4993,509 +5441,9 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def responseExpected = read('classpath:assets/usuarios/responseUsuarios.json')</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def idUsuario = karate.get('idUsuario',dataRandom.getRandomNumberDocumentCO())</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def nombre =  karate.get('nombre','Usuario'+dataRandom.generateRandomString(4))</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def correo =  karate.get('correo',dataRandom.generateRandomEmail())</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def contrasena =  karate.get('contrasena','PS'+dataRandom.generateRandomString(4))</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def apodo =  karate.get('apodo',dataRandom.generateRandomString(3))</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def equiposIdEquipo =  karate.get('equiposIdEquipo',null)</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">print idUsuario</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-35" class="collapse collapsable-details">
-        <pre>16:24:24.263 [print] 35196598 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">def bodyCreateUser = read('classpath:assets/usuarios/crearUsuario.json')</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">print bodyCreateUser</span>
-
-  <span class="lead-duration duration">0.002</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-36" class="collapse collapsable-details">
-        <pre>16:24:24.267 [print] {
-  &quot;id_usuario&quot;: &quot;35196598&quot;,
-  &quot;nombre&quot;: &quot;UsuarioP&Ntilde;ZB&quot;,
-  &quot;correo&quot;: &quot;testingAPI_2ho8z4e9@gmail.com&quot;,
-  &quot;contrasena&quot;: &quot;PS6zoi&quot;,
-  &quot;apodo&quot;: &quot;b0t&quot;,
-  &quot;equipos_id_equipo&quot;: &quot;&quot;
-}
- 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; And passed">
-  <span class="keyword indention">&gt; And</span>
-  <span class="name">request bodyCreateUser</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; When passed">
-  <span class="keyword indention">&gt; When</span>
-  <span class="name">method POST</span>
-
-  <span class="lead-duration duration">0.370</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
-  <span class="keyword indention">&gt; *</span>
-  <span class="name">print response</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-37">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-37" class="collapse collapsable-details">
-        <pre>16:24:24.638 [print] {
-  &quot;error&quot;: &quot;Error al crear el usuario: invalid input syntax for type integer: \&quot;\&quot;&quot;
-}
- 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">print requestCreate</span>
-
-  <span class="lead-duration duration">0.002</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-38">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-38" class="collapse collapsable-details">
-        <pre>16:24:24.641 [print] {
-  &quot;apodo&quot;: &quot;b0t&quot;,
-  &quot;equiposIdEquipo&quot;: &quot;&quot;,
-  &quot;responseHeaders&quot;: {
-    &quot;Date&quot;: [
-      &quot;Wed, 19 Mar 2025 16:24:24 GMT&quot;
-    ],
-    &quot;Content-Type&quot;: [
-      &quot;application/json; charset=utf-8&quot;
-    ],
-    &quot;Transfer-Encoding&quot;: [
-      &quot;chunked&quot;
-    ],
-    &quot;Connection&quot;: [
-      &quot;keep-alive&quot;
-    ],
-    &quot;etag&quot;: [
-      &quot;W/\&quot;52-ORH1xaoHYF4MOuxYb+RuNnlIN8A\&quot;&quot;
-    ],
-    &quot;rndr-id&quot;: [
-      &quot;345f42bf-ab07-40cf&quot;
-    ],
-    &quot;vary&quot;: [
-      &quot;Accept-Encoding&quot;
-    ],
-    &quot;x-powered-by&quot;: [
-      &quot;Express&quot;
-    ],
-    &quot;x-render-origin-server&quot;: [
-      &quot;Render&quot;
-    ],
-    &quot;cf-cache-status&quot;: [
-      &quot;DYNAMIC&quot;
-    ],
-    &quot;Server&quot;: [
-      &quot;cloudflare&quot;
-    ],
-    &quot;CF-RAY&quot;: [
-      &quot;922e51dfce6b1ee4-ORD&quot;
-    ],
-    &quot;alt-svc&quot;: [
-      &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
-    ],
-    &quot;Set-Cookie&quot;: [
-    ]
-  },
-  &quot;responseExpected&quot;: {
-    &quot;responseCrearUsuario&quot;: &quot;Usuario creado correctamente&quot;
-  },
-  &quot;responseTime&quot;: 369,
-  &quot;response&quot;: {
-    &quot;error&quot;: &quot;Error al crear el usuario: invalid input syntax for type integer: \&quot;\&quot;&quot;
-  },
-  &quot;idUsuario&quot;: &quot;35196598&quot;,
-  &quot;correo&quot;: &quot;testingAPI_2ho8z4e9@gmail.com&quot;,
-  &quot;contrasena&quot;: &quot;PS6zoi&quot;,
-  &quot;bodyCreateUser&quot;: {
-    &quot;id_usuario&quot;: &quot;35196598&quot;,
-    &quot;nombre&quot;: &quot;UsuarioP&Ntilde;ZB&quot;,
-    &quot;correo&quot;: &quot;testingAPI_2ho8z4e9@gmail.com&quot;,
-    &quot;contrasena&quot;: &quot;PS6zoi&quot;,
-    &quot;apodo&quot;: &quot;b0t&quot;,
-    &quot;equipos_id_equipo&quot;: &quot;&quot;
-  },
-  &quot;responseStatus&quot;: 400,
-  &quot;nombre&quot;: &quot;UsuarioP&Ntilde;ZB&quot;
-}
- 
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match requestCreate.responseStatus == 400</span>
+  <span class="name">def responseExpected = read('classpath:assets/usuarios/responseUsuarios.json')</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -5529,10 +5477,6 @@ $(document).ready(function() {
 
 
 <div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_3471865504.html">src/test/resources/features/usuarios/usuarios.feature</a>
-    </div>
 
 
 <div class="tags indention">
@@ -5542,10 +5486,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.401</span>
+  <span class="lead-duration duration">1.477</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-39">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-45">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -5558,14 +5502,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-39" class="collapse collapsable-details ">
+  <div id="element-45" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-40">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-46">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -5577,7 +5521,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-40" class="inner-level collapse collapsable-details ">
+  <div id="steps-46" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -5747,7 +5691,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def requestCreate = call read('classpath:features/usuarios/usuarios.feature@CrearUsuarioRequest'){idUsuario:#(idUsuario),nombre:#(nombre),correo:#(correo),contrasena:#(contrasena),apodo:#(apodo),equiposIdEquipo:#(equiposIdEquipo)}</span>
 
-  <span class="lead-duration duration">0.485</span>
+  <span class="lead-duration duration">0.498</span>
 
 </div>
 
@@ -5880,7 +5824,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def idUsuario = karate.get('idUsuario',dataRandom.getRandomNumberDocumentCO())</span>
+  <span class="name">def idUsuario = karate.get('idUsuario')</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -5907,7 +5851,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def nombre =  karate.get('nombre','Usuario'+dataRandom.generateRandomString(4))</span>
+  <span class="name">def nombre =  karate.get('nombre')</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -5934,7 +5878,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def correo =  karate.get('correo',dataRandom.generateRandomEmail())</span>
+  <span class="name">def correo =  karate.get('correo')</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -5961,7 +5905,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def contrasena =  karate.get('contrasena','PS'+dataRandom.generateRandomString(4))</span>
+  <span class="name">def contrasena =  karate.get('contrasena')</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -5988,7 +5932,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def apodo =  karate.get('apodo',dataRandom.generateRandomString(3))</span>
+  <span class="name">def apodo =  karate.get('apodo')</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -6015,9 +5959,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-&amp;gt; * passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def equiposIdEquipo =  karate.get('equiposIdEquipo',null)</span>
+  <span class="name">def equiposIdEquipo =  connectionDB.getConsult(consultaSQL.RANDOM_EQUIPO.concatenarDato()).id_equipo[0]</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.072</span>
 
 </div>
 
@@ -6058,11 +6002,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-41">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-47">
           <a>Doc string</a>
       </div>
-      <div id="msg-41" class="collapse collapsable-details">
-        <pre>16:24:24.666 [print] 1549542631 
+      <div id="msg-47" class="collapse collapsable-details">
+        <pre>19:49:25.054 [print] 1181773742 
 </pre>
       </div>
     </div>
@@ -6109,7 +6053,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">print bodyCreateUser</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -6123,17 +6067,17 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-42">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-48">
           <a>Doc string</a>
       </div>
-      <div id="msg-42" class="collapse collapsable-details">
-        <pre>16:24:24.668 [print] {
-  &quot;id_usuario&quot;: &quot;1549542631&quot;,
-  &quot;nombre&quot;: &quot;UsuariocONp&quot;,
-  &quot;correo&quot;: &quot;testingAPI_yISgnXav@gmail.com&quot;,
-  &quot;contrasena&quot;: &quot;PSM4cI&quot;,
-  &quot;apodo&quot;: &quot;fIl&quot;,
-  &quot;equipos_id_equipo&quot;: null
+      <div id="msg-48" class="collapse collapsable-details">
+        <pre>19:49:25.055 [print] {
+  &quot;id_usuario&quot;: &quot;1181773742&quot;,
+  &quot;nombre&quot;: &quot;UsuarioCXJD&quot;,
+  &quot;correo&quot;: &quot;testingAPI_gx8HsH8q@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PSA31n&quot;,
+  &quot;apodo&quot;: &quot;Tkc&quot;,
+  &quot;equipos_id_equipo&quot;: &quot;3312&quot;
 }
  
 </pre>
@@ -6182,7 +6126,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method POST</span>
 
-  <span class="lead-duration duration">0.467</span>
+  <span class="lead-duration duration">0.416</span>
 
 </div>
 
@@ -6223,11 +6167,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-43">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-49">
           <a>Doc string</a>
       </div>
-      <div id="msg-43" class="collapse collapsable-details">
-        <pre>16:24:25.137 [print] {
+      <div id="msg-49" class="collapse collapsable-details">
+        <pre>19:49:25.472 [print] {
   &quot;message&quot;: &quot;Usuario creado&quot;,
   &quot;usuario&quot;: {
     &quot;message&quot;: &quot;Usuario creado correctamente&quot;
@@ -6253,7 +6197,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">print requestCreate</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -6267,16 +6211,16 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-44">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-50">
           <a>Doc string</a>
       </div>
-      <div id="msg-44" class="collapse collapsable-details">
-        <pre>16:24:25.140 [print] {
-  &quot;apodo&quot;: &quot;fIl&quot;,
-  &quot;equiposIdEquipo&quot;: null,
+      <div id="msg-50" class="collapse collapsable-details">
+        <pre>19:49:25.474 [print] {
+  &quot;apodo&quot;: &quot;Tkc&quot;,
+  &quot;equiposIdEquipo&quot;: &quot;3312&quot;,
   &quot;responseHeaders&quot;: {
     &quot;Date&quot;: [
-      &quot;Wed, 19 Mar 2025 16:24:25 GMT&quot;
+      &quot;Fri, 21 Mar 2025 19:49:25 GMT&quot;
     ],
     &quot;Content-Type&quot;: [
       &quot;application/json; charset=utf-8&quot;
@@ -6291,7 +6235,7 @@ $(document).ready(function() {
       &quot;W/\&quot;51-/gBhgxKgCU22/TfG2RJtjeGkAro\&quot;&quot;
     ],
     &quot;rndr-id&quot;: [
-      &quot;b668322e-1057-47d8&quot;
+      &quot;5afafff1-0355-4a9a&quot;
     ],
     &quot;vary&quot;: [
       &quot;Accept-Encoding&quot;
@@ -6302,14 +6246,14 @@ $(document).ready(function() {
     &quot;x-render-origin-server&quot;: [
       &quot;Render&quot;
     ],
-    &quot;cf-cache-status&quot;: [
+    &quot;CF-Cache-Status&quot;: [
       &quot;DYNAMIC&quot;
     ],
     &quot;Server&quot;: [
       &quot;cloudflare&quot;
     ],
     &quot;CF-RAY&quot;: [
-      &quot;922e51e24acef84d-ORD&quot;
+      &quot;923ff8efac7ef96f-SJC&quot;
     ],
     &quot;alt-svc&quot;: [
       &quot;h3=\&quot;:443\&quot;; ma=86400&quot;
@@ -6320,26 +6264,26 @@ $(document).ready(function() {
   &quot;responseExpected&quot;: {
     &quot;responseCrearUsuario&quot;: &quot;Usuario creado correctamente&quot;
   },
-  &quot;responseTime&quot;: 466,
+  &quot;responseTime&quot;: 415,
   &quot;response&quot;: {
     &quot;message&quot;: &quot;Usuario creado&quot;,
     &quot;usuario&quot;: {
       &quot;message&quot;: &quot;Usuario creado correctamente&quot;
     }
   },
-  &quot;idUsuario&quot;: &quot;1549542631&quot;,
-  &quot;correo&quot;: &quot;testingAPI_yISgnXav@gmail.com&quot;,
-  &quot;contrasena&quot;: &quot;PSM4cI&quot;,
+  &quot;idUsuario&quot;: &quot;1181773742&quot;,
+  &quot;correo&quot;: &quot;testingAPI_gx8HsH8q@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PSA31n&quot;,
   &quot;bodyCreateUser&quot;: {
-    &quot;id_usuario&quot;: &quot;1549542631&quot;,
-    &quot;nombre&quot;: &quot;UsuariocONp&quot;,
-    &quot;correo&quot;: &quot;testingAPI_yISgnXav@gmail.com&quot;,
-    &quot;contrasena&quot;: &quot;PSM4cI&quot;,
-    &quot;apodo&quot;: &quot;fIl&quot;,
-    &quot;equipos_id_equipo&quot;: null
+    &quot;id_usuario&quot;: &quot;1181773742&quot;,
+    &quot;nombre&quot;: &quot;UsuarioCXJD&quot;,
+    &quot;correo&quot;: &quot;testingAPI_gx8HsH8q@gmail.com&quot;,
+    &quot;contrasena&quot;: &quot;PSA31n&quot;,
+    &quot;apodo&quot;: &quot;Tkc&quot;,
+    &quot;equipos_id_equipo&quot;: &quot;3312&quot;
   },
   &quot;responseStatus&quot;: 201,
-  &quot;nombre&quot;: &quot;UsuariocONp&quot;
+  &quot;nombre&quot;: &quot;UsuarioCXJD&quot;
 }
  
 </pre>
@@ -6415,7 +6359,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def query = connectionDB.getConsult(consultaSQL.CONSULT_USER_BY_ID.concatenarDato(idUsuario))</span>
 
-  <span class="lead-duration duration">0.020</span>
+  <span class="lead-duration duration">0.072</span>
 
 </div>
 
@@ -6456,28 +6400,28 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-45">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-51">
           <a>Doc string</a>
       </div>
-      <div id="msg-45" class="collapse collapsable-details">
-        <pre>16:24:25.163 [print] {
+      <div id="msg-51" class="collapse collapsable-details">
+        <pre>19:49:25.548 [print] {
   &quot;id_usuario&quot;: [
-    &quot;1549542631&quot;
+    &quot;1181773742&quot;
   ],
   &quot;nombre&quot;: [
-    &quot;UsuariocONp                             &quot;
+    &quot;UsuarioCXJD                             &quot;
   ],
   &quot;correo&quot;: [
-    &quot;testingAPI_yISgnXav@gmail.com                               &quot;
+    &quot;testingAPI_gx8HsH8q@gmail.com                               &quot;
   ],
   &quot;contrasena&quot;: [
-    &quot;$2b$10$0m05sC74p/g5hCcGCGxzDeuHgP8yFXK/fK6OGK0pvb6bpHmdglo6C                                        &quot;
+    &quot;$2b$10$7Jf/g5D7xFylZVNbFiiJpOPX8TCZ362FRhgGFqWTQZGcnDfi2xTY6                                        &quot;
   ],
   &quot;apodo&quot;: [
-    &quot;fIl                                     &quot;
+    &quot;Tkc                                     &quot;
   ],
   &quot;equipos_id_equipo&quot;: [
-    null
+    &quot;3312&quot;
   ]
 }
  
@@ -6554,7 +6498,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def bodyUser = read('classpath:assets/usuarios/requestLogin.json')</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -6595,13 +6539,13 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-46">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-52">
           <a>Doc string</a>
       </div>
-      <div id="msg-46" class="collapse collapsable-details">
-        <pre>16:24:25.166 [print] {
-  &quot;correo&quot;: &quot;testingAPI_yISgnXav@gmail.com&quot;,
-  &quot;contrasena&quot;: &quot;PSM4cI&quot;
+      <div id="msg-52" class="collapse collapsable-details">
+        <pre>19:49:25.550 [print] {
+  &quot;correo&quot;: &quot;testingAPI_gx8HsH8q@gmail.com&quot;,
+  &quot;contrasena&quot;: &quot;PSA31n&quot;
 }
  
 </pre>
@@ -6650,7 +6594,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method POST</span>
 
-  <span class="lead-duration duration">0.380</span>
+  <span class="lead-duration duration">0.409</span>
 
 </div>
 
@@ -6691,13 +6635,13 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-47">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-53">
           <a>Doc string</a>
       </div>
-      <div id="msg-47" class="collapse collapsable-details">
-        <pre>16:24:25.547 [print] {
+      <div id="msg-53" class="collapse collapsable-details">
+        <pre>19:49:25.960 [print] {
   &quot;message&quot;: &quot;Inicio de sesi&oacute;n exitoso&quot;,
-  &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c3VhcmlvIjoxNTQ5NTQyNjMxLCJjb3JyZW8iOiJ0ZXN0aW5nQVBJX3lJU2duWGF2QGdtYWlsLmNvbSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiLCJpYXQiOjE3NDI0MDE0NjUsImV4cCI6MTc0MjQwNTA2NX0.NoftgtoDO4Z4T6RTD3DZVf-gFBiSBAPuqzUdo_eW4h4&quot;
+  &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZF91c3VhcmlvIjoxMTgxNzczNzQyLCJjb3JyZW8iOiJ0ZXN0aW5nQVBJX2d4OEhzSDhxQGdtYWlsLmNvbSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiLCJpYXQiOjE3NDI1ODY1NjUsImV4cCI6MTc0MjU5MDE2NX0.gIcOqvfzSSJ51VheWzXmZhS7g74BvVuJ_SdCGxlsVhk&quot;
 }
  
 </pre>
@@ -6746,60 +6690,6 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">response.message == 'Inicio de sesi&oacute;n exitoso'</span>
 
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def query = connectionDB.getConsult(consultaSQL.DELETE_USER_TEST.concatenarDato(idUsuario))</span>
-
-  <span class="lead-duration duration">0.028</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">print query</span>
-
   <span class="lead-duration duration">0.000</span>
 
 </div>
@@ -6812,19 +6702,6 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-48">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-48" class="collapse collapsable-details">
-        <pre>16:24:25.579 [print] {
-}
- 
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -6843,6 +6720,7 @@ $(document).ready(function() {
   </div>
 </div>
 
+        </div>
 
       </div>
     </div>

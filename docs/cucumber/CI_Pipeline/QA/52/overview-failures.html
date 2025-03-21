@@ -41,9 +41,10 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Steps Overview</title>
+<title>Cucumber Reports  - Failures Overview</title>
 
 </head>
+
 <body>
 
 <nav class="navbar navbar-default navbar-fixed-top" id="navigation">
@@ -53,8 +54,8 @@ $(document).ready(function() {
       <ul class="nav navbar-nav navbar-right">
         <li role="presentation" ><a href="overview-features.html">Features</a></li>
         <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
-        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
-        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation"  class="active" ><a href="overview-failures.html">Failures</a></li>
       </ul>
     </div>
   </div>
@@ -73,8 +74,8 @@ $(document).ready(function() {
   </thead>
   <tbody>
     <tr class="info">
-      <td>test paralleltest in Colombia</td>
-      <td>19 Mar 2025, 16:24</td>
+      <td>test paralleltest in API torneo</td>
+      <td>21 Mar 2025, 19:49</td>
     </tr>
   </tbody>
 </table>
@@ -87,56 +88,23 @@ $(document).ready(function() {
 
 <div id="report-lead" class="container-fluid">
   <div class="col-md-10 col-md-offset-1">
-    <h2>Steps Statistics</h2>
-      <p>The following graph shows step statistics for this build. Below list is based on results.
- step does not provide information about result then is not listed below.
- Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+    <h2>Failures Overview</h2>
+      <p>The following summary displays scenarios that failed.</p>
   </div>
 </div>
+
 
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <table id="tablesorter" class="stats-table table-hover">
 
-        <thead>
-          <tr class="header">
-            <th>Implementation</th>
-            <th>Occurrences</th>
-            <th>Average duration</th>
-            <th>Max duration</th>
-            <th>Total durations</th>
-            <th>Ratio</th>
-          </tr>
-        </thead>
+        <p>You have no failed scenarios in your Cucumber report</p>
 
-        <tbody>
-            <tr>
-              <td class="location">karate</td>
-              <td>220</td>
-              <td class="duration" data-value="20626374">0.020</td>
-              <td class="duration" data-value="20626374">0.640</td>
-              <td class="duration" data-value="4537802361">4.537</td>
-              <td class="passed">100.00%</td>
-            </tr>
-        </tbody>
-
-        <tfoot class="total">
-          <tr>
-            <td>1</td>
-            <td>220</td>
-            <td class="duration">0.020</td>
-            <td class="duration">4.537</td>
-            <td class="duration">4.537</td>
-            <td>Totals</td>
-          </tr>
-        </tfoot>
-
-      </table>
     </div>
   </div>
 </div>
 
+<br/>
 
 <nav class="navbar navbar-default" id="footer">
   <div class="container-fluid">
